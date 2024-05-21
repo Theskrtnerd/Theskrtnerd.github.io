@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Discord-Bot on BT</title>
-    <link>//localhost:1313/tags/discord-bot/</link>
+    <link>https://Theskrtnerd.github.io/tags/discord-bot/</link>
     <description>Recent content in Discord-Bot on BT</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
     <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/discord-bot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Theskrtnerd.github.io/tags/discord-bot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Soccer Discord Bot to make your Covid days much better</title>
-      <link>//localhost:1313/posts/soccer-discord-bot-in-covid-days/</link>
+      <link>https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/</link>
       <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/soccer-discord-bot-in-covid-days/</guid>
+      <guid>https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/</guid>
       <description>Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</description>
     </item>
   </channel>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Soccer Discord Bot to make your Covid days much better | BT</title>
 <meta name="keywords" content="discord-bot, coding, random">
 <meta name="description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...">
 <meta name="author" content="xineohperif">
-<link rel="canonical" href="//localhost:1313/posts/soccer-discord-bot-in-covid-days/">
+<link rel="canonical" href="https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://Theskrtnerd.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://Theskrtnerd.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://Theskrtnerd.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://Theskrtnerd.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://Theskrtnerd.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/soccer-discord-bot-in-covid-days/">
+<link rel="alternate" hreflang="en" href="https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,6 +56,73 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:title" content="Soccer Discord Bot to make your Covid days much better" />
+<meta property="og:description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-26T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Soccer Discord Bot to make your Covid days much better"/>
+<meta name="twitter:description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://Theskrtnerd.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Soccer Discord Bot to make your Covid days much better",
+      "item": "https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Soccer Discord Bot to make your Covid days much better",
+  "name": "Soccer Discord Bot to make your Covid days much better",
+  "description": "Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...",
+  "keywords": [
+    "discord-bot", "coding", "random"
+  ],
+  "articleBody": "Introduction During the tough days of Covid, stuck with online studies and feeling down, Discord and my friends ✨ were a lifeline. Chatting and playing games on Discord made things a lot more fun.\nI stumbled upon Discord bots, especially the Game Discord Bots, and thought it’d be cool to play soccer games. But, there weren’t any. After some Google searching, I discovered I could make my own Discord Bot using Python.\nWith just one year of Python experience, I learned to code and set it up on repl.it. I kept adding our favorite games like “Guess the player,” “Missing 11,” and “Soccer Quiz.”\nThis project is my favorite. It brought me joy and helped my friends and me get through one of the toughest times for everyone.\nProcess Let’s walk through the process of creating the bot:\n1. Register the bot Start by visiting the Discord Developer Portal, selecting “New Application,” and filling in the necessary information for your Discord bot. Create a new Bot Token, a crucial element for bot development.\nNote: If you’ve already created the token, opt for “Reset Token” to generate a new one.\n2. Invite the bot to your server Now, invite the bot to your server for testing. Navigate to OAuth2 -\u003e URL Generator, choose the options bot and Administrator for your local server, and generate a URL like https://discord.com/api/oauth2/authorize?client_id={client_id}\u0026permissions=2048\u0026scope=bot. Paste this URL into your browser’s search bar to add the bot to your server.\nOnce you see the bot’s incoming message in your server, it confirms successful addition.\n3. Start coding ✨ Now, to start, I would recommend trying to run your code on repl.it. Create an account if you haven’t already, and create a new project.\nCreate 2 files main.py and keep_alive.py. These are the only 2 files you need right now.\nFor keep_alive.py, paste the following code in:\nfrom flask import Flask from threading import Thread app = Flask('') @app.route('/') def home(): return \"Hello. I am alive!\" def run(): app.run(host='0.0.0.0',port=8080) def keep_alive(): t = Thread(target=run) t.start() And for main.py, paste in the following template that I created:\nfrom discord.ext import commands import os client = commands.Bot(command_prefix='$') @client.event async def on_ready(): print(\"Bot's ready\") @client.event async def on_message(message): if message.author == client.user: return msg = message.content if msg == \"Hello Discord Bot\": await message.channel.send('Hi ' + message.author.display_name) await client.process_commands(message) keep_alive() client.run(os.environ[\"TOKEN\"]) Now, please open the Secrets tab in your Repl and add a new secret. The key will be TOKEN, and the value will be the Bot token you copied from the previous step.\nWith that are set, you can start running your bot! Press Run and wait for a bit. After you see the message “Bot’s ready” in terminal, you can start testing your bot.\nIn your server, try typing “Hello Discord Bot”, it will respond like this:\n4. Add your own touch With all of that setup, you can now create anything you want! Just think of something you can do with the Discord Bot and make it yourself.\nFor reference, I will talk about the process of adding the Soccer Games. So in order to create the soccer games like starting 11 or guess the player, I need to get data from previous matches, or player’s history.\nBut to do that, I need to find some kinds of API, or I have to crawl data from a soccer site. After looking around, I cannot find a free API that has things I need. So I decided to crawl data from Transfermarkt. This site has everything I need, from player’s transfer history, to the line-ups of all the matches in history.\nSo firstly, I used bs4 to crawl data. But a downside of bs4 is that it only works on static web. And because transfrmarkt is a dynamic generated website, this library didn’t work. Luckily, I found another alternative, which is requests-html. This works simillar to bs4, but it will wait for the website to load before crawling the data.\nBelow is a code demo of the functions for my games, which contains all the data crawling and game creating.\nfrom requests_html import HTMLSession import random import nextcord # get_matches_from_team_and_year def get_matches(team_id, year): url = f\"https://www.transfermarkt.com/manchester-united/\" url += f\"spielplandatum/verein/{team_id}\" url += f\"/plus/0?saison_id={year}\u0026wettbewerb_id=\u0026\" url += \"day=\u0026heim_gast=\u0026punkte=\u0026datum_von=-\u0026datum_bis=-\" session = HTMLSession() r = session.get(url) print(url) matches = r.html.find('.ergebnis-link') matches_ids = [ int(match.attrs[\"href\"].split(\"/\")[-1]) for match in matches ] return matches_ids # more code here... Here’s the code’s repo if you want to have a deeper look. Hopefully, from this you can get some inspirations to create your own unique Discord bot.\nConclusion In conclusion, a Discord bot proves to be an excellent and practical way to enhance coding skills while creating something interesting for beginners.\nI hope you find inspiration in this journey and that it proves useful for your own Discord bot endeavors.\n",
+  "wordCount" : "800",
+  "inLanguage": "en",
+  "datePublished": "2023-08-26T00:00:00Z",
+  "dateModified": "2023-08-26T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "xineohperif"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BT",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://Theskrtnerd.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,8 +140,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="BT (Alt + H)">
-                <img src="//localhost:1313/logo.png" alt="" aria-label="logo"
+            <a href="https://Theskrtnerd.github.io/" accesskey="h" title="BT (Alt + H)">
+                <img src="https://Theskrtnerd.github.io/logo.png" alt="" aria-label="logo"
                     height="35">BT</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -101,22 +168,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="//localhost:1313/about/" title="About">
+                <a href="https://Theskrtnerd.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/posts/" title="Blog">
+                <a href="https://Theskrtnerd.github.io/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/projects/" title="Projects">
+                <a href="https://Theskrtnerd.github.io/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://Theskrtnerd.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -269,16 +336,16 @@ Hopefully, from this you can get some inspirations to create your own unique Dis
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//localhost:1313/tags/discord-bot/">Discord-Bot</a></li>
-      <li><a href="//localhost:1313/tags/coding/">Coding</a></li>
-      <li><a href="//localhost:1313/tags/random/">Random</a></li>
+      <li><a href="https://Theskrtnerd.github.io/tags/discord-bot/">Discord-Bot</a></li>
+      <li><a href="https://Theskrtnerd.github.io/tags/coding/">Coding</a></li>
+      <li><a href="https://Theskrtnerd.github.io/tags/random/">Random</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="//localhost:1313/">BT</a></span> · 
+        <span>&copy; 2024 <a href="https://Theskrtnerd.github.io/">BT</a></span> · 
 
     <span>
         Powered by
