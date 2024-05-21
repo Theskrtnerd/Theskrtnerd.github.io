@@ -1,5 +1,5 @@
-baseURL: "https://Theskrtnerd.github.io"
-theme: ["PaperMod"]
+baseURL: "https://Theskrtnerd.github.io/"
+theme: PaperMod
 title: BT
 params:
   label:
