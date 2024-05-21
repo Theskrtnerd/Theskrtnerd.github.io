@@ -1,1 +1,1 @@
-# Personal website, built using Hugo & PaperMod
+Personal website, built using Hugo & PaperMod
