@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Markdown on BT</title>
+    <link>https://Theskrtnerd.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on BT</description>
+    <generator>Hugo -- 0.125.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://Theskrtnerd.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ultimate guide to getting a Tech Internship</title>
+      <link>https://Theskrtnerd.github.io/posts/guide-to-swe-internship/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://Theskrtnerd.github.io/posts/guide-to-swe-internship/</guid>
+      <description>The only guide to secure a tech internship in 2024</description>
+    </item>
+  </channel>
+</rss>
