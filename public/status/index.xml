@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Daily Status on BT</title>
-    <link>https://Theskrtnerd.github.io/status/</link>
+    <link>http://localhost:1313/status/</link>
     <description>Recent content in Daily Status on BT</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://Theskrtnerd.github.io/status/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/status/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://Theskrtnerd.github.io/status/2024-04-23/</link>
+      <link>http://localhost:1313/status/2024-04-23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/status/2024-04-23/</guid>
+      <guid>http://localhost:1313/status/2024-04-23/</guid>
       <description>Hi, I just started building this blog 👶. I&amp;rsquo;ll try to spend more time writing blogs and stuff to update all my stuff here.
 I had a meeting for the WDC Web Project today. My job in this project is to build the front-end for a volunteering website. This might be a good project for my list of projects.
 I also had a short talk with a World Quant recruiter today.</description>
     </item>
     <item>
       <title></title>
-      <link>https://Theskrtnerd.github.io/status/2024-05-01/</link>
+      <link>http://localhost:1313/status/2024-05-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/status/2024-05-01/</guid>
+      <guid>http://localhost:1313/status/2024-05-01/</guid>
       <description>Today is a good day for me 🥰. I did pretty well in the Algorithm Design &amp;amp; Data Structure Prac Exam 2, which was a comeback from Prac Exam 1. Hopefully I can get better grade than OOP for this course.
 I&amp;rsquo;m also having a meeting with Tobin about the internship and our progress in 30 minutes. It&amp;rsquo;s been a while seen our last meeting, and there will be a lot to talk about.</description>
     </item>
     <item>
       <title></title>
-      <link>https://Theskrtnerd.github.io/status/2024-05-03/</link>
+      <link>http://localhost:1313/status/2024-05-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/status/2024-05-03/</guid>
+      <guid>http://localhost:1313/status/2024-05-03/</guid>
       <description>Today I got rejected from another company. 😞 Almost, like literally almost every single company I applied to has rejected me. Maybe it&amp;rsquo;s my communications skill, but maybe there&amp;rsquo;s something more to it.
 At least on the research side, I&amp;rsquo;m doing pretty well (i guess). The meeting with Tobin the other day went fine. I guess now we&amp;rsquo;ll pivot to a different type of model, Diffusion model. I&amp;rsquo;m now trying to replicate the paper&amp;rsquo;s results, and writing some code to finetune a backdoor model myself.</description>
     </item>
     <item>
       <title></title>
-      <link>https://Theskrtnerd.github.io/status/2024-05-05/</link>
+      <link>http://localhost:1313/status/2024-05-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/status/2024-05-05/</guid>
+      <guid>http://localhost:1313/status/2024-05-05/</guid>
       <description>I had 2 big dinners the past 2 days. One was with my house, and one was with all my friends. It was super fun but tiresome. But I&amp;rsquo;m starting to feel like I&amp;rsquo;m spending a lot of time for sports. Although they are quality time, spending too much will stop me from other activities like Gym. So maybe I will need to make some time for Gym.
 Also, I feel like I need to find a part-time job now.</description>
     </item>
     <item>
       <title></title>
-      <link>https://Theskrtnerd.github.io/status/2024-05-09/</link>
+      <link>http://localhost:1313/status/2024-05-09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/status/2024-05-09/</guid>
+      <guid>http://localhost:1313/status/2024-05-09/</guid>
       <description>It&amp;rsquo;s been quite long since my last daily status (~4 days). A lot has happened ig. SQUAD participated in the YouX Games Night the other day and got second prize - 30$ voucher to watch movies. It was a bit sad as we were so close to winning the first prize.
 Also, as a project lead of SQUAD, me and the team will do a new personal project now. It&amp;rsquo;s a Sports betting bot, and hopefully we can produce something out of this, and make the resume prettier (at least for Quant).</description>
     </item>

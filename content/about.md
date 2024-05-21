@@ -7,6 +7,16 @@ title: About me
 
 ---
 
+### Introduction
+
+Hi, I'm Barry Tran, a first-year student at the University of Adelaide with a passion for mathematics and coding. Since childhood, I've been fascinated by solving complex math problems with fundamental principles and simple logic.
+
+Discovering programming opened up new possibilities for me. From web and mobile development to data science and machine learning, I've eagerly learned new technologies through online resources like YouTube, mastering tools such as Django and Flutter.
+
+Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysis**, driven by the potential to apply logic and technology to solve real-world problems. I'm excited to continue exploring and innovating in these fields.
+
+---
+
 ### Education
 
 **Bachelor of Computer Science (Advanced)** - _University of Adelaide (2023-Present)_
@@ -20,7 +30,7 @@ title: About me
 ***MIT Media Lab - MIT Adelaide Living Lab***
   - Time: 03/2024 - Present
   - Title: Research Intern
-  - Research Topic: TBU
+  - Research Topic: Comparative Analysis of Backdoor Attack Techniques in Diffusion Models
   - Supervisor: [Tobin South](https://www.linkedin.com/in/tobinsouth/)
 
 
@@ -49,7 +59,7 @@ title: About me
 
 ---
 
-### My top 3
+### My Top Three
 
 - Movies: Tenet, Interstellar, Dune 2
 - Songs: Losing You, Playing God, Dư Âm

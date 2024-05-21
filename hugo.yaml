@@ -19,6 +19,8 @@ params:
       url: "https://github.com/Theskrtnerd"
     - name: "linkedin"
       url: "https://linkedin.com/in/xineohperif/"
+    - name: "resume"
+      url: "/Barry_Tran_Resume_New.pdf"
 
   ShowAllPagesInArchive: true
 
