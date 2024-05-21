@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on BT</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on BT</description>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>//localhost:1313/tags/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random</title>
+      <link>//localhost:1313/tags/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/random/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sorting</title>
+      <link>//localhost:1313/tags/sorting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/sorting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uni</title>
+      <link>//localhost:1313/tags/uni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/uni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>//localhost:1313/tags/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gist</title>
+      <link>//localhost:1313/tags/gist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/gist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>//localhost:1313/tags/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax</title>
+      <link>//localhost:1313/tags/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/syntax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discord-Bot</title>
+      <link>//localhost:1313/tags/discord-bot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/discord-bot/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
