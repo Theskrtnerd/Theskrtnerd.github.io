@@ -53,9 +53,9 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 - My record for solving a 3x3 Rubik cube is **18.41s**
 - I can solve a Rubik cube **blindfolded**
 - My typing record on [Monkeytype](https://monkeytype.com/) (30 seconds) is **96 WPM**
-- I can play a lot of sports, but my favourites are **Soccer**, **Frisbee**, and **Basketball**
 - I can play **Guitar** of all different types (Acoustic, Electric, Fingerstyle, etc.)
 - I love **Maths**, **Coding** and anything cool!
+- My favourite football team is **Manchester United**
 
 ---
 
@@ -64,6 +64,8 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 - Movies: Tenet, Interstellar, Dune 2
 - Songs: Losing You, Playing God, Dư Âm
 - Food: Bún Riêu, Cơm tấm, Bún Chả
+- Games: PES, Santorini, Fantasy Premier League
+- Sports: Soccer, Basketball, Frisbee
 
 ---
 
