@@ -66,6 +66,7 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 - Food: Bún Riêu, Cơm tấm, Bún Chả
 - Games: PES, Santorini, Fantasy Premier League
 - Sports: Soccer, Basketball, Frisbee
+- Coffee places: Sii, Tranquil, Cafe Thái (all in Hanoi)
 
 ---
 
