@@ -54,8 +54,8 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 - I can solve a Rubik cube **blindfolded**
 - My typing record on [Monkeytype](https://monkeytype.com/) (30 seconds) is **96 WPM**
 - I can play **Guitar** of all different types (Acoustic, Electric, Fingerstyle, etc.)
-- I love **Maths**, **Coding** and anything cool!
 - My favourite football team is **Manchester United**
+- I love **Maths**, **Coding** and anything cool!
 
 ---
 
