@@ -62,7 +62,7 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 ### My Top Three
 
 - Movies: Tenet, Interstellar, Dune 2
-- Songs: Losing You, Playing God, Dư Âm
+- Songs: Just the two of us, Playing God, Dư Âm
 - Food: Bún Riêu, Cơm tấm, Bún Chả
 - Games: PES, Santorini, Fantasy Premier League
 - Sports: Soccer, Basketball, Frisbee
