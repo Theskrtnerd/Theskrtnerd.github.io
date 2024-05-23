@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Daily Status on BT</title>
+    <title>Life Update on BT</title>
     <link>https://Theskrtnerd.github.io/status/</link>
-    <description>Recent content in Daily Status on BT</description>
+    <description>Recent content in Life Update on BT</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
@@ -48,6 +48,14 @@ Also, I feel like I need to find a part-time job now.</description>
       <guid>https://Theskrtnerd.github.io/status/2024-05-09/</guid>
       <description>It&amp;rsquo;s been quite long since my last daily status (~4 days). A lot has happened ig. SQUAD participated in the YouX Games Night the other day and got second prize - 30$ voucher to watch movies. It was a bit sad as we were so close to winning the first prize.
 Also, as a project lead of SQUAD, me and the team will do a new personal project now. It&amp;rsquo;s a Sports betting bot, and hopefully we can produce something out of this, and make the resume prettier (at least for Quant).</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Theskrtnerd.github.io/status/2024-05-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Theskrtnerd.github.io/status/2024-05-21/</guid>
+      <description>It&amp;rsquo;s been quite long since my last daily status. Right now I felt kinda depressed, as I&amp;rsquo;ve wasted the last 2 days doing random stuff, and not focus on stuff that I actually need to do.
+I will be traveling back to Vietnam in a month, and that seems to be quite exciting. I will be able to meet my friends, family, and do all the stuff I&amp;rsquo;ve been wanting to do if I come back to Vietnam.</description>
     </item>
   </channel>
 </rss>
