@@ -44,10 +44,10 @@ menu:
       url: /search/
       weight: 10
 
-    #- identifier: status
-    #  name: Daily Status
-    #  url: /status/
-    #  weight: 10
+    - identifier: status
+      name: Life Update
+      url: /status/
+      weight: 10
 
     - identifier: projects
       name: Projects
