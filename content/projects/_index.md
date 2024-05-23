@@ -4,6 +4,13 @@ description: All list of all my finished projects
 layout: single
 ---
 
+---
+
+### [AUMS Website](https://github.com/Adelaide-University-Maths-Society/aums.org.au)
+
+- Description: Website of the Adelaide University Mathematics Society, the best club in Adelaide University
+- Tags: `astro`, `react`, `tailwindcss`, `typescript`, `web-dev`
+- Time: 01/2024 - 02/2024
 
 ---
 
@@ -20,6 +27,14 @@ layout: single
 - Description: Two-player 2D platformer game created using C++ and SFML, with generated levels and obstacles
 - Tags: `game-dev`, `cpp`, `sfml`
 - Time: 09/2023 - 10/2023
+
+---
+
+### [Personal Portfolio Website](https://github.com/Theskrtnerd/portfolio-web)
+
+- Description: My old personal portfolio website created using AstroJS
+- Tags: `astro`, `tailwindcss`, `svelte`, `web-dev`
+- Time: 08/2023 - 11/2023
 
 ---
 
@@ -55,5 +70,10 @@ layout: single
 
 ---
 
+### [Soccer Discord Bot](https://github.com/Theskrtnerd/soccer-discord-bot)
 
+- Description: Soccer Discord bot with your favourite soccer games like Missing 11, Guess the player, etc.
+- Tags: `python`, `discord-api`, `bs4`
+- Time: 06/2021 - 10/2021
 
+---
