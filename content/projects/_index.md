@@ -6,6 +6,14 @@ layout: single
 
 ---
 
+### [AI Product Photoshoot Wizard](https://github.com/Theskrtnerd/gen-ai-photoshoots)
+
+- Description: Effortlessly create professional-quality product photos using Generate AI.
+- Tags: `streamlit`, `gen-ai`, `diffusion`, `google-apis`, `web-dev`
+- Time: 04/2024 - 05/2024
+
+---
+
 ### [AUMS Website](https://github.com/Adelaide-University-Maths-Society/aums.org.au)
 
 - Description: Website of the Adelaide University Mathematics Society, the best club in Adelaide University

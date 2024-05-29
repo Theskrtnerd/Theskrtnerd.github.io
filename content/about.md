@@ -67,6 +67,7 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 - Games: PES, Santorini, Fantasy Premier League
 - Sports: Soccer, Basketball, Frisbee
 - Coffee places: Deep Sii, Tranquil Books & Coffee, Cafe Thái
+- Soccer players: Rashford, Lewandowski, Ronaldo
 
 ---
 
