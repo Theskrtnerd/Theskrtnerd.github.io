@@ -94,5 +94,12 @@ Still, I have 2 projects to look after. One is the MIT internship as I need to c
       <description>Introduction Hi, I&amp;rsquo;m Barry Tran, a first-year student at the University of Adelaide with a passion for mathematics and coding. Since childhood, I&amp;rsquo;ve been fascinated by solving complex math problems with fundamental principles and simple logic.
 Discovering programming opened up new possibilities for me. From web and mobile development to data science and machine learning, I&amp;rsquo;ve eagerly learned new technologies through online resources like YouTube, mastering tools such as Django and Flutter.</description>
     </item>
+    <item>
+      <title>Photos</title>
+      <link>https://Theskrtnerd.github.io/photos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Theskrtnerd.github.io/photos/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>
