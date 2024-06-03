@@ -1,0 +1,50 @@
+<style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0 !important;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .image-gallery li {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .image-gallery li a {
+    width: 100%; /* Set width to 100% */
+    display: flex; /* Set display to flex */
+    height: 100%;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  .image-gallery li img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .image-gallery li a:hover img {
+    transform: scale(1.1);
+  }
+
+</style>
+
+<ul class="image-gallery">
+  {{ $dir := string (.Get "gallery_dir") }}
+  {{ range (readDir (print "assets" $dir)) }}
+  {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
+  {{- $imageurl := printf "%s/%s" $dir .Name -}}
+  {{- $imagetitle := index (split .Name ".") 0 -}}
+  <li>
+    <a href="#{{ .Name }}" title="{{ $imagetitle }}">
+      <img src="{{ ($image).Permalink }}" alt="{{ $imagetitle }}" title="{{ $imagetitle }}">
+    </a>
+  </li>
+  {{ end }}
+</ul>
