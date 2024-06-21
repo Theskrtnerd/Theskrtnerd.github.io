@@ -6,6 +6,14 @@ layout: single
 
 ---
 
+### [Green Action Website](https://github.com/Theskrtnerd/)
+
+- Description: A full-stack volunteering website dedicated to saving trees
+- Tags: `vue-js`, `express`, `web-dev`
+- Time: 03/2024 - 06/2024
+
+---
+
 ### [AI Product Photoshoot Wizard](https://github.com/Theskrtnerd/gen-ai-photoshoots)
 
 - Description: Effortlessly create professional-quality product photos using Generate AI.
@@ -17,7 +25,7 @@ layout: single
 ### [AUMS Website](https://github.com/Adelaide-University-Maths-Society/aums.org.au)
 
 - Description: Website of the Adelaide University Mathematics Society, the best club in Adelaide University
-- Tags: `astro`, `react`, `tailwindcss`, `typescript`, `web-dev`
+- Tags: `astro-js`, `react-js`, `tailwindcss`, `typescript`, `web-dev`
 - Time: 01/2024 - 02/2024
 
 ---
@@ -25,7 +33,7 @@ layout: single
 ### [Budi Landing Page](https://github.com/Theskrtnerd/budi-landing-page)
 
 - Description: Landing page for the Budi startup, a startup aims to eliminate expensive shipping costs for students
-- Tags: `astro`, `react`, `tailwindcss`, `web-dev`
+- Tags: `astro-js`, `react-js`, `tailwindcss`, `web-dev`
 - Time: 10/2023
 
 ---
@@ -41,7 +49,7 @@ layout: single
 ### [Personal Portfolio Website](https://github.com/Theskrtnerd/portfolio-web)
 
 - Description: My old personal portfolio website created using AstroJS
-- Tags: `astro`, `tailwindcss`, `svelte`, `web-dev`
+- Tags: `astro-js`, `tailwindcss`, `svelte`, `web-dev`
 - Time: 08/2023 - 11/2023
 
 ---
@@ -57,7 +65,7 @@ layout: single
 ### [Event Management QR Website](https://github.com/Theskrtnerd/qr-web-app)
 
 - Description: Event management web app that generates QR codes for events and scans them to check-in attendees
-- Tags: `django`, `react`, `tailwindcss`, `rest-api`
+- Tags: `django`, `react-js`, `tailwindcss`, `rest-api`
 - Time: 10/2022 - 02/2023
 
 ---
