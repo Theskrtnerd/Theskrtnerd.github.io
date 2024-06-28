@@ -1,6 +1,6 @@
 ---
 title: My Projects
-description: All list of all my finished projects
+description: "All list of all my finished projects. Current Project Count: 11"
 layout: single
 ---
 

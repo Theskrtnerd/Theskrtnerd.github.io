@@ -2,104 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>BT</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:38105/</link>
     <description>Recent content on BT</description>
-    <generator>Hugo -- 0.125.7</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:38105/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sort everything in Hack Assembly</title>
-      <link>http://localhost:1313/posts/sorting-in-hack-assembly/</link>
+      <link>http://localhost:38105/posts/sorting-in-hack-assembly/</link>
       <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sorting-in-hack-assembly/</guid>
+      <guid>http://localhost:38105/posts/sorting-in-hack-assembly/</guid>
       <description>Imagine spending 6 hours just to put a ball into the net. That&amp;#39;s what happened with me the other day when I tried doing my Computer Systems assignment...</description>
     </item>
     <item>
-      <title>Ultimate guide to getting a Tech Internship</title>
-      <link>http://localhost:1313/posts/guide-to-swe-internship/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/guide-to-swe-internship/</guid>
-      <description>The only guide to secure a tech internship in 2024</description>
-    </item>
-    <item>
       <title>Soccer Discord Bot to make your Covid days much better</title>
-      <link>http://localhost:1313/posts/soccer-discord-bot-in-covid-days/</link>
+      <link>http://localhost:38105/posts/soccer-discord-bot-in-covid-days/</link>
       <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/soccer-discord-bot-in-covid-days/</guid>
+      <guid>http://localhost:38105/posts/soccer-discord-bot-in-covid-days/</guid>
       <description>Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-04-23/</link>
+      <link>http://localhost:38105/status/2024-04-23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-04-23/</guid>
+      <guid>http://localhost:38105/status/2024-04-23/</guid>
       <description>Hi, I just started building this blog 👶. I&amp;rsquo;ll try to spend more time writing blogs and stuff to update all my stuff here.
 I had a meeting for the WDC Web Project today. My job in this project is to build the front-end for a volunteering website. This might be a good project for my list of projects.
 I also had a short talk with a World Quant recruiter today.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-01/</link>
+      <link>http://localhost:38105/status/2024-05-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-01/</guid>
+      <guid>http://localhost:38105/status/2024-05-01/</guid>
       <description>Today is a good day for me 🥰. I did pretty well in the Algorithm Design &amp;amp; Data Structure Prac Exam 2, which was a comeback from Prac Exam 1. Hopefully I can get better grade than OOP for this course.
 I&amp;rsquo;m also having a meeting with Tobin about the internship and our progress in 30 minutes. It&amp;rsquo;s been a while seen our last meeting, and there will be a lot to talk about.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-03/</link>
+      <link>http://localhost:38105/status/2024-05-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-03/</guid>
+      <guid>http://localhost:38105/status/2024-05-03/</guid>
       <description>Today I got rejected from another company. 😞 Almost, like literally almost every single company I applied to has rejected me. Maybe it&amp;rsquo;s my communications skill, but maybe there&amp;rsquo;s something more to it.
 At least on the research side, I&amp;rsquo;m doing pretty well (i guess). The meeting with Tobin the other day went fine. I guess now we&amp;rsquo;ll pivot to a different type of model, Diffusion model. I&amp;rsquo;m now trying to replicate the paper&amp;rsquo;s results, and writing some code to finetune a backdoor model myself.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-05/</link>
+      <link>http://localhost:38105/status/2024-05-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-05/</guid>
+      <guid>http://localhost:38105/status/2024-05-05/</guid>
       <description>I had 2 big dinners the past 2 days. One was with my house, and one was with all my friends. It was super fun but tiresome. But I&amp;rsquo;m starting to feel like I&amp;rsquo;m spending a lot of time for sports. Although they are quality time, spending too much will stop me from other activities like Gym. So maybe I will need to make some time for Gym.
 Also, I feel like I need to find a part-time job now.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-09/</link>
+      <link>http://localhost:38105/status/2024-05-09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-09/</guid>
+      <guid>http://localhost:38105/status/2024-05-09/</guid>
       <description>It&amp;rsquo;s been quite long since my last daily status (~4 days). A lot has happened ig. SQUAD participated in the YouX Games Night the other day and got second prize - 30$ voucher to watch movies. It was a bit sad as we were so close to winning the first prize.
 Also, as a project lead of SQUAD, me and the team will do a new personal project now. It&amp;rsquo;s a Sports betting bot, and hopefully we can produce something out of this, and make the resume prettier (at least for Quant).</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-21/</link>
+      <link>http://localhost:38105/status/2024-05-21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-21/</guid>
+      <guid>http://localhost:38105/status/2024-05-21/</guid>
       <description>It&amp;rsquo;s been quite long since my last daily status. Right now I felt kinda depressed, as I&amp;rsquo;ve wasted the last 2 days doing random stuff, and not focus on stuff that I actually need to do.
 I will be traveling back to Vietnam in a month, and that seems to be quite exciting. I will be able to meet my friends, family, and do all the stuff I&amp;rsquo;ve been wanting to do if I come back to Vietnam.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/status/2024-05-23/</link>
+      <link>http://localhost:38105/status/2024-05-23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/status/2024-05-23/</guid>
+      <guid>http://localhost:38105/status/2024-05-23/</guid>
       <description>Today&amp;rsquo;s a pretty productive day for me. I&amp;rsquo;ve essentially completed all my uni assignments and the tasks needed for this week. Tomorrow I&amp;rsquo;ll have a hangout with friends so that&amp;rsquo;s something to look foward to.
 Still, I have 2 projects to look after. One is the MIT internship as I need to clean the codebase. The other is the Cinnamon AI project - I only have a week left to submit the project.</description>
     </item>
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:38105/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:38105/about/</guid>
       <description>Introduction Hi, I&amp;rsquo;m Barry Tran, a first-year student at the University of Adelaide with a passion for mathematics and coding. Since childhood, I&amp;rsquo;ve been fascinated by solving complex math problems with fundamental principles and simple logic.
 Discovering programming opened up new possibilities for me. From web and mobile development to data science and machine learning, I&amp;rsquo;ve eagerly learned new technologies through online resources like YouTube, mastering tools such as Django and Flutter.</description>
     </item>
     <item>
       <title>Photos</title>
-      <link>http://localhost:1313/photos/</link>
+      <link>http://localhost:38105/photos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/photos/</guid>
+      <guid>http://localhost:38105/photos/</guid>
       <description> </description>
+    </item>
+    <item>
+      <title>Useful Resources</title>
+      <link>http://localhost:38105/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:38105/resources/</guid>
+      <description>This is a list of useful resources, for different types of questions you may/might have about my experience/learning materials.
+How to find a SWE/Quant internship/job in Australia Read this super useful blog Cool subreddit with like-minded people </description>
     </item>
   </channel>
 </rss>
