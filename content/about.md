@@ -73,7 +73,7 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 
 ### Countries I've been to
 
-Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia
+Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia, Hongkong*, China* 
 
 
 
