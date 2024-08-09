@@ -6,8 +6,15 @@
     <description>Recent content on BT</description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://Theskrtnerd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring the future of AI Backdoor attacks</title>
+      <link>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</link>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</guid>
+      <description>A bit of thoughts about backdoor attacks and its future</description>
+    </item>
     <item>
       <title>Sort everything in Hack Assembly</title>
       <link>https://Theskrtnerd.github.io/posts/sorting-in-hack-assembly/</link>
@@ -21,14 +28,6 @@
       <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://Theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/</guid>
       <description>Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</guid>
-      <description>author: [&amp;ldquo;xineohperif&amp;rdquo;] title: &amp;ldquo;Exploring the future of AI Backdoor attacks&amp;rdquo; date: &amp;ldquo;2024-08-09&amp;rdquo; description: &amp;ldquo;A bit of thoughts about backdoor attacks and its future&amp;rdquo; summary: &amp;ldquo;A bit of thoughts about backdoor attacks and its future&amp;rdquo; tags: [&amp;ldquo;gen-ai&amp;rdquo;, &amp;ldquo;coding&amp;rdquo;, &amp;ldquo;random&amp;rdquo;] categories: [&amp;ldquo;coding&amp;rdquo;] series: [&amp;ldquo;AI Learning&amp;rdquo;] section: posts ShowToc: true
-Introduction For the last semester I&amp;rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security.</description>
     </item>
     <item>
       <title></title>
