@@ -24,6 +24,14 @@
     </item>
     <item>
       <title></title>
+      <link>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/</guid>
+      <description>author: [&amp;ldquo;xineohperif&amp;rdquo;] title: &amp;ldquo;Exploring the future of AI Backdoor attacks&amp;rdquo; date: &amp;ldquo;2024-08-09&amp;rdquo; description: &amp;ldquo;A bit of thoughts about backdoor attacks and its future&amp;rdquo; summary: &amp;ldquo;A bit of thoughts about backdoor attacks and its future&amp;rdquo; tags: [&amp;ldquo;gen-ai&amp;rdquo;, &amp;ldquo;coding&amp;rdquo;, &amp;ldquo;random&amp;rdquo;] categories: [&amp;ldquo;coding&amp;rdquo;] series: [&amp;ldquo;AI Learning&amp;rdquo;] section: posts ShowToc: true
+Introduction For the last semester I&amp;rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://Theskrtnerd.github.io/status/2024-04-23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Theskrtnerd.github.io/status/2024-04-23/</guid>
@@ -84,8 +92,10 @@ Still, I have 2 projects to look after. One is the MIT internship as I need to c
       <link>https://Theskrtnerd.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Theskrtnerd.github.io/about/</guid>
-      <description>Introduction Hi, I&amp;rsquo;m Barry Tran, a first-year student at the University of Adelaide with a passion for mathematics and coding. Since childhood, I&amp;rsquo;ve been fascinated by solving complex math problems with fundamental principles and simple logic.
-Discovering programming opened up new possibilities for me. From web and mobile development to data science and machine learning, I&amp;rsquo;ve eagerly learned new technologies through online resources like YouTube, mastering tools such as Django and Flutter.</description>
+      <description>Introduction Hi, I&amp;rsquo;m Barry Tran, a second-year student at the University of Adelaide with a passion for mathematics and coding.
+Currently, I&amp;rsquo;m focused on Artificial Intelligence and Quantitative Analysis, driven by the potential to apply logic and technology to solve real-world problems. I&amp;rsquo;m excited to continue exploring and innovating in these fields.
+Education Bachelor of Computer Science (Advanced) - University of Adelaide (2023-Present)
+Mathematics Major - Hanoi-Amsterdam Highschool for the Gifted (2020-2023)</description>
     </item>
     <item>
       <title>Photos</title>

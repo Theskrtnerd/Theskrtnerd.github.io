@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>BT</title>
+<meta name="keywords" content="">
+<meta name="description" content="author: [&ldquo;xineohperif&rdquo;] title: &ldquo;Exploring the future of AI Backdoor attacks&rdquo; date: &ldquo;2024-08-09&rdquo; description: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; summary: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; tags: [&ldquo;gen-ai&rdquo;, &ldquo;coding&rdquo;, &ldquo;random&rdquo;] categories: [&ldquo;coding&rdquo;] series: [&ldquo;AI Learning&rdquo;] section: posts ShowToc: true
+Introduction For the last semester I&rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security.">
+<meta name="author" content="">
+<link rel="canonical" href="https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://Theskrtnerd.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://Theskrtnerd.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://Theskrtnerd.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://Theskrtnerd.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://Theskrtnerd.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="author: [&ldquo;xineohperif&rdquo;] title: &ldquo;Exploring the future of AI Backdoor attacks&rdquo; date: &ldquo;2024-08-09&rdquo; description: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; summary: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; tags: [&ldquo;gen-ai&rdquo;, &ldquo;coding&rdquo;, &ldquo;random&rdquo;] categories: [&ldquo;coding&rdquo;] series: [&ldquo;AI Learning&rdquo;] section: posts ShowToc: true
+Introduction For the last semester I&rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="author: [&ldquo;xineohperif&rdquo;] title: &ldquo;Exploring the future of AI Backdoor attacks&rdquo; date: &ldquo;2024-08-09&rdquo; description: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; summary: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo; tags: [&ldquo;gen-ai&rdquo;, &ldquo;coding&rdquo;, &ldquo;random&rdquo;] categories: [&ldquo;coding&rdquo;] series: [&ldquo;AI Learning&rdquo;] section: posts ShowToc: true
+Introduction For the last semester I&rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://Theskrtnerd.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "author: [\u0026ldquo;xineohperif\u0026rdquo;] title: \u0026ldquo;Exploring the future of AI Backdoor attacks\u0026rdquo; date: \u0026ldquo;2024-08-09\u0026rdquo; description: \u0026ldquo;A bit of thoughts about backdoor attacks and its future\u0026rdquo; summary: \u0026ldquo;A bit of thoughts about backdoor attacks and its future\u0026rdquo; tags: [\u0026ldquo;gen-ai\u0026rdquo;, \u0026ldquo;coding\u0026rdquo;, \u0026ldquo;random\u0026rdquo;] categories: [\u0026ldquo;coding\u0026rdquo;] series: [\u0026ldquo;AI Learning\u0026rdquo;] section: posts ShowToc: true\nIntroduction For the last semester I\u0026rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security.",
+  "keywords": [
+    
+  ],
+  "articleBody": "author: [“xineohperif”] title: “Exploring the future of AI Backdoor attacks” date: “2024-08-09” description: “A bit of thoughts about backdoor attacks and its future” summary: “A bit of thoughts about backdoor attacks and its future” tags: [“gen-ai”, “coding”, “random”] categories: [“coding”] series: [“AI Learning”] section: posts ShowToc: true\nIntroduction For the last semester I’ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security. With that in mind, here are a few stuff I want to note down as well as some predictions about this topic in the future.\nBut what exactly is a backdoor attack? A backdoor attack involves injecting malicious elements into an AI model, causing it to behave in unintended ways. But what’s cool about backdoor attacks is that it’s usually hidden, so the user/creator won’t be able to know the model is backdoored, and the attack can only be triggered using a trigger (e.g. a keyword/specific icon in the prompt). This subtlety allows the backdoor to remain under normal usage, but will malfunction when a malicious user enter a trigger.\nCurrent status of backdoor attacks With the proliferation of AI systems, security concerns are becoming more critical than ever. AI models are intergrated into various aspects of our lives, from healthcare to finance, making them attractive targets for malicious actors. Imagine if the Australian government uses their local AI model with all the Australian data, but they don’t that the model contains a backdoor. Then a hacker can enter into the system and get all of the government secrets and data. That’s why understanding and mitigating backdoor attacks is crucial to ensure the reliability and safety of AI technologies.\nThroughout the internship, we have researched and did a bunch literature review on this topic, and the methods from the paper are alarming. Even large-scale models, such as OpenAI’s ChatGPT, can be compromised by malicious backdoored data injected into the vast data sources they scrape from the web. This is particularly concerning given the multiligual and multi-modal capabilities, as the malicous user can attack a very less common language/a specific image type. Then the backdoored data injected can be as little as 0.0001% of the training data, which is totally doable, as a coordinated effort by individuals or groups to publish a specific niched backdoored dataset online can significantly impact these models.\nFuture of backdoor attacks Backdoor attack research is a continually evolving field, and there’s no sign of it becoming less popular in the future. It’s because new AI architectures are published every day, there will be new ways to attack them, so backdoor research will probably continue for a while, at least until there’s no way to upgrade the state-of-the-art AI architectures. Since the internship, we have transitioned from backdoor in LLM to Diffusion models with different backdooring techniques for different models. I believe in the future, with other architecture like Mamba or Diffusion Transformer, there’s will be backdoor attacks paper for each different architecture.\nLuckily, backdoor attacks have now been researched extensively in the AI field, both in academia and industry, which means the risk of a hacker being able to harm a model right now is very unlikely. But what will happen in the future. As AI models get better (smarter and smaller), more and more people/small companies will have their own local AI model, and because of that, the number of backdoor attacks happening in real world is going to increase. Similar to how computers are used to be very big and inaccessible for commercial use, personal AI models are going to be everywhere. With that, backdoor attacks will be just like computer viruses. Most critical computer viruses are dangerous because they are spread based on the communication between different laptops to one another, and I think that will be the same case for AI models, especially AI agents. Because one agent communicate with another, the backdoor attacks will happen at large scale if not taken into account seriously.\nAnother important aspect right now is with the content and media we consume. Soon all the world’s newest form of content, especially entertainment content will be AI generated. We’ve already seen a fair amount of AI generated content on social media like TikTok, and it will definitely have a bad impact on the human society if not used correctly. Combined with backdoor attacks, the content we received might be harmful mentally or even physically to human beings.\nConclusion So in summary, backdoor attack is a very deadly framework and needs to be researched extensively, especially in the context of AI agents network and media content alignment. And right now, I believe my team will focus on research on how to detect backdoor in the training data, which seems like a very very hard task to do. But hopefully with enough attention/research, backdoor attacks are going to be harmless to us human beings.\n",
+  "wordCount" : "819",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://Theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BT",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://Theskrtnerd.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://Theskrtnerd.github.io/" accesskey="h" title="BT (Alt + H)">
+                <img src="https://Theskrtnerd.github.io/logo.png" alt="" aria-label="logo"
+                    height="35">BT</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://Theskrtnerd.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Theskrtnerd.github.io/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Theskrtnerd.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Theskrtnerd.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>author: [&ldquo;xineohperif&rdquo;]
+title: &ldquo;Exploring the future of AI Backdoor attacks&rdquo;
+date: &ldquo;2024-08-09&rdquo;
+description: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo;
+summary: &ldquo;A bit of thoughts about backdoor attacks and its future&rdquo;
+tags: [&ldquo;gen-ai&rdquo;, &ldquo;coding&rdquo;, &ldquo;random&rdquo;]
+categories: [&ldquo;coding&rdquo;]
+series: [&ldquo;AI Learning&rdquo;]
+section: posts
+ShowToc: true</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>For the last semester I&rsquo;ve been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security. With that in mind, here are a few stuff I want to note down as well as some predictions about this topic in the future.</p>
+<p>But what exactly is a backdoor attack? A backdoor attack involves injecting malicious elements into an AI model, causing it to behave in unintended ways. But what&rsquo;s cool about backdoor attacks is that it&rsquo;s usually hidden, so the user/creator won&rsquo;t be able to know the model is backdoored, and the attack can only be triggered using a trigger (e.g. a keyword/specific icon in the prompt). This subtlety allows the backdoor to remain under normal usage, but will malfunction when a malicious user enter a trigger.</p>
+<h2 id="current-status-of-backdoor-attacks">Current status of backdoor attacks<a hidden class="anchor" aria-hidden="true" href="#current-status-of-backdoor-attacks">#</a></h2>
+<p>With the proliferation of AI systems, security concerns are becoming more critical than ever. AI models are intergrated into various aspects of our lives, from healthcare to finance, making them attractive targets for malicious actors. Imagine if the Australian government uses their local AI model with all the Australian data, but they don&rsquo;t that the model contains a backdoor. Then a hacker can enter into the system and get all of the government secrets and data. That&rsquo;s why understanding and mitigating backdoor attacks is crucial to ensure the reliability and safety of AI technologies.</p>
+<p>Throughout the internship, we have researched and did a bunch literature review on this topic, and the methods from the paper are alarming. Even large-scale models, such as OpenAI&rsquo;s ChatGPT, can be compromised by malicious backdoored data injected into the vast data sources they scrape from the web. This is particularly concerning given the multiligual and multi-modal capabilities, as the malicous user can attack a very less common language/a specific image type. Then the backdoored data injected can be as little as 0.0001% of the training data, which is totally doable, as a coordinated effort by individuals or groups to publish a specific niched backdoored dataset online can significantly impact these models.</p>
+<h2 id="future-of-backdoor-attacks">Future of backdoor attacks<a hidden class="anchor" aria-hidden="true" href="#future-of-backdoor-attacks">#</a></h2>
+<p>Backdoor attack research is a continually evolving field, and there&rsquo;s no sign of it becoming less popular in the future. It&rsquo;s because new AI architectures are published every day, there will be new ways to attack them, so backdoor research will probably continue for a while, at least until there&rsquo;s no way to upgrade the state-of-the-art AI architectures. Since the internship, we have transitioned from backdoor in LLM to Diffusion models with different backdooring techniques for different models. I believe in the future, with other architecture like Mamba or Diffusion Transformer, there&rsquo;s will be backdoor attacks paper for each different architecture.</p>
+<p>Luckily, backdoor attacks have now been researched extensively in the AI field, both in academia and industry, which means the risk of a hacker being able to harm a model right now is very unlikely. But what will happen in the future. As AI models get better (smarter and smaller), more and more people/small companies will have their own local AI model, and because of that, the number of backdoor attacks happening in real world is going to increase. Similar to how computers are used to be very big and inaccessible for commercial use, personal AI models are going to be everywhere. With that, backdoor attacks will be just like computer viruses. Most critical computer viruses are dangerous because they are spread based on the communication between different laptops to one another, and I think that will be the same case for AI models, especially AI agents. Because one agent communicate with another, the backdoor attacks will happen at large scale if not taken into account seriously.</p>
+<p>Another important aspect right now is with the content and media we consume. Soon all the world&rsquo;s newest form of content, especially entertainment content will be AI generated. We&rsquo;ve already seen a fair amount of AI generated content on social media like TikTok, and it will definitely have a bad impact on the human society if not used correctly. Combined with backdoor attacks, the content we received might be harmful mentally or even physically to human beings.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>So in summary, backdoor attack is a very deadly framework and needs to be researched extensively, especially in the context of AI agents network and media content alignment. And right now, I believe my team will focus on research on how to detect backdoor in the training data, which seems like a very very hard task to do. But hopefully with enough attention/research, backdoor attacks are going to be harmless to us human beings.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://Theskrtnerd.github.io/">BT</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
