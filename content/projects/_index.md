@@ -1,9 +1,8 @@
 ---
 title: My Projects
-description: "All list of all my finished projects. Current Project Count: 11"
+description: "All list of all my finished projects."
 layout: single
 ---
-
 ---
 
 ### [Green Action Website](https://github.com/Theskrtnerd/)
