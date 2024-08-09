@@ -1,3 +1,4 @@
+---
 author: ["xineohperif"]
 title: "Exploring the future of AI Backdoor attacks"
 date: "2024-08-09"
@@ -8,6 +9,7 @@ categories: ["coding"]
 series: ["AI Learning"]
 section: posts
 ShowToc: true
+---
 
 ## Introduction
 
