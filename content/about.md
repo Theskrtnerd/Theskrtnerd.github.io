@@ -9,9 +9,7 @@ title: About me
 
 ### Introduction
 
-Hi, I'm Barry Tran, a first-year student at the University of Adelaide with a passion for mathematics and coding. Since childhood, I've been fascinated by solving complex math problems with fundamental principles and simple logic.
-
-Discovering programming opened up new possibilities for me. From web and mobile development to data science and machine learning, I've eagerly learned new technologies through online resources like YouTube, mastering tools such as Django and Flutter.
+Hi, I'm Barry Tran, a second-year student at the University of Adelaide with a passion for mathematics and coding.
 
 Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysis**, driven by the potential to apply logic and technology to solve real-world problems. I'm excited to continue exploring and innovating in these fields.
 
@@ -73,9 +71,6 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 
 ### Countries I've been to
 
-Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia, Hongkong*, China* 
-
-
-
+Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia, Hongkong, China
 
 
