@@ -1,5 +1,5 @@
 ---
-author: ["xineohperif"]
+author: ["xineohperif", "khanhgn"]
 title: "Exploring the future of AI Backdoor attacks"
 date: "2024-08-09"
 description: "A bit of thoughts about backdoor attacks and its future"
@@ -10,7 +10,6 @@ series: ["AI Learning"]
 section: posts
 ShowToc: true
 ---
-
 ## Introduction
 
 For the last semester I've been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security. With that in mind, here are a few stuff I want to note down as well as some predictions about this topic in the future.
@@ -34,6 +33,3 @@ Another important aspect right now is with the content and media we consume. Soo
 ## Conclusion
 
 So in summary, backdoor attack is a very deadly framework and needs to be researched extensively, especially in the context of AI agents network and media content alignment. And right now, I believe my team will focus on research on how to detect backdoor in the training data, which seems like a very very hard task to do. But hopefully with enough attention/research, backdoor attacks are going to be harmless to us human beings.
-
-
-
