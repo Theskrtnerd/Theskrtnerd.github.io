@@ -12,7 +12,7 @@ ShowToc: true
 ---
 ## Introduction
 
-For the last semester I've been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security. With that in mind, here are a few stuff I want to note down as well as some predictions about this topic in the future.
+For the last semester Me and my friend [Khanh](https://khanhgn.vercel.app/) haven been doing some AI research on backdoor attacks, which is a significant area of research in the landscape of AI security. With that in mind, here are a few stuff we want to note down as well as some predictions about this topic in the future.
 
 But what exactly is a backdoor attack? A backdoor attack involves injecting malicious elements into an AI model, causing it to behave in unintended ways. But what's cool about backdoor attacks is that it's usually hidden, so the user/creator won't be able to know the model is backdoored, and the attack can only be triggered using a trigger (e.g. a keyword/specific icon in the prompt). This subtlety allows the backdoor to remain under normal usage, but will malfunction when a malicious user enter a trigger.
 
@@ -20,7 +20,7 @@ But what exactly is a backdoor attack? A backdoor attack involves injecting mali
 
 With the proliferation of AI systems, security concerns are becoming more critical than ever. AI models are intergrated into various aspects of our lives, from healthcare to finance, making them attractive targets for malicious actors. Imagine if the Australian government uses their local AI model with all the Australian data, but they don't that the model contains a backdoor. Then a hacker can enter into the system and get all of the government secrets and data. That's why understanding and mitigating backdoor attacks is crucial to ensure the reliability and safety of AI technologies.
 
-Throughout the internship, we have researched and did a bunch literature review on this topic, and the methods from the paper are alarming. Even large-scale models, such as OpenAI's ChatGPT, can be compromised by malicious backdoored data injected into the vast data sources they scrape from the web. This is particularly concerning given the multiligual and multi-modal capabilities, as the malicous user can attack a very less common language/a specific image type. Then the backdoored data injected can be as little as 0.0001% of the training data, which is totally doable, as a coordinated effort by individuals or groups to publish a specific niched backdoored dataset online can significantly impact these models.
+Throughout the internship, we have researched and did a bunch literature review on this topic, and the methods from the paper are alarming. Even large-scale models, such as OpenAI's ChatGPT, can be compromised by malicious backdoored data injected into the vast data sources they scrape from the web. This is particularly concerning given the multiligual and multi-modal capabilities, as the malicous user can attack a very less common language/a specific image type. Then the backdoored data injected can be as little as 0.001% of the training data, which is totally doable, as a coordinated effort by individuals or groups to publish a specific niched backdoored dataset online can significantly impact these models.
 
 ## Future of backdoor attacks
 
