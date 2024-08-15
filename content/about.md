@@ -9,9 +9,9 @@ title: About me
 
 ### Introduction
 
-Hi, I'm Barry Tran, a second-year student at the University of Adelaide with a passion for mathematics and coding.
+Hi there, I'm Viet Bach (Barry) Tran, a second-year Computer Science student with a passion for mathematics and coding.
 
-Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysis**, driven by the potential to apply logic and technology to solve real-world problems. I'm excited to continue exploring and innovating in these fields.
+Right now, I'm interested in Artificial Intelligence and Quantitative Finance, and I look forward to contributing to these fields.
 
 ---
 
@@ -26,21 +26,23 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 ### Experience
 
 ***MIT Media Lab - MIT Adelaide Living Lab***
-  - Time: 03/2024 - Present
-  - Title: Research Intern
-  - Research Topic: Comparative Analysis of Backdoor Attack Techniques in Diffusion Models
-  - Supervisor: [Tobin South](https://www.linkedin.com/in/tobinsouth/)
 
+- Time: 03/2024 - Present
+- Title: Research Intern
+- Research Topic: Comparative Analysis of Backdoor Attack Techniques in Diffusion Models
+- Supervisor: [Tobin South](https://www.linkedin.com/in/tobinsouth/)
 
 ***Australian Institute for Machine Learning***
-  - Time: 11/2023 - 02/2024
-  - Title: Summer Research Intern
-  - Research Topic: Exploring X-ray Velocimetry (XV) imaging and Machine Learning for the detection and monitoring of cystic fibrosis disease in preclinical data.
-  - Supervisor: Dr. [Antonios Perperidis](https://www.adelaide.edu.au/directory/antonios.perperidis)
+
+- Time: 11/2023 - 02/2024
+- Title: Summer Research Intern
+- Research Topic: Exploring X-ray Velocimetry (XV) imaging and Machine Learning for the detection and monitoring of cystic fibrosis disease in preclinical data.
+- Supervisor: Dr. [Antonios Perperidis](https://www.adelaide.edu.au/directory/antonios.perperidis)
 
 ***Budi***
-  - Time: 10/2023 - 02/2024
-  - Title: Fullstack Software Engineer
+
+- Time: 10/2023 - 02/2024
+- Title: Fullstack Software Engineer
 
 ---
 
@@ -72,5 +74,3 @@ Currently, I'm focused on **Artificial Intelligence** and **Quantitative Analysi
 ### Countries I've been to
 
 Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia, Hongkong, China
-
-
