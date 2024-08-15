@@ -13,7 +13,7 @@ ShowToc: true
 
 ## Introduction
 
-This semester, I had the chance to study the course [Computer Systems](https://www.adelaide.edu.au/course-outlines/001956/2/sem-1/). This course is (kinda) based on the course [nand2tetrus](https://www.nand2tetris.org) and the book [The Elements of Computing Systems](https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686/). The course is famous and notorious for being hard, but it teaches you all the fundamentals of Computing Systems, from high-level languages like Python and C++, all the way down to machine code with 0 and 1 bits. 
+This semester, I had the chance to study the course [Computer Systems](https://www.adelaide.edu.au/course-outlines/001956/2/sem-1/). This course is (kinda) based on the course [nand2tetris](https://www.nand2tetris.org) and the book [The Elements of Computing Systems](https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686/). The course is famous and notorious for being hard, but it teaches you all the fundamentals of Computing Systems, from high-level languages like Python and C++, all the way down to machine code with 0 and 1 bits. 
 
 So it might be obvious that this course is regarded as the hardest in my entire CS degree. Furthermore, you can probably guess how hard the assignments were. Especially in the recent assignment, we were tasked with writing [Hack Assembly](https://www.jk-quantized.com/experiments/HomebrewComputer/Cheatsheets/hackASM.html) code, which is an Assembly language that is created for the Hack Platform, with all basic components of a normal computer with CPU and RAM, etc. This language at first looks super hard to read, with some weird syntax. Below is a small snippet of what the code looks like.
 
