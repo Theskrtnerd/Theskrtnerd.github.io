@@ -1,7 +1,7 @@
 ---
 title: Latest news/updates
 ---
-[26-07-2024] I'm accepted into BBVisual Lab under the supervision of Prof. Minh Hoai Nguyen. I'll be working on Object Counting. Topic sounds both funny and cool at the same time!
+[26-07-2024] I'm accepted into BBVisual Lab under the supervision of Prof. Minh Hoai Nguyen. I'll be working on Object Counting. Topic sounds both (lowkey) funny and cool at the same time!
 
 [03-07-2024] I receive an offer to join Canva as a Machine Learning Engineer Intern for the upcoming summer. Hope to create some cool designs there!
 
