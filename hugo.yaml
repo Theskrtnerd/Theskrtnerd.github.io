@@ -29,10 +29,10 @@ params:
 
 menu:
   main:
-    - identifier: update
-      name: Updates
-      url: /updates/
-      weight: 10
+    #- identifier: update
+    #  name: Updates
+    #  url: /updates/
+    #  weight: 10
       
     - identifier: blog
       name: Blog

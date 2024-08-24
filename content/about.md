@@ -11,7 +11,7 @@ title: About me
 
 Hi there, I'm Viet Bach (Barry) Tran, a second-year Computer Science student with a passion for mathematics and coding.
 
-Right now, I'm interested in Artificial Intelligence and Quantitative Finance, and I look forward to contributing to these fields.
+Right now, I'm interested in **AI** and **Quant**, and I look forward to contributing to these fields.
 
 ---
 
@@ -25,12 +25,19 @@ Right now, I'm interested in Artificial Intelligence and Quantitative Finance, a
 
 ### Experience
 
+***Australian Institute for Machine Learning - BB Visual Lab***
+
+- Time: 08/2024 - Present
+- Title: Undergraduate Student Researcher
+- Research Topic: Machine Learning for fine-grained class-agnostic visual counting
+- Supervisor: Prof. [Minh Hoai Nguyen](https://www.minhhoai.net/)
+
 ***MIT Media Lab - MIT Adelaide Living Lab***
 
 - Time: 03/2024 - Present
 - Title: Research Intern
 - Research Topic: Comparative Analysis of Backdoor Attack Techniques in Diffusion Models
-- Supervisor: [Tobin South](https://www.linkedin.com/in/tobinsouth/)
+- Supervisor: [Tobin South](https://tobin.page/)
 
 ***Australian Institute for Machine Learning***
 
@@ -74,3 +81,9 @@ Right now, I'm interested in Artificial Intelligence and Quantitative Finance, a
 ### Countries I've been to
 
 Vietnam, India, Taiwan, Bulgaria, Germany, France, Belgium, Netherlands, Luxembourg, Myanmmar, Cambodia, United Arab Emirates, Australia, Hongkong, China
+
+---
+
+### My photos
+
+{{< image-gallery gallery_dir="/album" >}}
