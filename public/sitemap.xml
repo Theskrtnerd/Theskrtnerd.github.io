@@ -17,9 +17,6 @@
     <loc>http://localhost:1313/categories/coding/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/exploring-the-future-of-ai-backdoor-attacks/</loc>
-    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/gen-ai/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -29,8 +26,8 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/status/</loc>
-    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/exploring-the-future-of-ai-backdoor-attacks/</loc>
+    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/sorting-in-hack-assembly/</loc>
     <lastmod>2024-05-03T00:00:00+00:00</lastmod>
@@ -49,20 +46,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/soccer-discord-bot-in-covid-days/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-04-23/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-01/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-03/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-05/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-09/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-21/</loc>
-  </url><url>
-    <loc>http://localhost:1313/status/2024-05-23/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
