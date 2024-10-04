@@ -1,6 +1,6 @@
 ---
 title: My Projects
-description: "All list of all my finished projects."
+description: "List of all my finished projects."
 layout: single
 ---
 ---
