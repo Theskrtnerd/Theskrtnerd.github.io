@@ -20,7 +20,7 @@ params:
     - name: "linkedin"
       url: "https://linkedin.com/in/xineohperif/"
     - name: "resume"
-      url: "/Barry_Tran_Resume_New.pdf"
+      url: "/Barry_Tran_Resume_20241018.pdf"
 
   ShowAllPagesInArchive: true
 
