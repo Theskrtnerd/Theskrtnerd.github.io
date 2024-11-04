@@ -29,7 +29,7 @@ Right now, I'm interested in **AI** and **Quant**, and I look forward to contrib
 
 - Time: 08/2024 - Present
 - Title: Undergraduate Student Researcher
-- Research Topic: Machine Learning for fine-grained class-agnostic visual counting
+- Research Topic: Spread them Count them: Fine-grained Class-agnostic Visual Counting
 - Supervisor: Prof. [Minh Hoai Nguyen](https://www.minhhoai.net/)
 
 ***MIT Media Lab - MIT Adelaide Living Lab***
@@ -44,12 +44,8 @@ Right now, I'm interested in **AI** and **Quant**, and I look forward to contrib
 - Time: 11/2023 - 02/2024
 - Title: Summer Research Intern
 - Research Topic: Exploring X-ray Velocimetry (XV) imaging and Machine Learning for the detection and monitoring of cystic fibrosis disease in preclinical data.
-- Supervisor: Dr. [Antonios Perperidis](https://www.adelaide.edu.au/directory/antonios.perperidis)
-
-***Budi***
-
-- Time: 10/2023 - 02/2024
-- Title: Fullstack Software Engineer
+- Supervisor: Dr. [Antonios Perperidis
+  ](https://www.adelaide.edu.au/directory/antonios.perperidis)
 
 ---
 
