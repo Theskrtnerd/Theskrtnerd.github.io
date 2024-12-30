@@ -9,52 +9,54 @@ title: About me
 
 ### Introduction
 
-Hi there, I'm Viet Bach (Barry) Tran, a second-year Computer Science student with a passion for mathematics and coding.
+Hi there! I’m Viet Bach Tran — but feel free to call me Bach or Barry (Viet is actually my middle name).
 
-Right now, I'm interested in **AI** and **Quant**, and I look forward to contributing to these fields.
+I’m a second-year Bachelor of Computer Science (Advanced) student at the University of Adelaide, majoring in Artificial Intelligence.
 
----
+I’m currently doing a Machine Learning Engineer internship at Canva, working on an exciting project in Design Relayout.
 
-### Education
+I’m very passionate about AI research, with interests in a variety of topics like Visual Counting, Quant Finance, Backdoor Attack, Medical AI, Design Generation, and Ads Auctions. In other words, I’m curious about all areas of machine learning and how to apply it to various aspects of life.
 
-**Bachelor of Computer Science (Advanced)** - _University of Adelaide (2023-Present)_
+I’m currently serving as the president of the Adelaide University Mathematics Society (AUMS) and was previously a project manager for the Society of Quantitative Analysis and Data (SQUAD).
 
-**Mathematics Major** - _Hanoi-Amsterdam Highschool for the Gifted (2020-2023)_
+Outside of academics, you can find me playing soccer on Sundays, solving random puzzles on the bus, or staying up really really late playing games with friends.
+
+If you’d like to connect, chat, or discuss anything — from AI and machine learning to puzzles and games — feel free to reach out! I’m usually on platforms under the username ***xineohperif*** (firephoenix reversed).
 
 ---
 
 ### Experience
 
-***Australian Institute for Machine Learning - BB Visual Lab***
+***Canva*** - Machine Learning Engineer Intern
 
-- Time: 08/2024 - Present
-- Title: Undergraduate Student Researcher
-- Research Topic: Spread them Count them: Fine-grained Class-agnostic Visual Counting
-- Supervisor: Prof. [Minh Hoai Nguyen](https://www.minhhoai.net/)
+- Design Generation AU Team
+- Working on Design Relayout
 
-***MIT Media Lab - MIT Adelaide Living Lab***
+***Australian Institute for Machine Learning*** - Undergraduate Student Researcher
 
-- Time: 03/2024 - Present
-- Title: Research Intern
-- Research Topic: Comparative Analysis of Backdoor Attack Techniques in Diffusion Models
-- Supervisor: [Tobin South](https://tobin.page/)
+- BBVisual Lab - under Prof. [Minh Hoai Nguyen](https://www.minhhoai.net/)
+- Working on [Visual Counting](https://theskrtnerd.github.io/TCS_Final_Paper_a1901793.pdf)
 
-***Australian Institute for Machine Learning***
+***MIT Media Lab*** - Research Intern
 
-- Time: 11/2023 - 02/2024
-- Title: Summer Research Intern
-- Research Topic: Exploring X-ray Velocimetry (XV) imaging and Machine Learning for the detection and monitoring of cystic fibrosis disease in preclinical data.
-- Supervisor: Dr. [Antonios Perperidis
-  ](https://www.adelaide.edu.au/directory/antonios.perperidis)
+- MIT Adelaide Living Lab - under [Tobin South](https://tobin.page/)
+- Working on [Backdoor Attack](https://theskrtnerd.github.io/posts/exploring-the-future-of-ai-backdoor-attacks/)
+
+***Australian Institute for Machine Learning*** - Summer Research Intern
+
+- Summer Research - under Dr. [Antonios Perperidis](https://www.adelaide.edu.au/directory/antonios.perperidis)
+- Working on [4D Medical Imaging](https://theskrtnerd.github.io//Cystic_Fibrosis_report_v2.pdf)
 
 ---
 
 ### Random Facts
 
-- My record for solving a Expert-level on [Killer Sudoku](https://sudoku.com/killer) is **06:57**
-- My record for solving a Extreme-level on [Classic Sudoku](https://sudoku.com) is **08:42**
-- My record for solving a 3x3 Rubik cube is **18.41s**
-- I can solve a Rubik cube **blindfolded**
+- I really like puzzles!
+  - My record for solving a Extreme-level on [Classic Sudoku](https://sudoku.com) is **08:42**
+  - My record for solving a Expert-level on [Killer Sudoku](https://sudoku.com/killer) is **06:57**
+  - My record for solving a 3x3 Rubik cube is **18.41s**
+  - I can solve a Rubik cube **blindfolded**
+  - I have solved the last **4** [Jane Street puzzles](https://www.janestreet.com/puzzles/).
 - My typing record on [Monkeytype](https://monkeytype.com/) (30 seconds) is **96 WPM**
 - I can play **Guitar** of all different types (Acoustic, Electric, Fingerstyle, etc.)
 - My favourite football team is **Manchester United**
@@ -64,13 +66,11 @@ Right now, I'm interested in **AI** and **Quant**, and I look forward to contrib
 
 ### My Top Three
 
-- Movies: Tenet, Interstellar, Dune 2
-- Songs: Just the two of us, Playing God, Dư Âm
-- Food: Bún Riêu, Cơm tấm, Bún Chả
-- Games: PES, Santorini, Fantasy Premier League
-- Sports: Soccer, Basketball, Frisbee
-- Coffee places: Deep Sii, Tranquil Books & Coffee, Cafe Thái
-- Soccer players: Rashford, Lewandowski, Ronaldo
+- Movies: [Tenet](https://www.imdb.com/title/tt6723592/),[ Interstellar](https://www.imdb.com/title/tt0816692/), [Dune: Part Two](https://www.imdb.com/title/tt15239678/)
+- Songs: [Just the two of us](https://www.youtube.com/watch?v=hlsqsIW6gx8), [Playing God](https://www.youtube.com/watch?v=DSBBEDAGOTc), [Cherry Wine](https://www.youtube.com/watch?v=1o00J04ThXQ)
+- Food: [Bún Riêu](https://en.wikipedia.org/wiki/B%C3%BAn_ri%C3%AAu), [Cơm tấm](https://vi.wikipedia.org/wiki/C%C6%A1m_t%E1%BA%A5m), [Bún Chả](https://vi.wikipedia.org/wiki/B%C3%BAn_ch%E1%BA%A3)
+- Boardgames: [Santorini](https://boardgamegeek.com/boardgame/194655/santorini), [Legends of Three Kingdoms](https://boardgamegeek.com/boardgame/35188/legends-of-the-three-kingdoms), [One Night Ultimate Warewolf](https://boardgamegeek.com/boardgame/147949/one-night-ultimate-werewolf)
+- Games: [Honor of Kings](https://en.wikipedia.org/wiki/Honor_of_Kings), [Pro Evolution Soccer](https://en.wikipedia.org/wiki/Pro_Evolution_Soccer), [Fantasy Premier League](https://en.wikipedia.org/wiki/Fantasy_Premier_League)
 
 ---
 
