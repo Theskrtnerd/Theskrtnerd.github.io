@@ -1,62 +1,30 @@
 baseURL: "https://Theskrtnerd.github.io/"
-theme: ["PaperMod"]
-title: BT
+theme: PaperMod
 params:
-  label:
-    title: Bach Tran
-    icon: /logo.png
-    iconHeight: 35
-
   profileMode:
-    enabled: true
-    title: Barry Tran # optional default will be site title
-    subtitle: "CS student, AI Researcher, SWE"
-    imageUrl: "assets/images/emoji.jpg" # optional
-    imageTitle: "xineohperif's emoji" # optional
-
-  socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/Theskrtnerd"
-    - name: "linkedin"
-      url: "https://linkedin.com/in/xineohperif/"
-    - name: "resume"
-      url: "/Barry_Tran_Resume_20241018.pdf"
-
+    imageUrl: "/images/ava.jpg"
+    imageTitle: "xineohperif's emoji"
+  social:
+    github: "https://github.com/Theskrtnerd"
+    linkedin: "https://linkedin.com/in/xineohperif/"
+    resume: "/Barry_Tran_Resume_20250414.pdf"
   ShowAllPagesInArchive: true
 
-  mainSections:
-    - posts
-
 menu:
-  main:
-    #- identifier: update
-    #  name: Updates
-    #  url: /updates/
-    #  weight: 10
-      
+  main:   
     - identifier: blog
-      name: Blog
-      url: /posts/
+      name: blog
+      url: /blog/
       weight: 10
 
     - identifier: about
-      name: About
-      url: /about/
+      name: about
+      url: /
       weight: 10
-
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 10
-
-    #- identifier: status
-    #  name: Life Update
-    #  url: /status/
-    #  weight: 10
-
-    - identifier: projects
-      name: Projects
-      url: /projects/
+    
+    - identifier: photos
+      name: photos
+      url: /photos/
       weight: 10
 
 markup:

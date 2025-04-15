@@ -1,0 +1,9 @@
+themes/
+public/
+resources/
+__pycache__/
+.DS_Store
+.env
+.hugo_cache/
+.idea/
+.vscode/

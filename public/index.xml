@@ -1,45 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>BT</title>
+    <title>About Me on </title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on BT</description>
-    <generator>Hugo -- 0.131.0</generator>
+    <description>Recent content in About Me on </description>
+    <generator>Hugo -- 0.146.4</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The future of AI Backdoor attacks</title>
-      <link>http://localhost:1313/posts/exploring-the-future-of-ai-backdoor-attacks/</link>
-      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/exploring-the-future-of-ai-backdoor-attacks/</guid>
-      <description>A bit of thoughts about backdoor attacks and its future</description>
-    </item>
-    <item>
-      <title>Sort everything in Hack Assembly</title>
-      <link>http://localhost:1313/posts/sorting-in-hack-assembly/</link>
-      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sorting-in-hack-assembly/</guid>
-      <description>Imagine spending 6 hours just to put a ball into the net. That&amp;#39;s what happened with me the other day when I tried doing my Computer Systems assignment...</description>
-    </item>
-    <item>
-      <title>Soccer Discord Bot to make your Covid days much better</title>
-      <link>http://localhost:1313/posts/soccer-discord-bot-in-covid-days/</link>
-      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/soccer-discord-bot-in-covid-days/</guid>
-      <description>Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</description>
-    </item>
-    <item>
-      <title>About me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Introduction Hi there, I&amp;rsquo;m Viet Bach (Barry) Tran, a second-year Computer Science student with a passion for mathematics and coding.
-Right now, I&amp;rsquo;m interested in AI and Quant, and I look forward to contributing to these fields.
-Education Bachelor of Computer Science (Advanced) - University of Adelaide (2023-Present)
-Mathematics Major - Hanoi-Amsterdam Highschool for the Gifted (2020-2023)
-Experience Australian Institute for Machine Learning - BB Visual Lab
-Time: 08/2024 - Present Title: Undergraduate Student Researcher Research Topic: Machine Learning for fine-grained class-agnostic visual counting Supervisor: Prof.</description>
-    </item>
   </channel>
 </rss>
