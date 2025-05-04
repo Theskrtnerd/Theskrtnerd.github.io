@@ -27,7 +27,8 @@ jobs:
           tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
 
       - name: Build
-        run: ${RUNNER_TEMP}/hugo
+        run: ${RUNNER_TEMP}/hugo --baseURL "https://theskrtnerd.github.io/"
+        # Replace 'your-repo-name' with your actual repository name
 
       - name: Clean destination directory
         if: github.ref == 'refs/heads/main'
