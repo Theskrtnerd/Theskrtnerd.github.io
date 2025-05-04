@@ -6,21 +6,6 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- 0.146.4</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Coding</title>
-      <link>http://localhost:1313/categories/coding/</link>
-      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/coding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Uni</title>
-      <link>http://localhost:1313/categories/uni/</link>
-      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/uni/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
