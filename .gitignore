@@ -1,5 +1,6 @@
 resources/
 __pycache__/
+public/
 .DS_Store
 .env
 .hugo_cache/
