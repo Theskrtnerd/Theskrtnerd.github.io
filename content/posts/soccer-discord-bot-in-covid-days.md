@@ -4,9 +4,7 @@ title: "Soccer Discord Bot to make your Covid days much better"
 date: "2023-08-26"
 description: "Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..."
 summary: "Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..."
-tags: ["discord-bot", "coding", "random"]
-categories: ["coding"]
-series: ["Random Projects"]
+tags: ["random"]
 section: posts
 ShowToc: true
 ---

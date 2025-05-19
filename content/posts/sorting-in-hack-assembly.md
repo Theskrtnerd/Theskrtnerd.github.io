@@ -4,9 +4,7 @@ title: "Sort everything in Hack Assembly"
 date: "2024-05-03"
 description: "Imagine spending 6 hours just to put a ball into the net. That's what happened with me the other day when I tried doing my Computer Systems assignment..."
 summary: "Imagine spending 6 hours just to put a ball into the net. That's what happened with me the other day when I tried doing my Computer Systems assignment..."
-tags: ["sorting", "coding", "uni", "random"]
-categories: ["coding", "uni"]
-series: ["Uni Interesting Stuff"]
+tags: ["random"]
 section: posts
 ShowToc: true
 ---

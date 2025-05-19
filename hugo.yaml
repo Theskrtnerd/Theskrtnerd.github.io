@@ -2,7 +2,7 @@ baseURL: "https://Theskrtnerd.github.io/"
 theme: PaperMod
 params:
   profileMode:
-    imageUrl: "/images/ava.jpg"
+    imageUrl: "/images/new-ava.jpeg"
     imageTitle: "xineohperif's emoji"
   social:
     github: "https://github.com/Theskrtnerd"

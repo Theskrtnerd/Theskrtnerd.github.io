@@ -4,9 +4,7 @@ title: "The future of AI Backdoor attacks"
 date: "2024-08-09"
 description: "A bit of thoughts about backdoor attacks and its future"
 summary: "A bit of thoughts about backdoor attacks and its future"
-tags: ["gen-ai", "coding", "random"]
-categories: ["coding"]
-series: ["AI Learning"]
+tags: ["ai", "research"]
 section: posts
 ShowToc: true
 ---
