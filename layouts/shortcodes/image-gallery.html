@@ -60,12 +60,11 @@
 
 <ul class="image-gallery">
   {{ $dir := string (.Get "gallery_dir") }}
-  {{ range (readDir (print "assets" $dir)) }}
-    {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
+  {{ range (readDir (printf "static%s" $dir)) }}
     {{- $imagetitle := index (split .Name ".") 0 -}}
     <li>
-      <a href="{{ ($image).Permalink }}" title="{{ $imagetitle }}">
-        <img src="{{ ($image).Permalink }}" alt="{{ $imagetitle }}" title="{{ $imagetitle }}" loading="lazy">
+      <a href="{{ $dir }}{{ .Name }}" title="{{ $imagetitle }}">
+        <img src="{{ $dir }}{{ .Name }}" alt="{{ $imagetitle }}" title="{{ $imagetitle }}" loading="lazy">
       </a>
     </li>
   {{ end }}

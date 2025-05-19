@@ -7,7 +7,7 @@ summary: "A bit of thoughts about backdoor attacks and its future"
 tags: ["gen-ai", "coding", "random"]
 categories: ["coding"]
 series: ["AI Learning"]
-section: blog
+section: posts
 ShowToc: true
 ---
 ## Introduction

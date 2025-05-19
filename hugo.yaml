@@ -14,7 +14,7 @@ menu:
   main:   
     - identifier: blog
       name: blog
-      url: /blog/
+      url: posts/
       weight: 10
 
     - identifier: about
@@ -22,9 +22,9 @@ menu:
       url: /
       weight: 10
     
-    - identifier: photos
-      name: photos
-      url: /photos/
+    - identifier: gallery
+      name: gallery
+      url: gallery/
       weight: 10
 
 markup:

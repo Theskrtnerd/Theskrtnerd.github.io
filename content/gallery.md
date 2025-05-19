@@ -1,5 +1,5 @@
 ---
-summary: "photos"
+title: "Photos"
 ---
 
 ### Some of my favourite photos
