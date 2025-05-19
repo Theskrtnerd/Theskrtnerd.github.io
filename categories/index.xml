@@ -6,6 +6,21 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
+    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://theskrtnerd.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://theskrtnerd.github.io/categories/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://theskrtnerd.github.io/categories/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uni</title>
+      <link>https://theskrtnerd.github.io/categories/uni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://theskrtnerd.github.io/categories/uni/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
