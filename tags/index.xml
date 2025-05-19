@@ -6,20 +6,27 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://theskrtnerd.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coding</title>
-      <link>https://theskrtnerd.github.io/tags/coding/</link>
+      <title>Top-of-Mind</title>
+      <link>https://theskrtnerd.github.io/tags/top-of-mind/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/tags/coding/</guid>
+      <guid>https://theskrtnerd.github.io/tags/top-of-mind/</guid>
       <description></description>
     </item>
     <item>
-      <title>Gen-Ai</title>
-      <link>https://theskrtnerd.github.io/tags/gen-ai/</link>
+      <title>Ai</title>
+      <link>https://theskrtnerd.github.io/tags/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/tags/gen-ai/</guid>
+      <guid>https://theskrtnerd.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://theskrtnerd.github.io/tags/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://theskrtnerd.github.io/tags/research/</guid>
       <description></description>
     </item>
     <item>
@@ -27,27 +34,6 @@
       <link>https://theskrtnerd.github.io/tags/random/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://theskrtnerd.github.io/tags/random/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sorting</title>
-      <link>https://theskrtnerd.github.io/tags/sorting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/tags/sorting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Uni</title>
-      <link>https://theskrtnerd.github.io/tags/uni/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/tags/uni/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Discord-Bot</title>
-      <link>https://theskrtnerd.github.io/tags/discord-bot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/tags/discord-bot/</guid>
       <description></description>
     </item>
   </channel>

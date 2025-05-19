@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Top-of-Mind on </title>
+    <link>https://theskrtnerd.github.io/tags/top-of-mind/</link>
+    <description>Recent content in Top-of-Mind on </description>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://theskrtnerd.github.io/tags/top-of-mind/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Embrace the Moment</title>
+      <link>https://theskrtnerd.github.io/posts/embrace-the-moment/</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://theskrtnerd.github.io/posts/embrace-the-moment/</guid>
+      <description>You only live once, so how will you live yours?</description>
+    </item>
+    <item>
+      <title>Slow down or Move fast?</title>
+      <link>https://theskrtnerd.github.io/posts/slow-down-or-move-fast/</link>
+      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://theskrtnerd.github.io/posts/slow-down-or-move-fast/</guid>
+      <description>Some thoughts about career and lifelong learning</description>
+    </item>
+  </channel>
+</rss>
