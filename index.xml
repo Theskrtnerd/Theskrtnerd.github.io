@@ -44,11 +44,11 @@
       <description>Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</description>
     </item>
     <item>
-      <title>Photos</title>
-      <link>https://theskrtnerd.github.io/gallery/</link>
+      <title>More about me</title>
+      <link>https://theskrtnerd.github.io/more/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://theskrtnerd.github.io/gallery/</guid>
-      <description>Some of my favourite photos </description>
+      <guid>https://theskrtnerd.github.io/more/</guid>
+      <description>Some of my favourite photos Countries I&amp;rsquo;ve been to </description>
     </item>
   </channel>
 </rss>
