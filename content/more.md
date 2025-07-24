@@ -84,8 +84,7 @@ var visitedplaces_config = {
         "SG",
         "AE",
         "TW",
-        "QA",
-        "OM"
+        "QA"
       ],
       "text": "Asia",
       "position": {
