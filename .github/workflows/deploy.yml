@@ -3,51 +3,46 @@ on:
   push:
     branches:
       - main
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          submodules: true
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
 
       - name: Checkout destination
-        uses: actions/checkout@v3
-        if: github.ref == 'refs/heads/main'
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: built-site
 
-      - name: Setup Hugo
+      - name: Replace built-site contents
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.125.7/hugo_extended_0.125.7_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
-
-      - name: Build
-        run: ${RUNNER_TEMP}/hugo --baseURL "https://theskrtnerd.github.io/"
-        # Replace 'your-repo-name' with your actual repository name
-
-      - name: Clean destination directory
-        if: github.ref == 'refs/heads/main'
-        run: |
-          rm -rf ${GITHUB_WORKSPACE}/built-site/*
-
-      - name: Copy built site
-        if: github.ref == 'refs/heads/main'
-        run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          find built-site -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          cp -R out/. built-site/
+          touch built-site/.nojekyll
 
       - name: Deploy
-        if: github.ref == 'refs/heads/main'
         run: |
-          cd ${GITHUB_WORKSPACE}/built-site
+          cd built-site
+          git config user.name 'Theskrtnerd'
+          git config user.email 'tvbbd2@gmail.com'
           git add .
           if [ -n "$(git status --porcelain)" ]; then
-            git config user.name 'Theskrtnerd'
-            git config user.email 'tvbbd2@gmail.com'
             git commit -m 'Updated site'
             git push
           else

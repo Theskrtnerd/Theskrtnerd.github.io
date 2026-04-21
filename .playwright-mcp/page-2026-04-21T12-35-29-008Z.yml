@@ -1,0 +1,49 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "bach tran" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: bach tran
+      - generic [ref=e6]:
+        - link "about" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "blog" [ref=e8] [cursor=pointer]:
+          - /url: /posts/
+        - link "more" [ref=e9] [cursor=pointer]:
+          - /url: /more/
+        - button "Toggle theme" [ref=e10]:
+          - img [ref=e11]
+  - main [ref=e13]:
+    - generic [ref=e16]:
+      - img "Bach Tran" [ref=e18]
+      - generic [ref=e19]:
+        - generic [ref=e20]: hanoi → adelaide → sydney
+        - heading "Bach Tran" [level=1] [ref=e21]
+        - paragraph [ref=e22]: a.k.a. Barry · xineohperif · Theskrtnerd
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: Hi! I'm Bach (Barry) Tran — a final-year Computer Science (Advanced) student at the University of Adelaide, with a lifelong love for maths, coding, and more recently, AI and ML.
+          - paragraph [ref=e25]: I like to say AI/ML is often the second-best solution to every problem — not always perfect, but incredibly flexible and powerful.
+          - paragraph [ref=e26]:
+            - generic [ref=e27]: off-hours, a
+            - generic [ref=e29]:
+              - generic [ref=e30]: part-time life enjoyer
+              - generic [ref=e31]: reluctant soccer captain
+              - generic [ref=e32]: aspiring indie guitarist
+              - generic [ref=e33]: hit-or-miss comedian
+              - generic [ref=e34]: part-time life enjoyer
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "github" [ref=e37] [cursor=pointer]:
+              - /url: https://github.com/Theskrtnerd
+          - listitem [ref=e38]:
+            - link "linkedin" [ref=e39] [cursor=pointer]:
+              - /url: https://linkedin.com/in/xineohperif/
+          - listitem [ref=e40]:
+            - link "résumé" [ref=e41] [cursor=pointer]:
+              - /url: /Bach_Tran_Resume_20251110.pdf
+          - listitem [ref=e42]:
+            - link "email" [ref=e43] [cursor=pointer]:
+              - /url: mailto:jayden161208@gmail.com
+  - button "Open Next.js Dev Tools" [ref=e49] [cursor=pointer]:
+    - img [ref=e50]
+  - alert [ref=e53]
