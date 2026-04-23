@@ -38,13 +38,13 @@ export default function Home() {
 
             <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
               <p>
-                I build things with code, mostly in the vicinity of applied AI.
+                I build things with code, mostly around applied AI.
                 Currently a final-year CS student at the University of Adelaide,
                 figuring out what to do next.
               </p>
               <p>
                 Before that: a kid in Hanoi who was kinda into maths, then a
-                student in Adelaide who got too into everything else - AI,
+                student in Australia who got too into everything else - AI,
                 quant, and lately startups. Somewhere along the way the maths
                 turned into code, and the code kept branching into whatever I
                 was curious about that month.
