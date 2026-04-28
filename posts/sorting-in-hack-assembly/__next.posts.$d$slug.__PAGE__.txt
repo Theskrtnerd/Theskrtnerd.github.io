@@ -1,0 +1,93 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/0gqn-2u~-trb_.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+7:I[97367,["/_next/static/chunks/0gqn-2u~-trb_.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:T1876,<h2>Introduction</h2>
+<p>This semester, I had the chance to study the course <a href="https://www.adelaide.edu.au/course-outlines/001956/2/sem-1/">Computer Systems</a>. This course is (kinda) based on the course <a href="https://www.nand2tetris.org">nand2tetris</a> and the book <a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686/">The Elements of Computing Systems</a>. The course is famous and notorious for being hard, but it teaches you all the fundamentals of Computing Systems, from high-level languages like Python and C++, all the way down to machine code with 0 and 1 bits. </p>
+<p>So it might be obvious that this course is regarded as the hardest in my entire CS degree. Furthermore, you can probably guess how hard the assignments were. Especially in the recent assignment, we were tasked with writing <a href="https://www.jk-quantized.com/experiments/HomebrewComputer/Cheatsheets/hackASM.html">Hack Assembly</a> code, which is an Assembly language that is created for the Hack Platform, with all basic components of a normal computer with CPU and RAM, etc. This language at first looks super hard to read, with some weird syntax. Below is a small snippet of what the code looks like.</p>
+<pre><code class="hljs language-sample.asm">@R1
+D=M
+@x
+M=D // x = R1
+
+@R2
+D=M
+@y
+M=D // y = R2
+
+@0
+D=A
+@R3
+M=D // R3 = 0
+</code></pre>
+<h2>Struggling with Sorting</h2>
+<p>I struggled with this assignment a lot. But of all the tasks, the task that interested me the most was the task of writing a sorting algorithm in a file called <code>ArrSort.asm</code> using this language.</p>
+<p>This task was not that difficult, but what was challenging was the bonus part, where you can receive bonus marks for implementing an algorithm in <code>O(nlog(n))</code> time complexity. My friend Khanh even talked about not being able to solve this before I started this assignment.</p>
+<p>At first, I thought this was going to be a simple task. But then I was (obviously) wrong. The two most famous sorting algorithms that have a <code>O(nlog(n))</code> time complexity are <strong>Merge Sort</strong> and <strong>Quick Sort</strong>.</p>
+<p>I first started by trying to implement <strong>Quick Sort</strong> in Assembly. But after trying to implement it for 3 hours, I realized a major issue with this algorithm: This algorithm needs to be implemented recursively, while Hack Assembly cannot implement recursion because this language doesn't have a return address after jumping and PC (Program Counter) integrated. This was a huge shock and letdown for me, as I've spent 3 hours (late night) for nothing.</p>
+<p>After that, I changed to <strong>Merge Sort</strong> and this was a much better solution that can be implemented iteratively. With help from ChatGPT, I was able to come up with this Python code for a high-level implementation:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">merge</span>(<span class="hljs-params">arr, r4, r5, r6</span>):
+    i = r4
+    j = r5 + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">while</span> i &#x3C;= r5 <span class="hljs-keyword">and</span> j &#x3C;= r6:
+        <span class="hljs-keyword">if</span> arr[i] &#x3C;= arr[j]:
+            i += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            temp = arr[j]
+            <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(j, i, -<span class="hljs-number">1</span>):
+                arr[k] = arr[k - <span class="hljs-number">1</span>]
+            arr[i] = temp
+            i += <span class="hljs-number">1</span>
+            j += <span class="hljs-number">1</span>
+            r5 += <span class="hljs-number">1</span>
+    
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">merge_sort</span>(<span class="hljs-params">arr</span>):
+    r2 = <span class="hljs-built_in">len</span>(arr)
+    r3 = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">while</span> r3 &#x3C; r2:
+        r4 = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">while</span> r4 &#x3C; r2 - <span class="hljs-number">1</span>:
+            r7 = r2 - <span class="hljs-number">1</span>
+            r5 = r3+r4-<span class="hljs-number">1</span>
+            r5 = <span class="hljs-built_in">min</span>(r5, r7)
+            r6 = r5+r3
+            r6 = <span class="hljs-built_in">min</span>(r6, r7)
+            merge(arr, r4, r5, r6)
+            r4 += <span class="hljs-number">2</span> * r3
+        r3 *= <span class="hljs-number">2</span>
+</code></pre>
+<p>Notice how the variables are named from <code>r2</code> to <code>r7</code>. This is because in the Hack Assembly, the variables you use will mostly be from <code>R1</code> to <code>R15</code>. With this naming, it will be easier for me to convert all this code to Hack Assembly. And after another 2 hours of work, I finally came up with this super-long code:</p>
+<pre><code class="hljs language-asm">@3
+M=1 // r3=1
+(WHILEA)
+@3
+D=M
+@2
+D=D-M
+@END
+D;JGE // while r3&#x3C;r2
+@4
+M=0 // r4 = 0
+(WHILEB)
+@4
+D=M+1
+@2
+D=D-M
+@ENDWHILEB
+D;JGE // while r4 &#x3C; r2-1
+@2
+D=M
+@7
+M=D-1 // r7 = r2-1
+@3
+...
+</code></pre>
+<p>For the full code, access my Github repo <a href="https://github.com/Theskrtnerd/computer-systems">here</a>. This will have all my tasks, with completed test cases to test if the code works.</p>
+<h2>Conclusion</h2>
+<p>So in conclusion, I've spent six hours (an all-nighter) just for one extra mark. But at least for me, it was super worth it, as I was able to understand assembly code deep down to the RAM and ROM level. Furthermore, I now understand more about sorting algorithms and how they work.</p>
+<p>What's even funnier is that I neglected all testing, which contributes many more marks than this bonus part. And luckily, with the automatic extension, I was able to submit all the testing files just one day before the final deadline.</p>
+<p>Although I loved this experience, I hope this is the last time I have to write stuff like this, as I'm too tired to spend another 6 hours.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"px-6 max-w-[760px] mx-auto pt-16 md:pt-20 pb-24","children":[["$","$L2",null,{"href":"/posts/","className":"animate-fade-up inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors group mb-12","children":[["$","span",null,{"className":"inline-block group-hover:-translate-x-0.5 transition-transform","children":"←"}],"all writing"]}],["$","header",null,{"className":"animate-fade-up delay-2 mb-12","children":[["$","time",null,{"dateTime":"2024-05-03","className":"font-mono text-xs uppercase tracking-widest text-muted","children":"May 3, 2024"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl md:text-6xl tracking-[-0.03em] leading-[1.02]","children":"Sort everything in Hack Assembly"}],["$","p",null,{"className":"mt-5 text-lg text-muted font-serif italic leading-snug","children":"Imagine spending 6 hours just to put a ball into the net. That's what happened with me the other day when I tried doing my Computer Systems assignment..."}]]}],["$","div",null,{"className":"prose animate-fade-up delay-3","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],null,"$L6"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9C0rtVy5wcn1_gI1uqRsA"}
+4:["$","nav",null,{"className":"mt-20 pt-8 border-t border-border grid grid-cols-2 gap-6","children":[["$","div",null,{"children":["$","$L2",null,{"href":"/posts/soccer-discord-bot-in-covid-days/","className":"group block hover:-translate-x-0.5 transition-transform","children":[["$","span",null,{"className":"font-mono text-xs uppercase tracking-widest text-muted","children":"← previous"}],["$","p",null,{"className":"font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors","children":"Soccer Discord Bot to make your Covid days much better"}]]}]}],["$","div",null,{"className":"text-right","children":["$","$L2",null,{"href":"/posts/exploring-the-future-of-ai-backdoor-attacks/","className":"group block hover:translate-x-0.5 transition-transform","children":[["$","span",null,{"className":"font-mono text-xs uppercase tracking-widest text-muted","children":"next →"}],["$","p",null,{"className":"font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors","children":"The future of AI Backdoor attacks"}]]}]}]]}]
+5:["$","footer",null,{"className":"px-6 max-w-[1100px] mx-auto w-full py-10 mt-24","children":["$","div",null,{"className":"border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 font-mono text-xs text-muted","children":[["$","span",null,{"children":["bach tran © ",2026]}],["$","span",null,{"className":"text-muted/60","children":["shipped with caution and crossed fingers ",["$","span",null,{"className":"blink","children":"_"}]]}]]}]}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

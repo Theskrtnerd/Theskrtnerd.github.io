@@ -1,408 +1,97 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Soccer Discord Bot to make your Covid days much better | </title>
-<meta name="keywords" content="random">
-<meta name="description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...">
-<meta name="author" content="xineohperif">
-<link rel="canonical" href="https://theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://theskrtnerd.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://theskrtnerd.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://theskrtnerd.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://theskrtnerd.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://theskrtnerd.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-  
-
-<meta property="og:title" content="Soccer Discord Bot to make your Covid days much better" />
-<meta property="og:description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-26T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Soccer Discord Bot to make your Covid days much better"/>
-<meta name="twitter:description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Blog",
-      "item": "https://theskrtnerd.github.io/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Soccer Discord Bot to make your Covid days much better",
-      "item": "https://theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Soccer Discord Bot to make your Covid days much better",
-  "name": "Soccer Discord Bot to make your Covid days much better",
-  "description": "Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...",
-  "keywords": [
-    "random"
-  ],
-  "articleBody": "Introduction During the tough days of Covid, stuck with online studies and feeling down, Discord and my friends ✨ were a lifeline. Chatting and playing games on Discord made things a lot more fun.\nI stumbled upon Discord bots, especially the Game Discord Bots, and thought it’d be cool to play soccer games. But, there weren’t any. After some Google searching, I discovered I could make my own Discord Bot using Python.\nWith just one year of Python experience, I learned to code and set it up on repl.it. I kept adding our favorite games like “Guess the player,” “Missing 11,” and “Soccer Quiz.”\nThis project is my favorite. It brought me joy and helped my friends and me get through one of the toughest times for everyone.\nProcess Let’s walk through the process of creating the bot:\n1. Register the bot Start by visiting the Discord Developer Portal, selecting “New Application,” and filling in the necessary information for your Discord bot. Create a new Bot Token, a crucial element for bot development.\nNote: If you’ve already created the token, opt for “Reset Token” to generate a new one.\n2. Invite the bot to your server Now, invite the bot to your server for testing. Navigate to OAuth2 -\u003e URL Generator, choose the options bot and Administrator for your local server, and generate a URL like https://discord.com/api/oauth2/authorize?client_id={client_id}\u0026permissions=2048\u0026scope=bot. Paste this URL into your browser’s search bar to add the bot to your server.\nOnce you see the bot’s incoming message in your server, it confirms successful addition.\n3. Start coding ✨ Now, to start, I would recommend trying to run your code on repl.it. Create an account if you haven’t already, and create a new project.\nCreate 2 files main.py and keep_alive.py. These are the only 2 files you need right now.\nFor keep_alive.py, paste the following code in:\nfrom flask import Flask from threading import Thread app = Flask('') @app.route('/') def home(): return \"Hello. I am alive!\" def run(): app.run(host='0.0.0.0',port=8080) def keep_alive(): t = Thread(target=run) t.start() And for main.py, paste in the following template that I created:\nfrom discord.ext import commands import os client = commands.Bot(command_prefix='$') @client.event async def on_ready(): print(\"Bot's ready\") @client.event async def on_message(message): if message.author == client.user: return msg = message.content if msg == \"Hello Discord Bot\": await message.channel.send('Hi ' + message.author.display_name) await client.process_commands(message) keep_alive() client.run(os.environ[\"TOKEN\"]) Now, please open the Secrets tab in your Repl and add a new secret. The key will be TOKEN, and the value will be the Bot token you copied from the previous step.\nWith that are set, you can start running your bot! Press Run and wait for a bit. After you see the message “Bot’s ready” in terminal, you can start testing your bot.\nIn your server, try typing “Hello Discord Bot”, it will respond like this:\n4. Add your own touch With all of that setup, you can now create anything you want! Just think of something you can do with the Discord Bot and make it yourself.\nFor reference, I will talk about the process of adding the Soccer Games. So in order to create the soccer games like starting 11 or guess the player, I need to get data from previous matches, or player’s history.\nBut to do that, I need to find some kinds of API, or I have to crawl data from a soccer site. After looking around, I cannot find a free API that has things I need. So I decided to crawl data from Transfermarkt. This site has everything I need, from player’s transfer history, to the line-ups of all the matches in history.\nSo firstly, I used bs4 to crawl data. But a downside of bs4 is that it only works on static web. And because transfrmarkt is a dynamic generated website, this library didn’t work. Luckily, I found another alternative, which is requests-html. This works simillar to bs4, but it will wait for the website to load before crawling the data.\nBelow is a code demo of the functions for my games, which contains all the data crawling and game creating.\nfrom requests_html import HTMLSession import random import nextcord # get_matches_from_team_and_year def get_matches(team_id, year): url = f\"https://www.transfermarkt.com/manchester-united/\" url += f\"spielplandatum/verein/{team_id}\" url += f\"/plus/0?saison_id={year}\u0026wettbewerb_id=\u0026\" url += \"day=\u0026heim_gast=\u0026punkte=\u0026datum_von=-\u0026datum_bis=-\" session = HTMLSession() r = session.get(url) print(url) matches = r.html.find('.ergebnis-link') matches_ids = [ int(match.attrs[\"href\"].split(\"/\")[-1]) for match in matches ] return matches_ids # more code here... Here’s the code’s repo if you want to have a deeper look. Hopefully, from this you can get some inspirations to create your own unique Discord bot.\nConclusion In conclusion, a Discord bot proves to be an excellent and practical way to enhance coding skills while creating something interesting for beginners.\nI hope you find inspiration in this journey and that it proves useful for your own Discord bot endeavors.\n",
-  "wordCount" : "800",
-  "inLanguage": "en",
-  "datePublished": "2023-08-26T00:00:00Z",
-  "dateModified": "2023-08-26T00:00:00Z",
-  "author":[{
-    "@type": "Person",
-    "name": "xineohperif"
-  }],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://theskrtnerd.github.io/posts/soccer-discord-bot-in-covid-days/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://theskrtnerd.github.io/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://theskrtnerd.github.io/" title="about">
-                    <span>about</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://theskrtnerd.github.io/posts/" title="blog">
-                    <span>blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://theskrtnerd.github.io/more/" title="more">
-                    <span>more</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Soccer Discord Bot to make your Covid days much better
-    </h1>
-    <div class="post-description">
-      Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...
-    </div>
-    <div class="post-meta"><span title='2023-08-26 00:00:00 +0000 UTC'>August 26, 2023</span>&nbsp;·&nbsp;xineohperif
-
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
-                <li>
-                    <a href="#process" aria-label="Process">Process</a><ul>
-                        
-                <li>
-                    <a href="#1-register-the-bot" aria-label="1. Register the bot">1. Register the bot</a></li>
-                <li>
-                    <a href="#2-invite-the-bot-to-your-server" aria-label="2. Invite the bot to your server">2. Invite the bot to your server</a></li>
-                <li>
-                    <a href="#3-start-coding-" aria-label="3. Start coding ✨">3. Start coding ✨</a></li>
-                <li>
-                    <a href="#4-add-your-own-touch" aria-label="4. Add your own touch">4. Add your own touch</a></li></ul>
-                </li>
-                <li>
-                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<!DOCTYPE html><html lang="en" class="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_bed06b21-module__swPsvG__variable h-full antialiased"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/797e433ab948586e-s.p.0.q-h669a_dqa.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/7ebf22b5a21034f8-s.p.10_7676vm7pyy.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/caa3a2e1cccd8315-s.p.16t1db8_9y2o~.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/e41d5df559864f9e-s.p.0gq7fw9.sy_5..woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/chunks/0~7pf~d-f5e~b.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/0ddp8g9r39cxo.js"/><script src="/_next/static/chunks/0pqt~8bl3ukh4.js" async=""></script><script src="/_next/static/chunks/0xq4g897fskiu.js" async=""></script><script src="/_next/static/chunks/0i~93fld3ugu2.js" async=""></script><script src="/_next/static/chunks/turbopack-023ujz1sxpm.8.js" async=""></script><script src="/_next/static/chunks/0gqn-2u~-trb_.js" async=""></script><script src="/_next/static/chunks/0d3shmwh5_nmn.js" async=""></script><meta name="next-size-adjust" content=""/><title>Soccer Discord Bot to make your Covid days much better - Bach Tran</title><meta name="description" content="Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,..."/><link rel="icon" href="/favicon.ico"/><script>(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;if(d)document.documentElement.classList.add("dark")}catch(e){}})()</script><script src="/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body class="min-h-full flex flex-col"><div hidden=""><!--$--><!--/$--></div><nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/75 border-b border-border"><div class="max-w-[1100px] mx-auto px-6 h-14 flex items-center justify-between"><a class="font-mono text-sm tracking-tight font-medium" href="/">bach tran</a><div class="flex items-center gap-7 font-mono text-xs tracking-wide text-muted"><a data-active="false" class="nav-link hover:text-foreground transition-colors duration-300 data-[active=true]:text-foreground" href="/">about</a><a data-active="true" class="nav-link hover:text-foreground transition-colors duration-300 data-[active=true]:text-foreground" href="/posts/">blog</a><a data-active="false" class="nav-link hover:text-foreground transition-colors duration-300 data-[active=true]:text-foreground" href="/more/">more</a><button aria-label="Toggle theme" class="w-8 h-8 flex items-center justify-center text-muted hover:text-foreground transition-colors duration-300"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"></path></svg></button></div></div></nav><main class="flex-1 pt-14"><article class="px-6 max-w-[760px] mx-auto pt-16 md:pt-20 pb-24"><a class="animate-fade-up inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors group mb-12" href="/posts/"><span class="inline-block group-hover:-translate-x-0.5 transition-transform">←</span>all writing</a><header class="animate-fade-up delay-2 mb-12"><time dateTime="2023-08-26" class="font-mono text-xs uppercase tracking-widest text-muted">August 26, 2023</time><h1 class="mt-4 font-serif text-4xl md:text-6xl tracking-[-0.03em] leading-[1.02]">Soccer Discord Bot to make your Covid days much better</h1><p class="mt-5 text-lg text-muted font-serif italic leading-snug">Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...</p></header><div class="prose animate-fade-up delay-3"><h2>Introduction</h2>
 <p>During the tough days of Covid, stuck with online studies and feeling down, Discord and my friends ✨ were a lifeline. Chatting and playing games on Discord made things a lot more fun.</p>
-<p>I stumbled upon Discord bots, especially the Game Discord Bots, and thought it&rsquo;d be cool to play soccer games. But, there weren&rsquo;t any. After some Google searching, I discovered I could make my own Discord Bot using Python.</p>
-<p>With just one year of Python experience, I learned to code and set it up on repl.it. I kept adding our favorite games like &ldquo;Guess the player,&rdquo; &ldquo;Missing 11,&rdquo; and &ldquo;Soccer Quiz.&rdquo;</p>
+<p>I stumbled upon Discord bots, especially the Game Discord Bots, and thought it'd be cool to play soccer games. But, there weren't any. After some Google searching, I discovered I could make my own Discord Bot using Python.</p>
+<p>With just one year of Python experience, I learned to code and set it up on repl.it. I kept adding our favorite games like "Guess the player," "Missing 11," and "Soccer Quiz."</p>
 <p>This project is my favorite. It brought me joy and helped my friends and me get through one of the toughest times for everyone.</p>
-<h2 id="process">Process<a hidden class="anchor" aria-hidden="true" href="#process">#</a></h2>
-<p>Let&rsquo;s walk through the process of creating the bot:</p>
-<h3 id="1-register-the-bot">1. Register the bot<a hidden class="anchor" aria-hidden="true" href="#1-register-the-bot">#</a></h3>
-<p>Start by visiting the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>, selecting &ldquo;New Application,&rdquo; and filling in the necessary information for your Discord bot. Create a new Bot Token, a crucial element for bot development.</p>
-<p><img loading="lazy" src="/soccer-discord-bot-in-covid-days/1705682228710.png" alt="1705682228710"  />
-</p>
-<p><strong>Note:</strong> If you&rsquo;ve already created the token, opt for &ldquo;Reset Token&rdquo; to generate a new one.</p>
-<h3 id="2-invite-the-bot-to-your-server">2. Invite the bot to your server<a hidden class="anchor" aria-hidden="true" href="#2-invite-the-bot-to-your-server">#</a></h3>
-<p>Now, invite the bot to your server for testing. Navigate to <code>OAuth2 -&gt; URL Generator</code>, choose the options <code>bot</code> and <code>Administrator</code> for your local server, and generate a URL like <code>https://discord.com/api/oauth2/authorize?client_id={client_id}&amp;permissions=2048&amp;scope=bot.</code> Paste this URL into your browser&rsquo;s search bar to add the bot to your server.</p>
-<p><img loading="lazy" src="/soccer-discord-bot-in-covid-days/1705683032435.png" alt="1705683032435"  />
-</p>
-<p>Once you see the bot&rsquo;s incoming message in your server, it confirms successful addition.</p>
-<h3 id="3-start-coding-">3. Start coding ✨<a hidden class="anchor" aria-hidden="true" href="#3-start-coding-">#</a></h3>
-<p>Now, to start, I would recommend trying to run your code on <a href="https://replit.com">repl.it</a>. Create an account if you haven&rsquo;t already, and create a new project.</p>
+<h2>Process</h2>
+<p>Let's walk through the process of creating the bot:</p>
+<h3>1. Register the bot</h3>
+<p>Start by visiting the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>, selecting "New Application," and filling in the necessary information for your Discord bot. Create a new Bot Token, a crucial element for bot development.</p>
+<p><img src="/soccer-discord-bot-in-covid-days/1705682228710.png" alt="1705682228710"></p>
+<p><strong>Note:</strong> If you've already created the token, opt for "Reset Token" to generate a new one.</p>
+<h3>2. Invite the bot to your server</h3>
+<p>Now, invite the bot to your server for testing. Navigate to <code>OAuth2 -> URL Generator</code>, choose the options <code>bot</code> and <code>Administrator</code> for your local server, and generate a URL like <code>https://discord.com/api/oauth2/authorize?client_id={client_id}&#x26;permissions=2048&#x26;scope=bot.</code> Paste this URL into your browser's search bar to add the bot to your server.</p>
+<p><img src="/soccer-discord-bot-in-covid-days/1705683032435.png" alt="1705683032435"></p>
+<p>Once you see the bot's incoming message in your server, it confirms successful addition.</p>
+<h3>3. Start coding ✨</h3>
+<p>Now, to start, I would recommend trying to run your code on <a href="https://replit.com">repl.it</a>. Create an account if you haven't already, and create a new project.</p>
 <p>Create 2 files <code>main.py</code> and <code>keep_alive.py</code>. These are the only 2 files you need right now.</p>
 <p>For <code>keep_alive.py</code>, paste the following code in:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> threading <span style="color:#f92672">import</span> Thread
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(<span style="color:#e6db74">&#39;&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">home</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hello. I am alive!&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>():
-</span></span><span style="display:flex;"><span>  app<span style="color:#f92672">.</span>run(host<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0.0.0.0&#39;</span>,port<span style="color:#f92672">=</span><span style="color:#ae81ff">8080</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">keep_alive</span>():
-</span></span><span style="display:flex;"><span>    t <span style="color:#f92672">=</span> Thread(target<span style="color:#f92672">=</span>run)
-</span></span><span style="display:flex;"><span>    t<span style="color:#f92672">.</span>start()
-</span></span></code></pre></div><p>And for <code>main.py</code>, paste in the following template that I created:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> discord.ext <span style="color:#f92672">import</span> commands
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> commands<span style="color:#f92672">.</span>Bot(command_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;$&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@client.event</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_ready</span>():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Bot&#39;s ready&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@client.event</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_message</span>(message):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> message<span style="color:#f92672">.</span>author <span style="color:#f92672">==</span> client<span style="color:#f92672">.</span>user:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
-</span></span><span style="display:flex;"><span>    msg <span style="color:#f92672">=</span> message<span style="color:#f92672">.</span>content
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> msg <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Hello Discord Bot&#34;</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> message<span style="color:#f92672">.</span>channel<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;Hi &#39;</span> <span style="color:#f92672">+</span> message<span style="color:#f92672">.</span>author<span style="color:#f92672">.</span>display_name)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> client<span style="color:#f92672">.</span>process_commands(message)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>keep_alive()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>client<span style="color:#f92672">.</span>run(os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;TOKEN&#34;</span>])
-</span></span></code></pre></div><p>Now, please open the <code>Secrets</code> tab in your Repl and add a new secret. The key will be <code>TOKEN</code>, and the value will be the Bot token you copied from the previous step.</p>
-<p>With that are set, you can start running your bot! Press <code>Run</code> and wait for a bit. After you see the message &ldquo;Bot&rsquo;s ready&rdquo; in terminal, you can start testing your bot.</p>
-<p>In your server, try typing &ldquo;Hello Discord Bot&rdquo;, it will respond like this:</p>
-<p><img loading="lazy" src="/soccer-discord-bot-in-covid-days/1705684870442.png" alt="1705684870442"  />
-</p>
-<h3 id="4-add-your-own-touch">4. Add your own touch<a hidden class="anchor" aria-hidden="true" href="#4-add-your-own-touch">#</a></h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+<span class="hljs-keyword">from</span> threading <span class="hljs-keyword">import</span> Thread
+
+app = Flask(<span class="hljs-string">''</span>)
+
+<span class="hljs-meta">@app.route(<span class="hljs-params"><span class="hljs-string">'/'</span></span>)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">home</span>():
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello. I am alive!"</span>
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">run</span>():
+  app.run(host=<span class="hljs-string">'0.0.0.0'</span>,port=<span class="hljs-number">8080</span>)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">keep_alive</span>():
+    t = Thread(target=run)
+    t.start()
+</code></pre>
+<p>And for <code>main.py</code>, paste in the following template that I created:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> discord.ext <span class="hljs-keyword">import</span> commands
+<span class="hljs-keyword">import</span> os
+
+client = commands.Bot(command_prefix=<span class="hljs-string">'$'</span>)
+
+<span class="hljs-meta">@client.event</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_ready</span>():
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Bot's ready"</span>)
+
+<span class="hljs-meta">@client.event</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_message</span>(<span class="hljs-params">message</span>):
+    <span class="hljs-keyword">if</span> message.author == client.user:
+        <span class="hljs-keyword">return</span>
+    msg = message.content
+
+    <span class="hljs-keyword">if</span> msg == <span class="hljs-string">"Hello Discord Bot"</span>:
+        <span class="hljs-keyword">await</span> message.channel.send(<span class="hljs-string">'Hi '</span> + message.author.display_name)
+
+    <span class="hljs-keyword">await</span> client.process_commands(message)
+
+keep_alive()
+
+client.run(os.environ[<span class="hljs-string">"TOKEN"</span>])
+</code></pre>
+<p>Now, please open the <code>Secrets</code> tab in your Repl and add a new secret. The key will be <code>TOKEN</code>, and the value will be the Bot token you copied from the previous step.</p>
+<p>With that are set, you can start running your bot! Press <code>Run</code> and wait for a bit. After you see the message "Bot's ready" in terminal, you can start testing your bot.</p>
+<p>In your server, try typing "Hello Discord Bot", it will respond like this:</p>
+<p><img src="/soccer-discord-bot-in-covid-days/1705684870442.png" alt="1705684870442"></p>
+<h3>4. Add your own touch</h3>
 <p>With all of that setup, you can now create anything you want! Just think of something you can do with the Discord Bot and make it yourself.</p>
-<p>For reference, I will talk about the process of adding the Soccer Games. So in order to create the soccer games like starting 11 or guess the player, I need to get data from previous matches, or player&rsquo;s history.</p>
-<p>But to do that, I need to find some kinds of API, or I have to crawl data from a soccer site. After looking around, I cannot find a free API that has things I need. So I decided to crawl data from <a href="https://www.transfermarkt.com">Transfermarkt</a>. This site has everything I need, from player&rsquo;s transfer history, to the line-ups of all the matches in history.</p>
-<p>So firstly, I used <code>bs4</code> to crawl data. But a downside of <code>bs4</code> is that it only works on static web. And because transfrmarkt is a dynamic generated website, this library didn&rsquo;t work. Luckily, I found another alternative, which is <code>requests-html</code>. This works simillar to <code>bs4</code>, but it will wait for the website to load before crawling the data.</p>
+<p>For reference, I will talk about the process of adding the Soccer Games. So in order to create the soccer games like starting 11 or guess the player, I need to get data from previous matches, or player's history.</p>
+<p>But to do that, I need to find some kinds of API, or I have to crawl data from a soccer site. After looking around, I cannot find a free API that has things I need. So I decided to crawl data from <a href="https://www.transfermarkt.com">Transfermarkt</a>. This site has everything I need, from player's transfer history, to the line-ups of all the matches in history.</p>
+<p>So firstly, I used <code>bs4</code> to crawl data. But a downside of <code>bs4</code> is that it only works on static web. And because transfrmarkt is a dynamic generated website, this library didn't work. Luckily, I found another alternative, which is <code>requests-html</code>. This works simillar to <code>bs4</code>, but it will wait for the website to load before crawling the data.</p>
 <p>Below is a code demo of the functions for my games, which contains all the data crawling and game creating.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> requests_html <span style="color:#f92672">import</span> HTMLSession
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> random
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> nextcord
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># get_matches_from_team_and_year</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_matches</span>(team_id, year):
-</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.transfermarkt.com/manchester-united/&#34;</span>
-</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">+=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;spielplandatum/verein/</span><span style="color:#e6db74">{</span>team_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">+=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;/plus/0?saison_id=</span><span style="color:#e6db74">{</span>year<span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;wettbewerb_id=&amp;&#34;</span>
-</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;day=&amp;heim_gast=&amp;punkte=&amp;datum_von=-&amp;datum_bis=-&#34;</span>
-</span></span><span style="display:flex;"><span>    session <span style="color:#f92672">=</span> HTMLSession()
-</span></span><span style="display:flex;"><span>    r <span style="color:#f92672">=</span> session<span style="color:#f92672">.</span>get(url)
-</span></span><span style="display:flex;"><span>    print(url)  
-</span></span><span style="display:flex;"><span>    matches <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>html<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;.ergebnis-link&#39;</span>)
-</span></span><span style="display:flex;"><span>    matches_ids <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>        int(<span style="color:#66d9ef">match</span><span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;href&#34;</span>]<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;/&#34;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">match</span> <span style="color:#f92672">in</span> matches
-</span></span><span style="display:flex;"><span>    ]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> matches_ids
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># more code here...</span>
-</span></span></code></pre></div><p>Here&rsquo;s the <a href="https://github.com/Theskrtnerd/soccer-discord-bot">code&rsquo;s repo</a> if you want to have a deeper look.
+<pre><code class="hljs language-python">
+<span class="hljs-keyword">from</span> requests_html <span class="hljs-keyword">import</span> HTMLSession
+<span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> nextcord
+
+<span class="hljs-comment"># get_matches_from_team_and_year</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_matches</span>(<span class="hljs-params">team_id, year</span>):
+    url = <span class="hljs-string">f"https://www.transfermarkt.com/manchester-united/"</span>
+    url += <span class="hljs-string">f"spielplandatum/verein/<span class="hljs-subst">{team_id}</span>"</span>
+    url += <span class="hljs-string">f"/plus/0?saison_id=<span class="hljs-subst">{year}</span>&#x26;wettbewerb_id=&#x26;"</span>
+    url += <span class="hljs-string">"day=&#x26;heim_gast=&#x26;punkte=&#x26;datum_von=-&#x26;datum_bis=-"</span>
+    session = HTMLSession()
+    r = session.get(url)
+    <span class="hljs-built_in">print</span>(url)  
+    matches = r.html.find(<span class="hljs-string">'.ergebnis-link'</span>)
+    matches_ids = [
+        <span class="hljs-built_in">int</span>(<span class="hljs-keyword">match</span>.attrs[<span class="hljs-string">"href"</span>].split(<span class="hljs-string">"/"</span>)[-<span class="hljs-number">1</span>]) <span class="hljs-keyword">for</span> <span class="hljs-keyword">match</span> <span class="hljs-keyword">in</span> matches
+    ]
+    <span class="hljs-keyword">return</span> matches_ids
+
+<span class="hljs-comment"># more code here...</span>
+</code></pre>
+<p>Here's the <a href="https://github.com/Theskrtnerd/soccer-discord-bot">code's repo</a> if you want to have a deeper look.
 Hopefully, from this you can get some inspirations to create your own unique Discord bot.</p>
-<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<h2>Conclusion</h2>
 <p>In conclusion, a Discord bot proves to be an excellent and practical way to enhance coding skills while creating something interesting for beginners.</p>
-<p>I hope you find inspiration in this journey and that it proves useful for your own Discord bot endeavors.</p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://theskrtnerd.github.io/tags/random/">Random</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://theskrtnerd.github.io/"></a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+<p>I hope you find inspiration in this journey and that it proves useful for your own Discord bot endeavors.</p></div><nav class="mt-20 pt-8 border-t border-border grid grid-cols-2 gap-6"><div></div><div class="text-right"><a class="group block hover:translate-x-0.5 transition-transform" href="/posts/sorting-in-hack-assembly/"><span class="font-mono text-xs uppercase tracking-widest text-muted">next →</span><p class="font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors">Sort everything in Hack Assembly</p></a></div></nav><footer class="px-6 max-w-[1100px] mx-auto w-full py-10 mt-24"><div class="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 font-mono text-xs text-muted"><span>bach tran © <!-- -->2026</span><span class="text-muted/60">shipped with caution and crossed fingers <span class="blink">_</span></span></div></footer></article><!--$--><!--/$--></main><script src="/_next/static/chunks/0ddp8g9r39cxo.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[56850,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n3:I[39756,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n4:I[37457,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n6:I[97367,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"OutletBoundary\"]\n7:\"$Sreact.suspense\"\na:I[97367,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"ViewportBoundary\"]\nc:I[97367,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"MetadataBoundary\"]\ne:I[68027,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/0~7pf~d-f5e~b.css\",\"style\"]\n:HL[\"/_next/static/media/797e433ab948586e-s.p.0.q-h669a_dqa.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7ebf22b5a21034f8-s.p.10_7676vm7pyy.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/caa3a2e1cccd8315-s.p.16t1db8_9y2o~.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/e41d5df559864f9e-s.p.0gq7fw9.sy_5..woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"posts\",\"soccer-discord-bot-in-covid-days\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"slug\",\"soccer-discord-bot-in-covid-days\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0~7pf~d-f5e~b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_bed06b21-module__swPsvG__variable h-full antialiased\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"(function(){try{var t=localStorage.getItem(\\\"theme\\\");var d=t?t===\\\"dark\\\":window.matchMedia(\\\"(prefers-color-scheme:dark)\\\").matches;if(d)document.documentElement.classList.add(\\\"dark\\\")}catch(e){}})()\"}}]}],[\"$\",\"body\",null,{\"className\":\"min-h-full flex flex-col\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-1 pt-14\",\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[\"$L5\",null,[\"$\",\"$L6\",null,{\"children\":[\"$\",\"$7\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@8\"}]}]]}],{},null,false,null]},null,false,\"$@9\"]},null,false,\"$@9\"]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$La\",null,{\"children\":\"$Lb\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Lc\",null,{\"children\":[\"$\",\"$7\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Ld\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$e\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0~7pf~d-f5e~b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"9C0rtVy5wcn1_gI1uqRsA\"}\n"])</script><script>self.__next_f.push([1,"f:[]\n9:\"$Wf\"\n"])</script><script>self.__next_f.push([1,"10:I[22016,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"\"]\n11:T21a7,"])</script><script>self.__next_f.push([1,"\u003ch2\u003eIntroduction\u003c/h2\u003e\n\u003cp\u003eDuring the tough days of Covid, stuck with online studies and feeling down, Discord and my friends ✨ were a lifeline. Chatting and playing games on Discord made things a lot more fun.\u003c/p\u003e\n\u003cp\u003eI stumbled upon Discord bots, especially the Game Discord Bots, and thought it'd be cool to play soccer games. But, there weren't any. After some Google searching, I discovered I could make my own Discord Bot using Python.\u003c/p\u003e\n\u003cp\u003eWith just one year of Python experience, I learned to code and set it up on repl.it. I kept adding our favorite games like \"Guess the player,\" \"Missing 11,\" and \"Soccer Quiz.\"\u003c/p\u003e\n\u003cp\u003eThis project is my favorite. It brought me joy and helped my friends and me get through one of the toughest times for everyone.\u003c/p\u003e\n\u003ch2\u003eProcess\u003c/h2\u003e\n\u003cp\u003eLet's walk through the process of creating the bot:\u003c/p\u003e\n\u003ch3\u003e1. Register the bot\u003c/h3\u003e\n\u003cp\u003eStart by visiting the \u003ca href=\"https://discord.com/developers/applications\"\u003eDiscord Developer Portal\u003c/a\u003e, selecting \"New Application,\" and filling in the necessary information for your Discord bot. Create a new Bot Token, a crucial element for bot development.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/soccer-discord-bot-in-covid-days/1705682228710.png\" alt=\"1705682228710\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNote:\u003c/strong\u003e If you've already created the token, opt for \"Reset Token\" to generate a new one.\u003c/p\u003e\n\u003ch3\u003e2. Invite the bot to your server\u003c/h3\u003e\n\u003cp\u003eNow, invite the bot to your server for testing. Navigate to \u003ccode\u003eOAuth2 -\u003e URL Generator\u003c/code\u003e, choose the options \u003ccode\u003ebot\u003c/code\u003e and \u003ccode\u003eAdministrator\u003c/code\u003e for your local server, and generate a URL like \u003ccode\u003ehttps://discord.com/api/oauth2/authorize?client_id={client_id}\u0026#x26;permissions=2048\u0026#x26;scope=bot.\u003c/code\u003e Paste this URL into your browser's search bar to add the bot to your server.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/soccer-discord-bot-in-covid-days/1705683032435.png\" alt=\"1705683032435\"\u003e\u003c/p\u003e\n\u003cp\u003eOnce you see the bot's incoming message in your server, it confirms successful addition.\u003c/p\u003e\n\u003ch3\u003e3. Start coding ✨\u003c/h3\u003e\n\u003cp\u003eNow, to start, I would recommend trying to run your code on \u003ca href=\"https://replit.com\"\u003erepl.it\u003c/a\u003e. Create an account if you haven't already, and create a new project.\u003c/p\u003e\n\u003cp\u003eCreate 2 files \u003ccode\u003emain.py\u003c/code\u003e and \u003ccode\u003ekeep_alive.py\u003c/code\u003e. These are the only 2 files you need right now.\u003c/p\u003e\n\u003cp\u003eFor \u003ccode\u003ekeep_alive.py\u003c/code\u003e, paste the following code in:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-python\"\u003e\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e flask \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Flask\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e threading \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Thread\n\napp = Flask(\u003cspan class=\"hljs-string\"\u003e''\u003c/span\u003e)\n\n\u003cspan class=\"hljs-meta\"\u003e@app.route(\u003cspan class=\"hljs-params\"\u003e\u003cspan class=\"hljs-string\"\u003e'/'\u003c/span\u003e\u003c/span\u003e)\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ehome\u003c/span\u003e():\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e\"Hello. I am alive!\"\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003erun\u003c/span\u003e():\n  app.run(host=\u003cspan class=\"hljs-string\"\u003e'0.0.0.0'\u003c/span\u003e,port=\u003cspan class=\"hljs-number\"\u003e8080\u003c/span\u003e)\n\n\u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ekeep_alive\u003c/span\u003e():\n    t = Thread(target=run)\n    t.start()\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eAnd for \u003ccode\u003emain.py\u003c/code\u003e, paste in the following template that I created:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-python\"\u003e\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e discord.ext \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e commands\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e os\n\nclient = commands.Bot(command_prefix=\u003cspan class=\"hljs-string\"\u003e'$'\u003c/span\u003e)\n\n\u003cspan class=\"hljs-meta\"\u003e@client.event\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eon_ready\u003c/span\u003e():\n    \u003cspan class=\"hljs-built_in\"\u003eprint\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Bot's ready\"\u003c/span\u003e)\n\n\u003cspan class=\"hljs-meta\"\u003e@client.event\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eon_message\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003emessage\u003c/span\u003e):\n    \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e message.author == client.user:\n        \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e\n    msg = message.content\n\n    \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e msg == \u003cspan class=\"hljs-string\"\u003e\"Hello Discord Bot\"\u003c/span\u003e:\n        \u003cspan class=\"hljs-keyword\"\u003eawait\u003c/span\u003e message.channel.send(\u003cspan class=\"hljs-string\"\u003e'Hi '\u003c/span\u003e + message.author.display_name)\n\n    \u003cspan class=\"hljs-keyword\"\u003eawait\u003c/span\u003e client.process_commands(message)\n\nkeep_alive()\n\nclient.run(os.environ[\u003cspan class=\"hljs-string\"\u003e\"TOKEN\"\u003c/span\u003e])\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eNow, please open the \u003ccode\u003eSecrets\u003c/code\u003e tab in your Repl and add a new secret. The key will be \u003ccode\u003eTOKEN\u003c/code\u003e, and the value will be the Bot token you copied from the previous step.\u003c/p\u003e\n\u003cp\u003eWith that are set, you can start running your bot! Press \u003ccode\u003eRun\u003c/code\u003e and wait for a bit. After you see the message \"Bot's ready\" in terminal, you can start testing your bot.\u003c/p\u003e\n\u003cp\u003eIn your server, try typing \"Hello Discord Bot\", it will respond like this:\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/soccer-discord-bot-in-covid-days/1705684870442.png\" alt=\"1705684870442\"\u003e\u003c/p\u003e\n\u003ch3\u003e4. Add your own touch\u003c/h3\u003e\n\u003cp\u003eWith all of that setup, you can now create anything you want! Just think of something you can do with the Discord Bot and make it yourself.\u003c/p\u003e\n\u003cp\u003eFor reference, I will talk about the process of adding the Soccer Games. So in order to create the soccer games like starting 11 or guess the player, I need to get data from previous matches, or player's history.\u003c/p\u003e\n\u003cp\u003eBut to do that, I need to find some kinds of API, or I have to crawl data from a soccer site. After looking around, I cannot find a free API that has things I need. So I decided to crawl data from \u003ca href=\"https://www.transfermarkt.com\"\u003eTransfermarkt\u003c/a\u003e. This site has everything I need, from player's transfer history, to the line-ups of all the matches in history.\u003c/p\u003e\n\u003cp\u003eSo firstly, I used \u003ccode\u003ebs4\u003c/code\u003e to crawl data. But a downside of \u003ccode\u003ebs4\u003c/code\u003e is that it only works on static web. And because transfrmarkt is a dynamic generated website, this library didn't work. Luckily, I found another alternative, which is \u003ccode\u003erequests-html\u003c/code\u003e. This works simillar to \u003ccode\u003ebs4\u003c/code\u003e, but it will wait for the website to load before crawling the data.\u003c/p\u003e\n\u003cp\u003eBelow is a code demo of the functions for my games, which contains all the data crawling and game creating.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-python\"\u003e\n\u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e requests_html \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e HTMLSession\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e random\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e nextcord\n\n\u003cspan class=\"hljs-comment\"\u003e# get_matches_from_team_and_year\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eget_matches\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eteam_id, year\u003c/span\u003e):\n    url = \u003cspan class=\"hljs-string\"\u003ef\"https://www.transfermarkt.com/manchester-united/\"\u003c/span\u003e\n    url += \u003cspan class=\"hljs-string\"\u003ef\"spielplandatum/verein/\u003cspan class=\"hljs-subst\"\u003e{team_id}\u003c/span\u003e\"\u003c/span\u003e\n    url += \u003cspan class=\"hljs-string\"\u003ef\"/plus/0?saison_id=\u003cspan class=\"hljs-subst\"\u003e{year}\u003c/span\u003e\u0026#x26;wettbewerb_id=\u0026#x26;\"\u003c/span\u003e\n    url += \u003cspan class=\"hljs-string\"\u003e\"day=\u0026#x26;heim_gast=\u0026#x26;punkte=\u0026#x26;datum_von=-\u0026#x26;datum_bis=-\"\u003c/span\u003e\n    session = HTMLSession()\n    r = session.get(url)\n    \u003cspan class=\"hljs-built_in\"\u003eprint\u003c/span\u003e(url)  \n    matches = r.html.find(\u003cspan class=\"hljs-string\"\u003e'.ergebnis-link'\u003c/span\u003e)\n    matches_ids = [\n        \u003cspan class=\"hljs-built_in\"\u003eint\u003c/span\u003e(\u003cspan class=\"hljs-keyword\"\u003ematch\u003c/span\u003e.attrs[\u003cspan class=\"hljs-string\"\u003e\"href\"\u003c/span\u003e].split(\u003cspan class=\"hljs-string\"\u003e\"/\"\u003c/span\u003e)[-\u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e]) \u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003ematch\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e matches\n    ]\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e matches_ids\n\n\u003cspan class=\"hljs-comment\"\u003e# more code here...\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHere's the \u003ca href=\"https://github.com/Theskrtnerd/soccer-discord-bot\"\u003ecode's repo\u003c/a\u003e if you want to have a deeper look.\nHopefully, from this you can get some inspirations to create your own unique Discord bot.\u003c/p\u003e\n\u003ch2\u003eConclusion\u003c/h2\u003e\n\u003cp\u003eIn conclusion, a Discord bot proves to be an excellent and practical way to enhance coding skills while creating something interesting for beginners.\u003c/p\u003e\n\u003cp\u003eI hope you find inspiration in this journey and that it proves useful for your own Discord bot endeavors.\u003c/p\u003e"])</script><script>self.__next_f.push([1,"5:[\"$\",\"article\",null,{\"className\":\"px-6 max-w-[760px] mx-auto pt-16 md:pt-20 pb-24\",\"children\":[[\"$\",\"$L10\",null,{\"href\":\"/posts/\",\"className\":\"animate-fade-up inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors group mb-12\",\"children\":[[\"$\",\"span\",null,{\"className\":\"inline-block group-hover:-translate-x-0.5 transition-transform\",\"children\":\"←\"}],\"all writing\"]}],[\"$\",\"header\",null,{\"className\":\"animate-fade-up delay-2 mb-12\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"2023-08-26\",\"className\":\"font-mono text-xs uppercase tracking-widest text-muted\",\"children\":\"August 26, 2023\"}],[\"$\",\"h1\",null,{\"className\":\"mt-4 font-serif text-4xl md:text-6xl tracking-[-0.03em] leading-[1.02]\",\"children\":\"Soccer Discord Bot to make your Covid days much better\"}],[\"$\",\"p\",null,{\"className\":\"mt-5 text-lg text-muted font-serif italic leading-snug\",\"children\":\"Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...\"}]]}],[\"$\",\"div\",null,{\"className\":\"prose animate-fade-up delay-3\",\"dangerouslySetInnerHTML\":{\"__html\":\"$11\"}}],\"$L12\",\"$L13\"]}]\n"])</script><script>self.__next_f.push([1,"12:[\"$\",\"nav\",null,{\"className\":\"mt-20 pt-8 border-t border-border grid grid-cols-2 gap-6\",\"children\":[[\"$\",\"div\",null,{\"children\":null}],[\"$\",\"div\",null,{\"className\":\"text-right\",\"children\":[\"$\",\"$L10\",null,{\"href\":\"/posts/sorting-in-hack-assembly/\",\"className\":\"group block hover:translate-x-0.5 transition-transform\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs uppercase tracking-widest text-muted\",\"children\":\"next →\"}],[\"$\",\"p\",null,{\"className\":\"font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors\",\"children\":\"Sort everything in Hack Assembly\"}]]}]}]]}]\n13:[\"$\",\"footer\",null,{\"className\":\"px-6 max-w-[1100px] mx-auto w-full py-10 mt-24\",\"children\":[\"$\",\"div\",null,{\"className\":\"border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 font-mono text-xs text-muted\",\"children\":[[\"$\",\"span\",null,{\"children\":[\"bach tran © \",2026]}],[\"$\",\"span\",null,{\"className\":\"text-muted/60\",\"children\":[\"shipped with caution and crossed fingers \",[\"$\",\"span\",null,{\"className\":\"blink\",\"children\":\"_\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"14:I[27201,[\"/_next/static/chunks/0gqn-2u~-trb_.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"IconMark\"]\n8:null\nd:[[\"$\",\"title\",\"0\",{\"children\":\"Soccer Discord Bot to make your Covid days much better - Bach Tran\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Discord bot with your favorite games: Missing 11, Guess the player, Tic-tac-toe,...\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"$L14\",\"3\",{}]]\n"])</script></body></html>
