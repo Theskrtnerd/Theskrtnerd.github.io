@@ -14,7 +14,7 @@ export default function Home() {
         <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
           <div className="animate-fade-up avatar-halo shrink-0 mx-auto md:mx-0">
             <Image
-              src="/images/new-ava.jpeg"
+              src="/images/landing.png"
               alt="Bach Tran"
               width={200}
               height={200}
@@ -33,7 +33,7 @@ export default function Home() {
             </h1>
             <p className="animate-fade-up delay-3 font-mono text-xs tracking-wide text-muted mb-6">
               <span className="italic font-serif text-sm normal-case tracking-normal text-muted/80">a.k.a.</span>{" "}
-              Barry · xineohperif · Theskrtnerd
+              Barry · xineohperif · Theskrtnerd · Viet Bach Tran
             </p>
 
             <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">

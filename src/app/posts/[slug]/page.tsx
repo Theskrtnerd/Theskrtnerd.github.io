@@ -15,7 +15,7 @@ export async function generateMetadata(
   try {
     const post = await getPost(slug);
     return {
-      title: `${post.title} — Bach Tran`,
+      title: `${post.title} - Bach Tran`,
       description: post.description ?? post.summary,
     };
   } catch {
@@ -38,8 +38,7 @@ export default async function PostPage(
   const next = idx > 0 ? all[idx - 1] : null;
 
   return (
-    <article className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-20 pb-24">
-      {/* Back */}
+    <article className="px-6 max-w-[760px] mx-auto pt-16 md:pt-20 pb-24">
       <Link
         href="/posts/"
         className="animate-fade-up inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors group mb-12"
@@ -48,55 +47,31 @@ export default async function PostPage(
         all writing
       </Link>
 
-      {/* Header */}
-      <header className="animate-fade-up delay-2 max-w-[70ch] mb-14">
-        <div className="flex flex-wrap items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted mb-6">
-          <time dateTime={post.date}>{formatDate(post.date)}</time>
-          {post.tags && post.tags.length > 0 && (
-            <>
-              <span className="text-muted/40">·</span>
-              <span className="flex gap-1.5">
-                {post.tags.map((t) => (
-                  <span key={t} className="border border-border px-2 py-0.5 normal-case tracking-wider">
-                    {t}
-                  </span>
-                ))}
-              </span>
-            </>
-          )}
-        </div>
+      <header className="animate-fade-up delay-2 mb-12">
+        <time
+          dateTime={post.date}
+          className="font-mono text-xs uppercase tracking-widest text-muted"
+        >
+          {formatDate(post.date)}
+        </time>
 
-        <h1 className="font-serif text-5xl md:text-7xl tracking-[-0.03em] leading-[0.98]">
+        <h1 className="mt-4 font-serif text-4xl md:text-6xl tracking-[-0.03em] leading-[1.02]">
           {post.title}
         </h1>
 
         {post.description && (
-          <p className="mt-6 text-lg md:text-xl text-muted font-serif italic leading-snug max-w-[56ch]">
+          <p className="mt-5 text-lg text-muted font-serif italic leading-snug">
             {post.description}
           </p>
         )}
-
-        <div className="mt-8 h-px bg-border" />
-
-        <div className="mt-4 flex items-center gap-3 font-mono text-xs text-muted">
-          <span>by</span>
-          {(post.author?.length ? post.author : ["xineohperif"]).map((a, i, arr) => (
-            <span key={a}>
-              <span className="text-foreground">{a}</span>
-              {i < arr.length - 1 && <span className="text-muted/40 ml-3">&</span>}
-            </span>
-          ))}
-        </div>
       </header>
 
-      {/* Body */}
       <div
-        className="prose animate-fade-up delay-3 mx-auto"
+        className="prose animate-fade-up delay-3"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
 
-      {/* Pager */}
-      <nav className="mt-24 pt-8 border-t border-border grid grid-cols-2 gap-6">
+      <nav className="mt-20 pt-8 border-t border-border grid grid-cols-2 gap-6">
         <div>
           {prev && (
             <Link
@@ -106,7 +81,7 @@ export default async function PostPage(
               <span className="font-mono text-xs uppercase tracking-widest text-muted">
                 ← previous
               </span>
-              <p className="font-serif text-xl mt-2 group-hover:italic transition-all">
+              <p className="font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors">
                 {prev.title}
               </p>
             </Link>
@@ -121,7 +96,7 @@ export default async function PostPage(
               <span className="font-mono text-xs uppercase tracking-widest text-muted">
                 next →
               </span>
-              <p className="font-serif text-xl mt-2 group-hover:italic transition-all">
+              <p className="font-serif text-lg mt-2 underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors">
                 {next.title}
               </p>
             </Link>

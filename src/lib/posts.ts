@@ -3,7 +3,9 @@ import path from "node:path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
-import remarkHtml from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeHighlight from "rehype-highlight";
+import rehypeStringify from "rehype-stringify";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "posts");
 
@@ -56,7 +58,9 @@ export async function getPost(slug: string): Promise<Post> {
   const { data, content } = matter(raw);
   const processed = await remark()
     .use(remarkGfm)
-    .use(remarkHtml, { sanitize: false })
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeHighlight, { detect: true })
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);
   return {
     slug,

@@ -69,29 +69,42 @@ const config = {
   home: "VN",
 };
 
+const SCRIPT_SRCS = [
+  "https://www.visitedplaces.com/js/common.js",
+  "https://www.visitedplaces.com/js/viewer.js",
+];
+
+// Module-scoped token so StrictMode's mount-unmount-mount cycle only initializes once.
+let mountToken = 0;
+
 export default function VisitedPlaces() {
   useEffect(() => {
-    // expose config to global scope where visitedplaces scripts read it from
-    (window as unknown as { visitedplaces_config: unknown }).visitedplaces_config = config;
+    const myToken = ++mountToken;
 
-    const scripts = [
-      "https://www.visitedplaces.com/js/common.js",
-      "https://www.visitedplaces.com/js/viewer.js",
-    ];
+    // Defer init by a tick so any rapid remount (StrictMode) supersedes this one.
+    const timer = setTimeout(() => {
+      if (myToken !== mountToken) return;
 
-    const tags: HTMLScriptElement[] = [];
-    scripts.forEach((src) => {
-      const existing = document.querySelector(`script[src="${src}"]`);
-      if (existing) return;
-      const s = document.createElement("script");
-      s.src = src;
-      s.async = true;
-      document.body.appendChild(s);
-      tags.push(s);
-    });
+      (window as unknown as { visitedplaces_config: unknown }).visitedplaces_config = config;
+
+      const chartdiv = document.getElementById("chartdiv");
+      if (!chartdiv) return;
+      chartdiv.innerHTML = "";
+
+      SCRIPT_SRCS.forEach((src) => {
+        document.querySelectorAll(`script[src="${src}"]`).forEach((s) => s.remove());
+      });
+
+      SCRIPT_SRCS.forEach((src) => {
+        const s = document.createElement("script");
+        s.src = src;
+        s.async = false;
+        document.body.appendChild(s);
+      });
+    }, 0);
 
     return () => {
-      tags.forEach((t) => t.remove());
+      clearTimeout(timer);
     };
   }, []);
 

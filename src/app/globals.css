@@ -395,3 +395,57 @@ body::after {
 .blink {
   animation: blink 1.2s steps(2) infinite;
 }
+
+/* ── Code highlighting (highlight.js) ── */
+:root {
+  --hl-comment: #8a8a82;
+  --hl-keyword: #8a3b2e;
+  --hl-string:  #4a6b3a;
+  --hl-number:  #7a5a1f;
+  --hl-fn:      #2c4a6b;
+  --hl-type:    #5a3a6b;
+  --hl-attr:    #6b3a5a;
+  --hl-meta:    #6b6b65;
+}
+.dark {
+  --hl-comment: #6b6b62;
+  --hl-keyword: #d99a85;
+  --hl-string:  #b8c98e;
+  --hl-number:  #e0b878;
+  --hl-fn:      #8fb3d9;
+  --hl-type:    #c79be0;
+  --hl-attr:    #e0a0c4;
+  --hl-meta:    #9a988c;
+}
+
+.prose .hljs { color: var(--foreground); background: transparent; }
+.prose .hljs-comment,
+.prose .hljs-quote { color: var(--hl-comment); font-style: italic; }
+.prose .hljs-keyword,
+.prose .hljs-selector-tag,
+.prose .hljs-literal,
+.prose .hljs-section,
+.prose .hljs-link { color: var(--hl-keyword); }
+.prose .hljs-string,
+.prose .hljs-regexp,
+.prose .hljs-addition,
+.prose .hljs-template-tag,
+.prose .hljs-template-variable { color: var(--hl-string); }
+.prose .hljs-number,
+.prose .hljs-symbol,
+.prose .hljs-bullet { color: var(--hl-number); }
+.prose .hljs-title,
+.prose .hljs-title.function_,
+.prose .hljs-built_in { color: var(--hl-fn); }
+.prose .hljs-class .hljs-title,
+.prose .hljs-title.class_,
+.prose .hljs-type { color: var(--hl-type); }
+.prose .hljs-attr,
+.prose .hljs-attribute,
+.prose .hljs-variable,
+.prose .hljs-name,
+.prose .hljs-tag { color: var(--hl-attr); }
+.prose .hljs-meta,
+.prose .hljs-deletion { color: var(--hl-meta); }
+.prose .hljs-emphasis { font-style: italic; }
+.prose .hljs-strong { font-weight: 600; }

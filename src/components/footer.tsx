@@ -6,7 +6,7 @@ export default function Footer() {
           bach tran &copy; {new Date().getFullYear()}
         </span>
         <span className="text-muted/60">
-          built quietly in adelaide <span className="blink">_</span>
+          shipped with caution and crossed fingers <span className="blink">_</span>
         </span>
       </div>
     </footer>
