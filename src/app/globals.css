@@ -184,6 +184,16 @@ body::after {
   height: 60%;
 }
 
+/* ── Highlights timeline ── */
+.tl-dot {
+  transition: background-color 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tl-item:hover .tl-dot {
+  background: var(--foreground);
+  transform: translateX(-50%) scale(1.35);
+}
+
 /* ── Prose (blog post body) ── */
 .prose {
   color: var(--foreground);
@@ -348,6 +358,34 @@ body::after {
 
 @keyframes halo-rotate {
   to { transform: rotate(360deg); }
+}
+
+/* ── Avatar flip ── */
+.avatar-flip {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.avatar-flip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.avatar-flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.avatar-flip-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-flip {
+    transition: none;
+  }
 }
 
 /* ── Marquee ticker ── */

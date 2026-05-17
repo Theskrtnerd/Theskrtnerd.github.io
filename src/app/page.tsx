@@ -1,4 +1,4 @@
-import Image from "next/image";
+import AvatarFlip from "@/components/avatar-flip";
 
 const socials = [
   { label: "github", href: "https://github.com/Theskrtnerd" },
@@ -12,16 +12,7 @@ export default function Home() {
     <section className="h-[calc(100dvh-3.5rem)] overflow-hidden flex items-center">
       <div className="px-6 max-w-[1100px] mx-auto w-full">
         <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
-          <div className="animate-fade-up avatar-halo shrink-0 mx-auto md:mx-0">
-            <Image
-              src="/images/landing.png"
-              alt="Bach Tran"
-              width={200}
-              height={200}
-              priority
-              className="rounded-full w-[140px] h-[140px] md:w-[176px] md:h-[176px] object-cover"
-            />
-          </div>
+          <AvatarFlip />
 
           <div className="max-w-[58ch]">
             <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] uppercase text-muted mb-4">
