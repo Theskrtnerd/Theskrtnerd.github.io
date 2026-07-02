@@ -31,17 +31,17 @@ function getAlbum(): GalleryPhoto[] {
 }
 
 const regions = [
-  { label: "Home", color: "emerald", countries: ["Vietnam"] },
+  { label: "home", color: "emerald", countries: ["vietnam"] },
   {
-    label: "Europe",
-    countries: ["France", "Germany", "Belgium", "Bulgaria", "Luxembourg", "Netherlands"],
+    label: "europe",
+    countries: ["france", "germany", "belgium", "bulgaria", "luxembourg", "netherlands"],
   },
-  { label: "North America", countries: ["United States"] },
+  { label: "north america", countries: ["united states"] },
   {
-    label: "Asia",
-    countries: ["Cambodia", "China", "Hong Kong", "India", "Myanmar", "Singapore", "UAE", "Taiwan", "Qatar"],
+    label: "asia",
+    countries: ["cambodia", "china", "hong kong", "india", "myanmar", "singapore", "uae", "taiwan", "qatar"],
   },
-  { label: "Oceania", countries: ["Australia"] },
+  { label: "oceania", countries: ["australia"] },
 ];
 
 export default function MorePage() {
@@ -51,19 +51,19 @@ export default function MorePage() {
   return (
     <div className="pb-24">
       <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-16 md:pb-20">
-        <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
-          More.
+        <h1 className="animate-fade-up font-sans font-bold text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
+          more
         </h1>
         <p className="animate-fade-up delay-3 mt-5 max-w-[54ch] text-muted leading-relaxed">
-          A few personal things, outside of work. Photos, places, music, food, etc. - the random stuff that make up the rest of me.
+          random personal things outside of work - photos, places, music, food, etc.
         </p>
       </header>
 
       {/* Gallery */}
       <section className="px-6 max-w-[1100px] mx-auto py-12 md:py-16">
         <div className="mb-8 flex items-baseline justify-between gap-4">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-            Frames
+          <h2 className="font-mono text-xs tracking-widest text-muted">
+            frames
           </h2>
           <span className="font-mono text-xs text-muted">
             {album.length} photos
@@ -76,8 +76,8 @@ export default function MorePage() {
       {/* Countries */}
       <section className="px-6 max-w-[1100px] mx-auto py-16 md:py-20">
         <div className="mb-8 flex items-baseline justify-between gap-4">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-            Atlas
+          <h2 className="font-mono text-xs tracking-widest text-muted">
+            atlas
           </h2>
           <span className="font-mono text-xs text-muted tabular-nums">
             {totalCountries} countries · 5 regions
@@ -95,13 +95,13 @@ export default function MorePage() {
               className="grid grid-cols-[140px_1fr] md:grid-cols-[200px_1fr] gap-6 md:gap-10 py-6 animate-fade-up"
               style={{ animationDelay: `${0.1 + ri * 0.08}s` }}
             >
-              <span className="font-mono text-xs uppercase tracking-widest text-muted flex items-center gap-2">
+              <span className="font-mono text-xs tracking-widest text-muted flex items-center gap-2">
                 {r.color === "emerald" && (
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500/80" />
                 )}
                 {r.label}
               </span>
-              <span className="font-serif text-lg md:text-xl tracking-tight leading-relaxed">
+              <span className="font-sans text-lg md:text-xl tracking-tight leading-relaxed">
                 {r.countries.join(", ")}
               </span>
             </li>

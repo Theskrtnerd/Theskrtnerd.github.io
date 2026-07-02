@@ -27,7 +27,6 @@
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-instrument-serif);
 }
 
 html {
@@ -44,23 +43,6 @@ body {
 ::selection {
   background: var(--foreground);
   color: var(--background);
-}
-
-/* Grain texture overlay */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.035;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 256px 256px;
-}
-
-.dark body::after {
-  opacity: 0.06;
 }
 
 /* ── Entry animations ── */
@@ -118,27 +100,6 @@ body::after {
   width: 100%;
 }
 
-/* ── Hero shimmer on serif display ── */
-@keyframes shimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-.hero-title {
-  background: linear-gradient(
-    110deg,
-    var(--foreground) 0%,
-    var(--muted) 38%,
-    var(--foreground) 58%,
-    var(--muted) 100%
-  );
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 10s ease-in-out infinite;
-}
-
 /* ── Section number accent ── */
 .section-number {
   position: relative;
@@ -186,12 +147,14 @@ body::after {
 
 /* ── Highlights timeline ── */
 .tl-dot {
+  transform: scale(1);
+  transform-origin: center;
   transition: background-color 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .tl-item:hover .tl-dot {
   background: var(--foreground);
-  transform: translateX(-50%) scale(1.35);
+  transform: scale(1.35);
 }
 
 /* ── Prose (blog post body) ── */
@@ -207,8 +170,8 @@ body::after {
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4 {
-  font-family: var(--font-serif), Georgia, serif;
-  font-weight: 400;
+  font-family: var(--font-geist-sans);
+  font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.2;
   color: var(--foreground);
@@ -219,7 +182,7 @@ body::after {
 .prose h1 { font-size: 2.25rem; }
 .prose h2 { font-size: 1.75rem; }
 .prose h3 { font-size: 1.375rem; }
-.prose h4 { font-size: 1.125rem; font-family: var(--font-geist-sans); font-weight: 600; }
+.prose h4 { font-size: 1.125rem; }
 
 .prose p {
   color: var(--foreground);
@@ -330,34 +293,6 @@ body::after {
 .gallery-item:hover {
   transform: translateY(-2px);
   filter: grayscale(0);
-}
-
-/* ── Avatar halo ── */
-.avatar-halo {
-  position: relative;
-}
-
-.avatar-halo::before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  animation: halo-rotate 18s linear infinite;
-}
-
-.avatar-halo::after {
-  content: "";
-  position: absolute;
-  inset: -16px;
-  border-radius: 50%;
-  border: 1px dashed var(--border);
-  animation: halo-rotate 26s linear infinite reverse;
-  opacity: 0.6;
-}
-
-@keyframes halo-rotate {
-  to { transform: rotate(360deg); }
 }
 
 /* ── Avatar flip ── */

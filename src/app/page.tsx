@@ -15,30 +15,30 @@ export default function Home() {
           <AvatarFlip />
 
           <div className="max-w-[58ch]">
-            <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] uppercase text-muted mb-4">
+            <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] text-muted mb-4">
               hanoi → adelaide → sydney
             </div>
 
-            <h1 className="animate-fade-up delay-2 font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
-              <span className="hero-title">Bach Tran</span>
+            <h1 className="animate-fade-up delay-2 font-sans font-bold text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
+              bach tran
             </h1>
             <p className="animate-fade-up delay-3 font-mono text-xs tracking-wide text-muted mb-6">
-              <span className="italic font-serif text-sm normal-case tracking-normal text-muted/80">a.k.a.</span>{" "}
-              Barry · xineohperif · Theskrtnerd · Viet Bach Tran
+              <span className="text-sm normal-case tracking-normal text-muted/80">a.k.a.</span>{" "}
+              barry · xineohperif · theskrtnerd · viet bach tran
             </p>
 
             <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
               <p>
-                I build things with code, mostly around applied AI.
-                Currently a final-year CS student at the University of Adelaide,
+                i build things with code, mostly around applied ai.
+                currently a final-year cs student at the university of adelaide,
                 figuring out what to do next.
               </p>
               <p>
-                Before that: a kid in Hanoi who was kinda into maths, then a
-                student in Australia who got too into everything else - AI,
-                quant, and lately startups. Somewhere along the way the maths
-                turned into code, and the code kept branching into whatever I
-                was curious about that month.
+                before that: a kid in hanoi who was kinda into maths, then a
+                student in australia who got too into everything else - ai,
+                quant, and lately startups. the maths turned into code at
+                some point, and i've mostly followed whatever seemed
+                interesting since.
               </p>
               <p className="text-muted flex flex-wrap items-baseline gap-x-2">
                 <span>off-hours, a</span>

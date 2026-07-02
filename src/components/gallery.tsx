@@ -85,7 +85,7 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
           className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex flex-col animate-fade-up"
           onClick={close}
         >
-          <div className="flex items-center justify-between px-5 py-4 font-mono text-xs uppercase tracking-widest text-muted">
+          <div className="flex items-center justify-between px-5 py-4 font-mono text-xs tracking-widest text-muted">
             <span className="tabular-nums">
               {String((openIdx ?? 0) + 1).padStart(2, "0")} /{" "}
               {String(photos.length).padStart(2, "0")}

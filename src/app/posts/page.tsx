@@ -17,12 +17,12 @@ export default function PostsPage() {
   return (
     <div className="px-6 max-w-[900px] mx-auto pt-16 md:pt-24 pb-24">
       <header className="mb-16 md:mb-20">
-        <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
-          Writing.
+        <h1 className="animate-fade-up font-sans font-bold text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
+          writing
         </h1>
         <p className="animate-fade-up delay-3 mt-5 max-w-[54ch] text-muted leading-relaxed">
-          I write things down when I can - some top-of-mind reflections,
-          some random technical pieces. Here's a few that made it out of the vault.
+          i try to write things down when i can - some top-of-mind reflections,
+          some random technical pieces, and other stuff in between.
         </p>
       </header>
 
@@ -38,7 +38,7 @@ export default function PostsPage() {
               style={{ animationDelay: `${0.2 + yi * 0.1}s` }}
             >
               <div className="flex items-baseline gap-4 mb-3">
-                <span className="font-mono text-xs uppercase tracking-widest text-muted tabular-nums">
+                <span className="font-mono text-xs tracking-widest text-muted tabular-nums">
                   {year}
                 </span>
                 <div className="flex-1 h-px bg-border" />
@@ -55,11 +55,11 @@ export default function PostsPage() {
                         {formatDateShort(p.date)}
                       </span>
                       <div className="min-w-0">
-                        <h3 className="font-serif text-xl md:text-2xl tracking-tight leading-snug underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors">
+                        <h3 className="font-sans font-medium text-xl md:text-2xl tracking-tight leading-snug underline decoration-transparent decoration-1 underline-offset-[6px] group-hover:decoration-foreground/40 transition-colors lowercase">
                           {p.title}
                         </h3>
                         {p.description && (
-                          <p className="text-sm text-muted mt-1.5 max-w-[64ch]">
+                          <p className="text-sm text-muted mt-1.5 max-w-[64ch] lowercase">
                             {p.description}
                           </p>
                         )}

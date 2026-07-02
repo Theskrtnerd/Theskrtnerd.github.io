@@ -2,8 +2,8 @@
 author: ["xineohperif"]
 title: "Sort everything in Hack Assembly"
 date: "2024-05-03"
-description: "Imagine spending 6 hours just to put a ball into the net. That's what happened with me the other day when I tried doing my Computer Systems assignment..."
-summary: "Imagine spending 6 hours just to put a ball into the net. That's what happened with me the other day when I tried doing my Computer Systems assignment..."
+description: "Implementing merge sort in Hack Assembly for a bonus mark"
+summary: "Implementing merge sort in Hack Assembly for a bonus mark"
 tags: ["random"]
 section: posts
 ShowToc: true

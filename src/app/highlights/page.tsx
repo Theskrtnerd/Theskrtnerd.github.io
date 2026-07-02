@@ -19,147 +19,145 @@ type Highlight = {
 
 const highlights: Highlight[] = [
   {
-    start: "Jul 2025",
-    end: "Present",
-    current: true,
-    role: "AI Engineer",
-    place: "ReadMe",
+    start: "jul 2025",
+    end: "jul 2026",
+    role: "ai engineer",
+    place: "readme",
     href: "https://readme.com/",
-    location: "SF Bay Area",
+    location: "sf bay area",
     description:
-      "Working on AI for technical documentation. Remote from Sydney, which means shipping by day and occasionally waking up to a very active US thread.",
+      "working on ai for technical documentation. remote from sydney, which means shipping by day and occasionally waking up to a very active us thread.",
   },
   {
-    start: "Mar 2025",
-    end: "Present",
-    current: true,
-    role: "Forward Deployed Engineer",
-    place: "Lyra",
+    start: "mar 2025",
+    end: "jul 2026",
+    role: "forward deployed engineer",
+    place: "lyra",
     href: "https://lyratechnologies.com.au/",
-    location: "Sydney",
+    location: "sydney",
     description:
-      "Building AI products for US startups. The FDE life: scoping, shipping, and occasionally getting called \"the AI guy\" by my co-workers.",
+      "building ai products for us startups. the fde life: scoping, shipping, and occasionally getting called \"the ai guy\" by my co-workers.",
   },
   {
-    start: "Dec 2024",
-    end: "Feb 2025",
-    role: "ML Engineer Intern",
-    place: "Canva",
+    start: "dec 2024",
+    end: "feb 2025",
+    role: "ml engineer intern",
+    place: "canva",
     href: "https://www.canva.com/",
-    location: "Sydney",
+    location: "sydney",
     description:
-      "Worked on AI for design relayout - basically, teaching a model to move boxes around so humans don't have to. Three months of summer flying between Adelaide and Sydney didn't hurt either.",
+      "worked on ai for design relayout - basically, teaching a model to move boxes around so humans don't have to. three months of summer flying between adelaide and sydney didn't hurt either.",
   },
   {
-    start: "Aug 2024",
-    end: "Jul 2025",
-    role: "Student Researcher",
-    place: "AIML",
+    start: "aug 2024",
+    end: "jul 2025",
+    role: "student researcher",
+    place: "aiml",
     href: "https://www.adelaide.edu.au/aiml/",
-    location: "Adelaide",
+    location: "adelaide",
     description:
-      "BBVisual Lab under Prof. Minh Hoai Nguyen. Worked on AI for visual counting - turns out counting not as easy as it looks, especially for neural nets.",
+      "bbvisual lab under prof. minh hoai nguyen. worked on ai for visual counting - turns out counting not as easy as it looks, especially for neural nets.",
   },
   {
-    start: "Jun 2024",
-    end: "Aug 2024",
-    role: "AI Trainee",
-    place: "Cinnamon AI",
+    start: "jun 2024",
+    end: "aug 2024",
+    role: "ai trainee",
+    place: "cinnamon ai",
     href: "https://cinnamon.ai/en/",
-    location: "Hanoi",
+    location: "hanoi",
     description:
-      "Spent a short stint in Vietnam learning AI engineering and building projects. Bonus: getting to eat phở for breakfast on weekdays again.",
+      "spent a short stint in vietnam learning ai engineering and building projects. bonus: getting to eat phở for breakfast on weekdays again.",
   },
   {
-    start: "Feb 2024",
-    end: "Oct 2024",
-    role: "Research Intern",
-    place: "MIT Media Lab",
+    start: "feb 2024",
+    end: "oct 2024",
+    role: "research intern",
+    place: "mit media lab",
     href: "https://www.media.mit.edu/",
-    location: "Boston",
+    location: "boston",
     description:
-      "MIT Adelaide Living Lab under Dr. Tobin South. Worked on backdoor attacks in AI models - the fun kind of security research and random yapping every week",
+      "mit adelaide living lab under dr. tobin south. worked on backdoor attacks in ai models - the fun kind of security research and random yapping every week",
   },
   {
     start: "2024",
-    role: "Project Manager",
-    place: "SQUAD",
+    role: "project manager",
+    place: "squad",
     href: "https://www.squadadelaide.org/",
     description:
-      "Organized a Datathon and did a Quant competition with the team - short stint, but a fun reminder that projects are usually harder on the people side than the technical side.",
+      "organized a datathon and did a quant competition with the team - short stint, but a fun reminder that projects are usually harder on the people side than the technical side.",
   },
   {
     start: "2023",
     end: "2025",
-    role: "President",
-    place: "Adelaide University Mathematics Society",
+    role: "president",
+    place: "adelaide university mathematics society",
     href: "https://aums.org.au/",
     description:
-      "Helped run AUMS for two years. Ran events, signed off on T-shirt designs, and learned that getting maths students into a room is somehow harder than the maths itself.",
+      "helped run aums for two years. ran events, signed off on t-shirt designs, and learned that getting maths students into a room is somehow harder than the maths itself.",
   },
   {
-    start: "Nov 2023",
-    end: "Feb 2024",
-    role: "Research Intern",
-    place: "AIML",
+    start: "nov 2023",
+    end: "feb 2024",
+    role: "research intern",
+    place: "aiml",
     href: "https://www.adelaide.edu.au/aiml/",
-    location: "Adelaide",
+    location: "adelaide",
     description:
-      "Summer research under Dr. Antonios Perperidis on ML for 4D medical imaging. My first real taste of research, and the moment I realized how much I didn't know.",
+      "summer research under dr. antonios perperidis on ml for 4d medical imaging. my first real taste of research, and the moment i realized how much i didn't know.",
   },
   {
-    start: "Feb 2023",
-    end: "Present",
+    start: "feb 2023",
+    end: "present",
     current: true,
-    role: "BS in Computer Science",
-    place: "University of Adelaide",
+    role: "bs in computer science",
+    place: "university of adelaide",
     href: "https://www.adelaide.edu.au/",
     description:
-      "Final-year CS student. Started out doing maths-y things, drifted into AI, then quant, then startups - in roughly that order.",
+      "final-year cs student. started out doing maths-y things, drifted into ai, then quant, then startups - in roughly that order.",
   },
   {
-    start: "Sep 2022",
-    end: "Apr 2023",
-    role: "President",
-    place: "Hanoi - Amsterdam Maths Lovers Club",
+    start: "sep 2022",
+    end: "apr 2023",
+    role: "president",
+    place: "hanoi - amsterdam maths lovers club",
     href: "https://www.facebook.com/toanhaml",
-    location: "Hanoi",
+    location: "hanoi",
     description:
-      "Ran the maths club at my high school - problem sets, sessions, and rounding up people who actually wanted to do extra maths for fun.",
+      "ran the maths club at my high school - problem sets, sessions, and rounding up people who actually wanted to do extra maths for fun.",
   },
   {
-    start: "Jun 2022",
-    end: "Jun 2023",
-    role: "Co-organizer",
-    place: "TEDxHanoiAmsterdamHS",
+    start: "jun 2022",
+    end: "jun 2023",
+    role: "co-organizer",
+    place: "tedxhanoiamsterdamhs",
     href: "https://www.ted.com/tedx/events/51821",
     description:
-      "Organized the first ever TEDx event for my highschool. Ran around Hanoi finding venues, ordering merch, chasing speakers, mentoring the team. It was fun!",
+      "organized the first ever tedx event for my highschool. ran around hanoi finding venues, ordering merch, chasing speakers, mentoring the team. it was fun!",
   },
   {
-    start: "Apr 2023",
-    role: "Meritorious Prize",
-    place: "International Mathematical Modeling Challenge",
+    start: "apr 2023",
+    role: "meritorious prize",
+    place: "international mathematical modeling challenge",
     href: "https://www.immchallenge.org/",
     description:
-      "Spent a weekend with three teammates wrestling a real-world problem into a maths model, then writing it up like our lives depended on it. Ended up with a Meritorious Prize.",
+      "spent a weekend with three teammates wrestling a real-world problem into a maths model, then writing it up like our lives depended on it. ended up with a meritorious prize.",
   },
   {
-    start: "Jan 2023",
-    role: "Third Prize",
-    place: "Vietnam National Mathematical Olympiad",
+    start: "jan 2023",
+    role: "third prize",
+    place: "vietnam national mathematical olympiad",
     href: "", // TODO: VMO (optional)
     description:
-      "Years of olympiad training condensed into one very long exam. Walked out unsure, walked back in to find a Third Prize next to my name.",
+      "years of olympiad training condensed into one very long exam. walked out unsure, walked back in to find a third prize next to my name.",
   },
   {
-    start: "Sep 2020",
-    end: "Jun 2023",
-    role: "Mathematics",
-    place: "Hanoi - Amsterdam High School for the Gifted",
+    start: "sep 2020",
+    end: "jun 2023",
+    role: "mathematics",
+    place: "hanoi - amsterdam high school for the gifted",
     href: "https://hn-ams.edu.vn/en",
     description:
-      "The school that turned a kid who liked counting into a kid who couldn't stop. Spent seven years deep in olympiad maths and skipping classes to play soccer, made friends I still text now, and figured out I also kinda liked code.",
+      "the school that turned a kid who liked counting into a kid who couldn't stop. spent seven years deep in olympiad maths and skipping classes to play soccer, made friends i still text now, and figured out i also kinda liked code.",
   },
 ];
 
@@ -186,14 +184,14 @@ function HighlightItem({ h, i }: { h: Highlight; i: number }) {
     >
       <span
         aria-hidden
-        className={`tl-dot absolute left-0 top-[7px] -translate-x-1/2 h-[11px] w-[11px] rounded-full ring-4 ring-background transition-colors ${
+        className={`tl-dot absolute -left-[5.5px] top-[7px] h-[11px] w-[11px] rounded-full ring-4 ring-background transition-colors ${
           h.current ? "bg-foreground" : "bg-border"
         }`}
       />
-      <div className="font-mono text-[0.6875rem] uppercase tracking-[0.18em] text-muted tabular-nums">
-        {h.end ? `${h.start} — ${h.end}` : h.start}
+      <div className="font-mono text-[0.6875rem] tracking-[0.18em] text-muted tabular-nums">
+        {h.end ? `${h.start} - ${h.end}` : h.start}
       </div>
-      <h3 className="mt-2 font-serif text-lg md:text-xl tracking-tight leading-snug">
+      <h3 className="mt-2 font-sans font-medium text-lg md:text-xl tracking-tight leading-snug">
         {h.role}
       </h3>
       <div className="mt-1 text-sm">
@@ -213,11 +211,11 @@ export default function HighlightsPage() {
   return (
     <div className="pb-24">
       <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-12 md:pb-16">
-        <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
-          Highlights.
+        <h1 className="animate-fade-up font-sans font-bold text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
+          highlights
         </h1>
         <p className="animate-fade-up delay-3 mt-5 max-w-[54ch] text-muted leading-relaxed">
-          A few moments worth remembering - work, school, and the side things that took on a life of their own.
+          career, school, and a few side things along the way.
         </p>
       </header>
 
