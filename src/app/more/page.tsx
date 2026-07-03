@@ -51,7 +51,7 @@ export default function MorePage() {
   return (
     <div className="pb-24">
       <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-16 md:pb-20">
-        <h1 className="animate-fade-up font-sans font-bold text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
+        <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
           more
         </h1>
         <p className="animate-fade-up delay-3 mt-5 max-w-[54ch] text-muted leading-relaxed">

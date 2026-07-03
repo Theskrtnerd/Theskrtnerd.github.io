@@ -3,6 +3,7 @@ import AvatarFlip from "@/components/avatar-flip";
 const socials = [
   { label: "github", href: "https://github.com/Theskrtnerd" },
   { label: "linkedin", href: "https://linkedin.com/in/xineohperif/" },
+  { label: "x", href: "https://x.com/tvbbd2" },
   { label: "résumé", href: "/Bach_Tran_Resume_20251110.pdf" },
   { label: "email", href: "mailto:jayden161208@gmail.com" },
 ];
@@ -19,7 +20,7 @@ export default function Home() {
               hanoi → adelaide → sydney
             </div>
 
-            <h1 className="animate-fade-up delay-2 font-sans font-bold text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
+            <h1 className="animate-fade-up delay-2 font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
               bach tran
             </h1>
             <p className="animate-fade-up delay-3 font-mono text-xs tracking-wide text-muted mb-6">

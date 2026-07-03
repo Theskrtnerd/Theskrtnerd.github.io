@@ -46,7 +46,7 @@ const highlights: Highlight[] = [
     href: "https://www.canva.com/",
     location: "sydney",
     description:
-      "worked on ai for design relayout - basically, teaching a model to move boxes around so humans don't have to. three months of summer flying between adelaide and sydney didn't hurt either.",
+      "worked on ai for design relayout - basically, teaching a model to move objects around so humans don't have to. three months of summer flying between adelaide and sydney didn't hurt either.",
   },
   {
     start: "aug 2024",
@@ -76,7 +76,7 @@ const highlights: Highlight[] = [
     href: "https://www.media.mit.edu/",
     location: "boston",
     description:
-      "mit adelaide living lab under dr. tobin south. worked on backdoor attacks in ai models - the fun kind of security research and random yapping every week",
+      "mit adelaide living lab under dr. tobin south. worked on backdoor attacks in ai models - the fun kind of security research and random yapping every week.",
   },
   {
     start: "2024",
@@ -84,7 +84,7 @@ const highlights: Highlight[] = [
     place: "squad",
     href: "https://www.squadadelaide.org/",
     description:
-      "organized a datathon and did a quant competition with the team - short stint, but a fun reminder that projects are usually harder on the people side than the technical side.",
+      "organized a datathon and ran a quant competition with the team - short stint, but a reminder that projects are harder on the people side than the technical side.",
   },
   {
     start: "2023",
@@ -148,7 +148,7 @@ const highlights: Highlight[] = [
     place: "vietnam national mathematical olympiad",
     href: "", // TODO: VMO (optional)
     description:
-      "years of olympiad training condensed into one very long exam. walked out unsure, walked back in to find a third prize next to my name.",
+      "years of mathematical olympiad training (skipped 50% of classes) condensed into one long exam - came out with a third prize.",
   },
   {
     start: "sep 2020",
@@ -157,7 +157,7 @@ const highlights: Highlight[] = [
     place: "hanoi - amsterdam high school for the gifted",
     href: "https://hn-ams.edu.vn/en",
     description:
-      "the school that turned a kid who liked counting into a kid who couldn't stop. spent seven years deep in olympiad maths and skipping classes to play soccer, made friends i still text now, and figured out i also kinda liked code.",
+      "seven years deep in olympiad maths, skipping classes for soccer, making friends i still text now - and figuring out i liked code too.",
   },
 ];
 
@@ -211,7 +211,7 @@ export default function HighlightsPage() {
   return (
     <div className="pb-24">
       <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-12 md:pb-16">
-        <h1 className="animate-fade-up font-sans font-bold text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
+        <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
           highlights
         </h1>
         <p className="animate-fade-up delay-3 mt-5 max-w-[54ch] text-muted leading-relaxed">
