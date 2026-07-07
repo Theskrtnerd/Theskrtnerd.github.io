@@ -26,7 +26,7 @@ const highlights: Highlight[] = [
     href: "https://readme.com/",
     location: "sf bay area",
     description:
-      "working on ai for technical documentation. remote from sydney, which means shipping by day and occasionally waking up to a very active us thread.",
+      "worked on ai for technical documentation. remote from sydney, which means shipping by day and occasionally waking up to a very active us thread.",
   },
   {
     start: "mar 2025",
@@ -36,7 +36,7 @@ const highlights: Highlight[] = [
     href: "https://lyratechnologies.com.au/",
     location: "sydney",
     description:
-      "building ai products for us startups. the fde life: scoping, shipping, and occasionally getting called \"the ai guy\" by my co-workers.",
+      "built ai products for us startups. the fde life: scoping, shipping, and occasionally getting called \"the ai guy\" by my co-workers.",
   },
   {
     start: "dec 2024",
