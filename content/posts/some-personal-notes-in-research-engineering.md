@@ -1,9 +1,9 @@
 ---
 author: ["xineohperif"]
-title: "Some personal notes in AI Research and Engineering"
+title: "Notes on AI Research and Engineering"
 date: "2026-07-08"
-description: "Reflections on doing research across academia and industry, and how to actually get started"
-summary: "Reflections on doing research across academia and industry, and how to actually get started"
+description: "Lessons from research across academia and industry"
+summary: "Lessons from research across academia and industry"
 tags: ["ai", "research"]
 section: posts
 ShowToc: true
