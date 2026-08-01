@@ -109,11 +109,11 @@ const highlights: Highlight[] = [
     start: "feb 2023",
     end: "present",
     current: true,
-    role: "bs in computer science",
+    role: "bs in computer science (honours)",
     place: "university of adelaide",
     href: "https://www.adelaide.edu.au/",
     description:
-      "final-year cs student. started out doing maths-y things, drifted into ai, then quant, then startups - in roughly that order.",
+      "fourth-year honours student researching memory systems. started out doing maths-y things, drifted into ai, then quant, then startups - in roughly that order.",
   },
   {
     start: "sep 2022",

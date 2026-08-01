@@ -5,7 +5,7 @@ const socials = [
   { label: "linkedin", href: "https://linkedin.com/in/xineohperif/" },
   { label: "x", href: "https://x.com/tvbbd2" },
   { label: "résumé", href: "/Bach_Tran_Resume_20251110.pdf" },
-  { label: "email", href: "mailto:jayden161208@gmail.com" },
+  { label: "email", href: "mailto:bachtran.au@gmail.com" },
 ];
 
 export default function Home() {
@@ -30,9 +30,9 @@ export default function Home() {
 
             <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
               <p>
-                i build things with code, mostly around applied ai.
-                currently a final-year cs student at the university of adelaide,
-                figuring out what to do next.
+                i build things with code, mostly around applied ai. currently a
+                fourth-year computer science honours student at the university
+                of adelaide, researching memory systems.
               </p>
               <p>
                 before that: a kid in hanoi who was kinda into maths, then a
