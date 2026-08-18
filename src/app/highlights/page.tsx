@@ -210,7 +210,7 @@ function HighlightItem({ h, i }: { h: Highlight; i: number }) {
 export default function HighlightsPage() {
   return (
     <div className="pb-24">
-      <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-12 md:pb-16">
+      <header className="site-container pt-16 md:pt-24 pb-12 md:pb-16">
         <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
           highlights
         </h1>
@@ -219,7 +219,7 @@ export default function HighlightsPage() {
         </p>
       </header>
 
-      <section className="px-6 max-w-[1100px] mx-auto py-8 md:py-12">
+      <section className="site-container py-8 md:py-12">
         <ol className="relative ml-1.5 border-l border-border max-w-[64ch]">
           {highlights.map((h, i) => (
             <HighlightItem key={`${h.start}-${i}`} h={h} i={i} />

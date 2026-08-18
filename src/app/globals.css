@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -39,6 +40,28 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   font-feature-settings: "ss01", "cv11";
+}
+
+/* Shared horizontal rhythm for navigation and every top-level page. */
+.site-container {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.article-container {
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .site-container,
+  .article-container {
+    padding-inline: 1.5rem;
+  }
 }
 
 ::selection {

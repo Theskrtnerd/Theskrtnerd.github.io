@@ -38,7 +38,7 @@ export default async function PostPage(
   const next = idx > 0 ? all[idx - 1] : null;
 
   return (
-    <article className="px-6 max-w-[760px] mx-auto pt-16 md:pt-20 pb-24">
+    <article className="article-container pt-16 md:pt-20 pb-24">
       <Link
         href="/posts/"
         className="animate-fade-up inline-flex items-center gap-2 font-mono text-xs tracking-widest text-muted hover:text-foreground transition-colors group mb-12"

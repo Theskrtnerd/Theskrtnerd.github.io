@@ -50,7 +50,7 @@ export default function MorePage() {
 
   return (
     <div className="pb-24">
-      <header className="px-6 max-w-[1100px] mx-auto pt-16 md:pt-24 pb-16 md:pb-20">
+      <header className="site-container pt-16 md:pt-24 pb-16 md:pb-20">
         <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
           more
         </h1>
@@ -60,7 +60,7 @@ export default function MorePage() {
       </header>
 
       {/* Gallery */}
-      <section className="px-6 max-w-[1100px] mx-auto py-12 md:py-16">
+      <section className="site-container py-12 md:py-16">
         <div className="mb-8 flex items-baseline justify-between gap-4">
           <h2 className="font-mono text-xs tracking-widest text-muted">
             frames
@@ -74,7 +74,7 @@ export default function MorePage() {
       </section>
 
       {/* Countries */}
-      <section className="px-6 max-w-[1100px] mx-auto py-16 md:py-20">
+      <section className="site-container py-16 md:py-20">
         <div className="mb-8 flex items-baseline justify-between gap-4">
           <h2 className="font-mono text-xs tracking-widest text-muted">
             atlas

@@ -16,7 +16,7 @@ export default function PostsPage() {
 
   return (
     <div className="pt-16 md:pt-24 pb-24">
-      <header className="px-6 max-w-[1100px] mx-auto mb-16 md:mb-20">
+      <header className="site-container mb-16 md:mb-20">
         <h1 className="animate-fade-up font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">
           writing
         </h1>
@@ -26,7 +26,7 @@ export default function PostsPage() {
         </p>
       </header>
 
-      <div className="px-6 max-w-[1100px] mx-auto space-y-14">
+      <div className="site-container space-y-14">
         {years.map((year, yi) => {
           const yearPosts = posts.filter(
             (p) => new Date(p.date).getFullYear().toString() === year

@@ -11,7 +11,7 @@ const socials = [
 export default function Home() {
   return (
     <section className="h-[calc(100dvh-3.5rem)] overflow-hidden flex items-center">
-      <div className="px-6 max-w-[1100px] mx-auto w-full">
+      <div className="site-container">
         <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
           <AvatarFlip />
 
