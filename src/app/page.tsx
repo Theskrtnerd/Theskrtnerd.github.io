@@ -17,7 +17,7 @@ export default function Home() {
 
           <div className="max-w-[58ch]">
             <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] text-muted mb-4">
-              hanoi → adelaide → sydney
+              hanoi → adelaide ↔ sydney
             </div>
 
             <h1 className="animate-fade-up delay-2 font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">

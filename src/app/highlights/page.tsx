@@ -106,7 +106,7 @@ const highlights: Highlight[] = [
       "summer research under dr. antonios perperidis on ml for 4d medical imaging. my first real taste of research, and the moment i realized how much i didn't know.",
   },
   {
-    start: "feb 2023",
+    start: "jul 2023",
     end: "present",
     current: true,
     role: "bs in computer science (honours)",
