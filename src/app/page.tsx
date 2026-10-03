@@ -4,7 +4,7 @@ const socials = [
   { label: "github", href: "https://github.com/Theskrtnerd" },
   { label: "linkedin", href: "https://linkedin.com/in/xineohperif/" },
   { label: "x", href: "https://x.com/tvbbd2" },
-  { label: "résumé", href: "/Bach_Tran_Resume_20260813.pdf" },
+  { label: "résumé", href: "/Bach_Tran_Resume_20261003.pdf" },
   { label: "email", href: "mailto:bachtran.au@gmail.com" },
 ];
 
