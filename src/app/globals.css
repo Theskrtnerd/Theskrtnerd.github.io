@@ -446,3 +446,101 @@ body {
 .prose .hljs-deletion { color: var(--hl-meta); }
 .prose .hljs-emphasis { font-style: italic; }
 .prose .hljs-strong { font-weight: 600; }
+
+/* App figures in the developer setup post. */
+.prose .setup-figure {
+  margin: 2.5rem 0;
+  padding: 1.5rem 0 1rem;
+  border-block: 1px solid var(--border);
+}
+
+.prose .setup-apps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.prose .setup-apps-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.prose .setup-app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.prose .setup-figure img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.prose .setup-app-name {
+  display: block;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.prose .setup-app-role {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.prose .setup-figure figcaption {
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.prose .setup-notes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prose .setup-notes-uses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+  font-size: 0.9375rem;
+}
+
+.prose .setup-notes-uses li {
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .prose .setup-apps,
+  .prose .setup-apps-two {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .prose .setup-app {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .prose .setup-figure img {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+}
