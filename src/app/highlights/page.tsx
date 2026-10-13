@@ -113,7 +113,7 @@ const highlights: Highlight[] = [
     place: "university of adelaide",
     href: "https://www.adelaide.edu.au/",
     description:
-      "fourth-year honours student researching memory systems. started out doing maths-y things, drifted into ai, then quant, then startups - in roughly that order.",
+      "research focus: memory systems. started out doing maths-y things, drifted into ai, then quant, then startups - in roughly that order.",
   },
   {
     start: "sep 2022",

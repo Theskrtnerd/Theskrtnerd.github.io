@@ -30,15 +30,14 @@ export default function Home() {
 
             <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
               <p>
-                i build things with code, mostly around applied ai. currently a
-                fourth-year computer science honours student at the university
-                of adelaide, researching memory systems.
+                i build things with code, mostly around applied ai. my research
+                focuses on memory systems.
               </p>
               <p>
                 before that: a kid in hanoi who was kinda into maths, then a
                 student in australia who got too into everything else - ai,
                 quant, and lately startups. the maths turned into code at
-                some point, and i've mostly followed whatever seemed
+                some point, and i&apos;ve mostly followed whatever seemed
                 interesting since.
               </p>
               <p className="text-muted flex flex-wrap items-baseline gap-x-2">

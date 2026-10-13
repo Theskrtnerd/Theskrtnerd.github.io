@@ -23,7 +23,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Bach Tran",
   description:
-    "Final-year CS student at Adelaide. Writing about AI, life, and the occasional detour.",
+    "Building things with code, mostly around applied AI. Writing about AI, life, and the occasional detour.",
   icons: {
     icon: "/favicon.ico",
   },
