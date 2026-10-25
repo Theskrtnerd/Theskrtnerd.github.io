@@ -7,9 +7,9 @@ import ThemeToggle from "./theme-toggle";
 
 const links = [
   { href: "/", label: "about", match: (p: string) => p === "/" },
-  { href: "/highlights/", label: "highlights", match: (p: string) => p.startsWith("/highlights") },
-  { href: "/posts/", label: "blog", match: (p: string) => p.startsWith("/posts") },
-  { href: "/more/", label: "more", match: (p: string) => p.startsWith("/more") },
+  { href: "/#highlights", label: "highlights", match: () => false },
+  { href: "/#blog", label: "blog", match: (p: string) => p.startsWith("/posts") },
+  { href: "/#others", label: "others", match: () => false },
 ];
 
 export default function Nav() {
@@ -30,8 +30,18 @@ export default function Nav() {
       <div className="site-container h-14 flex items-center justify-between">
         <Link
           href="/"
-          className="font-mono text-sm tracking-tight font-medium"
+          className="flex items-center gap-2.5 font-mono text-sm tracking-tight font-medium"
         >
+          <span
+            aria-hidden="true"
+            className="block shrink-0 bg-foreground"
+            style={{
+              width: 28,
+              height: 30,
+              mask: 'url("/logo.svg") center / contain no-repeat',
+              WebkitMask: 'url("/logo.svg") center / contain no-repeat',
+            }}
+          />
           bach tran
         </Link>
         <div className="hidden sm:flex items-center gap-7 font-mono text-xs tracking-wide text-muted">

@@ -47,35 +47,21 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+      <ul className="min-w-0">
         {photos.map((p, i) => (
-          <button
-            key={p.file}
-            type="button"
-            onClick={() => setOpenIdx(i)}
-            title={p.caption}
-            className="animate-fade-up group relative aspect-[4/5] overflow-hidden bg-surface focus:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40"
-            style={{ animationDelay: `${0.05 + (i % 6) * 0.05}s` }}
-            aria-label={`Open photo: ${p.caption}`}
-          >
-            <Image
-              src={`/album/${encodeURIComponent(p.file)}`}
-              alt={p.caption}
-              fill
-              sizes="(min-width: 768px) 33vw, 50vw"
-              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-            />
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300"
+          <li key={p.file}>
+            <button
+              type="button"
+              onClick={() => setOpenIdx(i)}
+              className="min-h-11 w-full cursor-pointer py-2 text-left text-[0.9375rem] md:text-base leading-7 text-foreground/85 lowercase underline decoration-border underline-offset-4 hover:text-foreground hover:decoration-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+              aria-label={`Open photo: ${p.caption}`}
+              aria-haspopup="dialog"
             >
-              <span className="block text-xs md:text-sm text-white leading-snug line-clamp-2">
-                {p.caption}
-              </span>
-            </div>
-          </button>
+              {p.caption}
+            </button>
+          </li>
         ))}
-      </div>
+      </ul>
 
       {isOpen && current && (
         <div
@@ -128,7 +114,7 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
                   className="max-h-[78vh] w-auto h-auto object-contain"
                 />
               </div>
-              <figcaption className="mt-5 max-w-[60ch] text-center text-sm text-muted leading-relaxed">
+              <figcaption className="mt-5 max-w-[60ch] text-center text-sm text-muted leading-relaxed lowercase">
                 {current.caption}
               </figcaption>
             </figure>

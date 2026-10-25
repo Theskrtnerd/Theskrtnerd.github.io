@@ -1,0 +1,9 @@
+.git/
+.next/
+out/
+private/
+.env*
+.atlas-password
+public/logo-concepts/
+.agents/
+.claude/

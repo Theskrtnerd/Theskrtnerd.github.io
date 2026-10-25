@@ -9,7 +9,7 @@ export default function AvatarFlip() {
   return (
     <button
       type="button"
-      onClick={() => setFlipped((f) => !f)}
+      onClick={() => setFlipped(value => !value)}
       aria-label={flipped ? "Show avatar" : "Show the real human"}
       aria-pressed={flipped}
       className="animate-fade-up avatar-halo shrink-0 mx-auto md:mx-0 block cursor-pointer rounded-full"

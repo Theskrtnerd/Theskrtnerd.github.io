@@ -6,9 +6,15 @@
     "dev": "next dev -p 3667",
     "build": "next build",
     "start": "next start -p 3667",
-    "lint": "eslint"
+    "lint": "eslint",
+    "atlas:encrypt": "node scripts/encrypt-atlas.mjs",
+    "prebuild": "npm run atlas:encrypt",
+    "predev": "npm run atlas:encrypt",
+    "test:atlas": "node --experimental-strip-types --test scripts/atlas-auth.test.mjs scripts/atlas-encryption.test.mjs",
+    "test:atlas:routes": "node --test scripts/atlas-routes.test.mjs"
   },
   "dependencies": {
+    "@next/env": "16.2.4",
     "gray-matter": "^4.0.3",
     "image-size": "^2.0.2",
     "next": "16.2.4",

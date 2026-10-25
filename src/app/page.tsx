@@ -1,4 +1,8 @@
 import AvatarFlip from "@/components/avatar-flip";
+import BlogList from "@/components/blog-list";
+import Footer from "@/components/footer";
+import Highlights from "@/components/highlights";
+import Others from "@/components/others";
 
 const socials = [
   { label: "github", href: "https://github.com/Theskrtnerd" },
@@ -10,67 +14,80 @@ const socials = [
 
 export default function Home() {
   return (
-    <section className="h-[calc(100dvh-3.5rem)] overflow-hidden flex items-center">
-      <div className="site-container">
-        <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
-          <AvatarFlip />
+    <>
+      <section aria-label="about" className="min-h-[calc(100dvh-3.5rem)] flex flex-col">
+        <div className="site-container flex-1 flex items-center py-4 md:py-16">
+          <div className="grid w-full md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
+            <AvatarFlip />
 
-          <div className="max-w-[58ch]">
-            <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] text-muted mb-4">
-              hanoi → adelaide ↔ sydney
-            </div>
+            <div className="max-w-[58ch]">
+              <div className="animate-fade-up delay-1 font-mono text-[0.6875rem] tracking-[0.2em] text-muted mb-4">
+                hanoi → adelaide ↔ sydney
+              </div>
 
-            <h1 className="animate-fade-up delay-2 font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
-              bach tran
-            </h1>
-            <p className="animate-fade-up delay-3 font-mono text-xs tracking-wide text-muted mb-6">
-              <span className="text-sm normal-case tracking-normal text-muted/80">a.k.a.</span>{" "}
-              barry · xineohperif · theskrtnerd · viet bach tran
-            </p>
-
-            <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
-              <p>
-                i build things with code, mostly around applied ai. my research
-                focuses on memory systems.
+              <h1 className="animate-fade-up delay-2 font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] mb-2">
+                bach tran
+              </h1>
+              <p className="animate-fade-up delay-3 font-mono text-xs tracking-wide text-muted mb-6">
+                <span className="text-sm normal-case tracking-normal text-muted/80">a.k.a.</span>{" "}
+                barry · xineohperif · theskrtnerd · viet bach tran
               </p>
-              <p>
-                before that: a kid in hanoi who was kinda into maths, then a
-                student in australia who got too into everything else - ai,
-                quant, and lately startups. the maths turned into code at
-                some point, and i&apos;ve mostly followed whatever seemed
-                interesting since.
-              </p>
-              <p className="text-muted flex flex-wrap items-baseline gap-x-2">
-                <span>off-hours, a</span>
-                <span className="role-rotator text-foreground">
-                  <span className="role-rotator-track">
-                    <span>part-time life enjoyer</span>
-                    <span>reluctant soccer captain</span>
-                    <span>aspiring indie guitarist</span>
-                    <span>hit-or-miss comedian</span>
-                    <span>part-time life enjoyer</span>
+
+              <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
+                <p>
+                  i build things with code, mostly around applied ai. my research
+                  focuses on memory systems.
+                </p>
+                <p>
+                  before that: a kid in hanoi who was kinda into maths, then a
+                  student in australia who got too into everything else - ai,
+                  quant, and lately startups. the maths turned into code at
+                  some point, and i&apos;ve mostly followed whatever seemed
+                  interesting since.
+                </p>
+                <p className="text-muted flex flex-wrap items-baseline gap-x-2">
+                  <span>off-hours, a</span>
+                  <span className="role-rotator text-foreground">
+                    <span className="role-rotator-track">
+                      <span>part-time life enjoyer</span>
+                      <span>reluctant soccer captain</span>
+                      <span>aspiring indie guitarist</span>
+                      <span>hit-or-miss comedian</span>
+                      <span>part-time life enjoyer</span>
+                    </span>
                   </span>
-                </span>
-              </p>
-            </div>
+                </p>
+              </div>
 
-            <ul className="animate-fade-up delay-5 mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs tracking-wide text-muted">
-              {socials.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target={s.href.startsWith("http") ? "_blank" : undefined}
-                    rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="nav-link hover:text-foreground transition-colors"
-                  >
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+              <ul className="animate-fade-up delay-5 mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs tracking-wide text-muted">
+                {socials.map((s) => (
+                  <li key={s.label}>
+                    <a
+                      href={s.href}
+                      target={s.href.startsWith("http") ? "_blank" : undefined}
+                      rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="nav-link hover:text-foreground transition-colors"
+                    >
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <a
+          href="#highlights"
+          aria-label="Scroll down to highlights"
+          className="mb-2 inline-flex min-h-11 shrink-0 items-center justify-center gap-2 self-center px-4 font-mono text-xs text-muted hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+        >
+          scroll down <span aria-hidden="true" className="text-base">↓</span>
+        </a>
+      </section>
+      <Highlights />
+      <BlogList />
+      <Others />
+      <Footer />
+    </>
   );
 }

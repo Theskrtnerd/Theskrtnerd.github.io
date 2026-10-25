@@ -25,7 +25,11 @@ export const metadata: Metadata = {
   description:
     "Building things with code, mostly around applied AI. Writing about AI, life, and the occasional detour.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
   },
 };
 
