@@ -1,7 +1,7 @@
 .git/
 .next/
 out/
-private/
+/private/
 .env*
 .atlas-password
 public/logo-concepts/
