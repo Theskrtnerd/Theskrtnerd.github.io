@@ -15,7 +15,7 @@ const highlights = [
     date: "jun 2026",
     dateTime: "2026-06",
     before: "started research with ",
-    label: "dr. xin yu",
+    label: "a/prof. xin yu",
     href: "https://xinyu-au.github.io/",
     after: ", with a focus on memory and multi-agent systems.",
   },
@@ -46,16 +46,10 @@ const highlights = [
   {
     date: "aug 2024",
     dateTime: "2024-08",
-    before: "started researching visual counting at ",
-    label: "aiml",
-    href: "https://www.adelaide.edu.au/aiml/",
-    after: (
-      <>
-        {" with "}
-        <HighlightLink href="https://minhhoai.net/">prof. minh hoai nguyen</HighlightLink>
-        .
-      </>
-    ),
+    before: "started researching visual counting with ",
+    label: "prof. minh hoai nguyen",
+    href: "https://minhhoai.net/",
+    after: ".",
   },
   {
     date: "feb 2024",
@@ -67,6 +61,20 @@ const highlights = [
       <>
         {" to research backdoor attacks in ai models with "}
         <HighlightLink href="https://tobin.page/">dr. tobin south</HighlightLink>
+        .
+      </>
+    ),
+  },
+  {
+    date: "nov 2023",
+    dateTime: "2023-11",
+    before: "joined ",
+    label: "aiml",
+    href: "https://www.adelaide.edu.au/aiml/",
+    after: (
+      <>
+        {" for summer research on 4d medical imaging with "}
+        <HighlightLink href="https://www.linkedin.com/in/antonios-perperidis-b64a6a16/">dr. antonios perperidis</HighlightLink>
         .
       </>
     ),
