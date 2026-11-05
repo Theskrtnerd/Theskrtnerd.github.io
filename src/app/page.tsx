@@ -36,7 +36,7 @@ export default function Home() {
               <div className="animate-fade-up delay-4 text-[0.9375rem] md:text-base leading-[1.75] text-foreground/85 space-y-4">
                 <p>
                   i build things with code, mostly around applied ai. my research
-                  focuses on memory systems.
+                  focuses on multi-agent systems and agent memory.
                 </p>
                 <p>
                   before that: a kid in hanoi who was kinda into maths, then a
