@@ -31,9 +31,7 @@ export default function BlogList() {
                   {formatDateShort(post.date)}
                 </time>
                 <span className="max-w-[78ch] text-[0.9375rem] md:text-base leading-7 text-foreground/85 underline decoration-border underline-offset-4 group-hover:text-foreground group-hover:decoration-foreground transition-colors">
-                  {post.slug === "slow-down-or-move-fast"
-                    ? post.title.toLowerCase().replace(/^slow/, "sLow")
-                    : post.title.toLowerCase()}
+                  {post.title.toLowerCase()}
                 </span>
               </Link>
             </li>

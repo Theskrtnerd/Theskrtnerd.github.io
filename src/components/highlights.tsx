@@ -31,7 +31,7 @@ const highlights = [
     date: "mar 2025",
     dateTime: "2025-03",
     before: "joined ",
-    label: "lyra",
+    label: "Lyra",
     href: "https://lyratechnologies.com.au/",
     after: " as a forward deployed engineer, building ai products for us startups.",
   },

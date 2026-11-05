@@ -6,7 +6,7 @@ Both views use the same existing collection and gallery interface. `/atlas/` is 
 
 Filtering happens on the server before returning public JSON. The public media endpoint serves only uploads referenced by public entries. Excluded music and other private-only media return 404 from that endpoint, even when the browser has a private session. Private data and uploads use separate authenticated endpoints. Direct requests for packaged `.enc` storage files are blocked.
 
-The homepage’s only five visible capital letters spell ATLAS in reading order, outside the bio: Apps and Technical in Highlights, sLow in the blog list, then Australia and Singapore in Others. A text-only “secret” row below the countries list hints at visiting `/word`. Visitors find the word and enter `/atlas` in their address bar. The avatar only flips photos. Neither Atlas route appears in the navbar, and the public interface does not link to the private view.
+The homepage’s only five visible capital letters spell ATLAS in reading order, outside the bio: Apps, Technical and Lyra in Highlights, then Australia and Singapore in Others. A text-only “secret” row below the countries list hints at visiting `/word`. Visitors find the word and enter `/atlas` in their address bar. The avatar only flips photos. Neither Atlas route appears in the navbar, and the public interface does not link to the private view.
 
 ## Search discovery
 
