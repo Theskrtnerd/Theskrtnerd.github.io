@@ -53,7 +53,7 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
             <button
               type="button"
               onClick={() => setOpenIdx(i)}
-              className="min-h-11 w-full cursor-pointer py-2 text-left text-[0.9375rem] md:text-base leading-7 text-foreground/85 lowercase underline decoration-border underline-offset-4 hover:text-foreground hover:decoration-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+              className="min-h-11 w-full cursor-pointer py-2 text-left text-[0.9375rem] md:text-base leading-7 text-foreground/85 underline decoration-border underline-offset-4 hover:text-foreground hover:decoration-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
               aria-label={`Open photo: ${p.caption}`}
               aria-haspopup="dialog"
             >
@@ -114,7 +114,7 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
                   className="max-h-[78vh] w-auto h-auto object-contain"
                 />
               </div>
-              <figcaption className="mt-5 max-w-[60ch] text-center text-sm text-muted leading-relaxed lowercase">
+              <figcaption className="mt-5 max-w-[60ch] text-center text-sm text-muted leading-relaxed">
                 {current.caption}
               </figcaption>
             </figure>

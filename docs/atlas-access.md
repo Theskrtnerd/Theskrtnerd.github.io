@@ -6,7 +6,17 @@ Both views use the same existing collection and gallery interface. `/atlas/` is 
 
 Filtering happens on the server before returning public JSON. The public media endpoint serves only uploads referenced by public entries. Excluded music and other private-only media return 404 from that endpoint, even when the browser has a private session. Private data and uploads use separate authenticated endpoints. Direct requests for packaged `.enc` storage files are blocked.
 
-The homepage’s only five visible capital letters spell ATLAS in reading order, outside the bio: Apps, Technical and Lyra in Highlights, then Australia and Singapore in Others. A text-only “secret” row below the countries list hints at visiting `/word`. Visitors find the word and enter `/atlas` in their address bar. The avatar only flips photos. Neither Atlas route appears in the navbar, and the public interface does not link to the private view.
+The homepage’s only five visible capital letters spell ATLAS in reading order, outside the bio: Apps and Technical in Highlights, Lyra in the latest photo caption, then Australia and Singapore in Others. A text-only “secret” row below the countries list hints at visiting `/word`. Visitors find the word and enter `/atlas` in their address bar. The avatar only flips photos. Neither Atlas route appears in the navbar, and the public interface does not link to the private view.
+
+## Visitor counter
+
+The public Atlas shows how many anonymous browsers have discovered it since the counter launched. The client saves a random UUID in local storage and a first-party cookie before registering a visit. Reloads, return visits, retries, and duplicate requests reuse that ID. The server stores only its SHA-256 hash in the `atlas_visitors` Neon table; a composite primary key prevents duplicate rows. No IP addresses, names, or browsing history are stored. A new device/browser or clearing both storage mechanisms can count again. If both storage mechanisms are blocked, the client reads the total without registering a visit. Counter failures never block the collection or display a fabricated total.
+
+GitHub Pages forwards Atlas to Vercel, so both entry points use the same counter. Private Atlas and preview deployments do not register visitors. The Neon `atlas-visitors` resource uses the free plan and is connected to the production Vercel environment via `DATABASE_URL`.
+
+Initialize a new database with `node scripts/setup-atlas-visitors.mjs` after supplying `DATABASE_URL`. Run `npm run test:atlas:visitors` with that variable to verify browser persistence and database concurrency. Tests use a separate counter namespace and remove their own rows afterward. Do not commit database credentials or enable the counter against a separate store when rebuilding GitHub Pages.
+
+Run `npm run test:atlas:visitor-routes` against the local production server on port 3678 (or set `ATLAS_TEST_URL`) to check the HTTP endpoint, cookie fallback, origin validation, and read-only requests. Supply the matching `DATABASE_URL`; this test deletes only its own randomly generated visitor row afterward.
 
 ## Search discovery
 

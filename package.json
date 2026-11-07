@@ -11,9 +11,12 @@
     "prebuild": "npm run atlas:encrypt",
     "predev": "npm run atlas:encrypt",
     "test:atlas": "node --experimental-strip-types --test scripts/atlas-auth.test.mjs scripts/atlas-encryption.test.mjs",
+    "test:atlas:visitors": "node --experimental-strip-types --test scripts/atlas-visitors.test.mjs",
+    "test:atlas:visitor-routes": "node --test scripts/atlas-visitor-routes.test.mjs",
     "test:atlas:routes": "node --test scripts/atlas-routes.test.mjs"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
     "@next/env": "16.2.4",
     "gray-matter": "^4.0.3",
     "image-size": "^2.0.2",

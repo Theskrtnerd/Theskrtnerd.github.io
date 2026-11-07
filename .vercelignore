@@ -1,6 +1,7 @@
 .git/
 .next/
 out/
+out-github-pages/
 /private/
 .env*
 .atlas-password

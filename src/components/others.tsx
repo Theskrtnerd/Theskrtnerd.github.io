@@ -18,7 +18,9 @@ function getAlbum(): GalleryPhoto[] {
         file,
         caption: file
           .replace(/\.(jpg|jpeg|png|webp)$/i, "")
-          .replace(/\s*\(\d{4}(?:\s*[-–]\s*\d{4})?\)\s*$/, ""),
+          .replace(/\s*\(\d{4}(?:\s*[-–]\s*\d{4})?\)\s*$/, "")
+          .toLowerCase()
+          .replace(/\blyra\b/g, "Lyra"),
         width,
         height,
       };

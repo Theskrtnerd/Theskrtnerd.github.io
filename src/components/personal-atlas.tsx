@@ -4,6 +4,7 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { AtlasCard } from "./atlas/card";
 import { EntryDialog } from "./atlas/dialogs";
+import VisitorCount from "./atlas/visitor-count";
 import { categories, monthKey, monthLabel, type AtlasAudience, type Entry } from "./atlas/data";
 
 const AtlasSpace = dynamic(() => import("./atlas/space"), { ssr: false, loading: () => <p role="status">Loading 3D view…</p> });
@@ -33,7 +34,7 @@ export default function PersonalAtlas({ entries, audience = "public" }: { entrie
   }
 
   return <div className={`atlas-page site-container pt-16 md:pt-24 ${playing ? "has-player" : ""}`}>
-    <header className="atlas-heading mb-12 md:mb-16"><div><h1 className="font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">personal <em>atlas</em><span aria-hidden="true">✳</span></h1><p className="mt-5 max-w-[54ch] text-muted leading-relaxed">{audience === "private" ? "music, photos, and things i’ve read or watched." : "photos and things i’ve read or watched."}</p></div></header>
+    <header className="atlas-heading mb-12 md:mb-16"><div><h1 className="font-serif text-5xl md:text-6xl tracking-[-0.03em] leading-[0.98]">personal <em>atlas</em><span aria-hidden="true">✳</span></h1><p className="mt-5 max-w-[54ch] text-muted leading-relaxed">{audience === "private" ? "music, photos, and things i’ve read or watched." : "photos and things i’ve read or watched."}</p>{audience === "public" && <VisitorCount />}</div></header>
     <div className="atlas-toolbar">
       <div className="atlas-category-bar" aria-label="Filter collection"><button aria-pressed={kind === "all"} onClick={() => { setKind("all"); setLimit(60); }}>all</button>{categories.filter(c => allEntries.some(e => e.kind === c.kind)).map(c => <button key={c.kind} aria-pressed={kind === c.kind} onClick={() => { setKind(c.kind); setLimit(60); }}>{c.label}</button>)}</div>
       <div className="atlas-tools">
