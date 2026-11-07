@@ -24,4 +24,4 @@ f:[]
 b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 14:I[27201,["/_next/static/chunks/0~6u4mpvkcgi9.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
 8:null
-d:[["$","title","0",{"children":"Embrace the Moment - Bach Tran"}],["$","meta","1",{"name":"description","content":"You only live once, so how will you live yours?"}],["$","link","2",{"rel":"icon","href":"/favicon.ico"}],["$","$L14","3",{}]]
+d:[["$","title","0",{"children":"Embrace the Moment - Bach Tran"}],["$","meta","1",{"name":"description","content":"You only live once, so how will you live yours?"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?v=3","sizes":"16x16 32x32 48x48"}],["$","link","favicon-svg",{"rel":"icon","href":"/favicon.svg?v=3","type":"image/svg+xml","sizes":"any"}],["$","link","apple-icon",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png?v=3","sizes":"180x180","type":"image/png"}],["$","$L14","3",{}]]
