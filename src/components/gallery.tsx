@@ -47,17 +47,28 @@ export default function Gallery({ photos }: { photos: GalleryPhoto[] }) {
 
   return (
     <>
-      <ul className="min-w-0">
+      <ul className="grid min-w-0 grid-cols-2 lg:grid-cols-5">
         {photos.map((p, i) => (
-          <li key={p.file}>
+          <li key={p.file} className="min-w-0">
             <button
               type="button"
               onClick={() => setOpenIdx(i)}
-              className="min-h-11 w-full cursor-pointer py-2 text-left text-[0.9375rem] md:text-base leading-7 text-foreground/85 underline decoration-border underline-offset-4 hover:text-foreground hover:decoration-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+              className="group relative block w-full cursor-zoom-in overflow-hidden text-left focus-visible:z-10 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white"
               aria-label={`Open photo: ${p.caption}`}
               aria-haspopup="dialog"
             >
-              {p.caption}
+              <span className="relative block aspect-[3/2] overflow-hidden bg-surface">
+                <Image
+                  src={`/album/${encodeURIComponent(p.file)}`}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1100px) 211px, (min-width: 1024px) calc((100vw - 48px) / 5), (min-width: 640px) calc((100vw - 48px) / 2), calc((100vw - 32px) / 2)"
+                  className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                />
+              </span>
+              <span className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-3 pt-8 font-mono text-xs leading-5 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                {p.caption}
+              </span>
             </button>
           </li>
         ))}

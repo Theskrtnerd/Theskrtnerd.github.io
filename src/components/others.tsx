@@ -51,13 +51,13 @@ export default function Others() {
         </h2>
 
         {album.length > 0 && (
-          <div className="mt-5 md:mt-6 grid gap-1 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-7" role="group" aria-labelledby="photos-heading">
-            <h3 id="photos-heading" className="pt-2 font-mono text-xs leading-7 text-muted">photos</h3>
+          <div className="mt-8 md:mt-10" role="group" aria-labelledby="photos-heading">
+            <h3 id="photos-heading" className="mb-3 font-mono text-xs leading-7 text-muted">photos</h3>
             <Gallery photos={album} />
           </div>
         )}
 
-        <div className={`${album.length > 0 ? "mt-8" : "mt-5 md:mt-6"} grid items-baseline gap-1 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-7`}>
+        <div className={`${album.length > 0 ? "mt-8 md:mt-10" : "mt-5 md:mt-6"} grid items-baseline gap-1 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-7`}>
           <h3 className="font-mono text-xs leading-7 text-muted whitespace-nowrap">countries visited</h3>
           <ul aria-label="Countries visited" className="max-w-[78ch] text-[0.9375rem] md:text-base leading-7 text-foreground/85">
             {countries.map((country, index) => (
